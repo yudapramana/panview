@@ -16,6 +16,7 @@ return array (
     'product' => 'Produk',
     'gallery' => 'Galeri',
     'contact' => 'Kontak',
+    'services' => 'Layanan',
   ),
   'footer' => 
   array (

@@ -7,9 +7,9 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="/" class="active">{{ __('messages.menu.home') }}</a></li>
+                <li><a href="/" @if (request()->segment(1) == '') class="active" @endif >{{ __('messages.menu.home') }}</a></li>
 
-                <li class="dropdown"><a href="/product"><span>{{ __('messages.menu.product') }}</span> <i class="bi bi-chevron-down"></i></a>
+                <li class="dropdown"><a href="/product"><span>{{ __('messages.menu.services') }}</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
                         <li><a href="/1">1</a></li>
                         <li><a href="/2">2</a></li>
@@ -17,8 +17,8 @@
 
                     </ul>
                 </li>
-                <li><a href="/gallery">{{ __('messages.menu.gallery') }}</a></li>
-                <li><a href="/contact">{{ __('messages.menu.contact') }}</a></li>
+                <li><a href="/gallery" @if (request()->segment(1) == 'gallery') class="active" @endif>{{ __('messages.menu.gallery') }}</a></li>
+                <li><a href="/contact" @if (request()->segment(1) == 'contact') class="active" @endif>{{ __('messages.menu.contact') }}</a></li>
 
                 <li class="dropdown"><a href="#"><span>{{ session()->get('locale') }}</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>

@@ -222,10 +222,37 @@
 <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-        <div class="container">
 
-            <div class="row content">
+
+    @foreach($services as $key => $service)
+    <section id="about" class="about  @if($key+1 == 1) pb-4 pt-5 @else pb-4 pt-0 @endif">
+        <div class="container">
+            <div class="row content align-item-center align-middle" style="align-items: center">
+                @if( ($key+1) % 2 == 0)
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                    <img src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
+                </div>
+                <div class="col-lg-6 pb-0 pt-0">
+                    <h4>{{$service->title}}</h4>
+                    <p style="font-size: small; text-align:justify;">{!! nl2br($service->description) !!}</p>
+                    <a href="/{{isset($service->next_url) ? $service->next_url : ''}}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
+                </div>
+                @else
+                <div class="col-lg-6 pb-0 pt-0">
+                    <h4>{{$service->title}}</h4>
+                    <p style="font-size: small; text-align:justify;">{!! nl2br($service->description) !!}</p>
+                    <a href="/{{isset($service->next_url) ? $service->next_url : ''}}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                    <img src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
+                </div>
+                @endif
+            </div>
+        </div>
+    </section><!-- End About Section -->
+    @endforeach
+
+    {{-- <div class="row content">
                 <div class="col-lg-6">
                     <h2>Eum ipsam laborum deleniti velitena</h2>
                     <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
@@ -246,10 +273,9 @@
                         magna aliqua.
                     </p>
                 </div>
-            </div>
+            </div> --}}
 
-        </div>
-    </section><!-- End About Section -->
+
 
     <!-- ======= Clients Section ======= -->
     {{-- <section id="clients" class="clients section-bg">

@@ -15,14 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['web']], function () {
     // your routes here
-    Route::get('/', function () {
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('landing.index');
 
-        return view('landing.home', [
-            'accountfb' => 'pandanviewmandeh',
-            'account' => 'pandanviewmandeh',
-            'channel' =>  '@pandanviewmandehofficial4919'
-        ]);
-    });
+    // Route::get('/', function () {
+
+    //     return view('landing.home', [
+    //         'accountfb' => 'pandanviewmandeh',
+    //         'account' => 'pandanviewmandeh',
+    //         'channel' =>  '@pandanviewmandehofficial4919'
+    //     ]);
+    // });
 
     Route::get('/contact', function () {
 
@@ -48,4 +50,8 @@ Route::group(['middleware' => ['web']], function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin.home');
+
+Route::get('/services', [\App\Http\Controllers\Admin\ServicesController::class, 'index'])->name('services.index');
+Route::post('/services/store', [\App\Http\Controllers\Admin\ServicesController::class, 'store']);
+Route::get('/services/fetch/{group}', [\App\Http\Controllers\Admin\ServicesController::class, 'fetch']);

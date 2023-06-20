@@ -16,6 +16,7 @@ return array (
     'product' => 'Product',
     'gallery' => 'Gallery',
     'contact' => 'Contact',
+    'services' => 'Services',
   ),
   'footer' => 
   array (

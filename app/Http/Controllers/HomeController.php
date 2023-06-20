@@ -23,6 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $services = \App\Models\Services::where('featured', 'yes')->get();
+        return view('landing.home', [
+            'accountfb' => 'pandanviewmandeh',
+            'account' => 'pandanviewmandeh',
+            'channel' =>  '@pandanviewmandehofficial4919',
+            'services' =>  $services
+        ]);
     }
 }
