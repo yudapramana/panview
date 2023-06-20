@@ -16,11 +16,11 @@
                 <div class="carousel-container">
                     <div class="container">
 
-                        <h2>Pandan View <span>Mandeh</span></h2>
-                        <p>{{ __('messages.carousel.description') }}</p>
-                        <a href="#about" class="btn-get-started scrollto">Selengkapnya</a>
+                        <h2 class="animate__animated animate__fadeInDown">Pandan View <span>Mandeh</span></h2>
+                        <p class="animate__animated animate__fadeInUp">{{ __('messages.carousel.description') }}</p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">{{ __('messages.carousel.more') }}</a>
 
-                        <div class="carousel-caption text-end">
+                        <div class="carousel-caption text-end animate__animated animate__fadeInRight">
                             <div class="s_share text-end">
 
                                 <a href="https://web.facebook.com/{{$accountfb}}" class="s_share_facebook" target="_blank" data-original-title="" title="" aria-describedby="tooltip278388">
@@ -38,13 +38,11 @@
                                 <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
                                     <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
                                 </a>
-                                <a href="mailto:?body=https%3A%2F%2Fcijaluresorts.com%2F&amp;subject=Home%20%7C%20Cijalu%20Resort" class="s_share_email" data-original-title="" title="" aria-describedby="tooltip910272">
-                                </a>
                             </div>
 
                             <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
                                 <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
-                                <a href="/contactus" class="btn btn-success flat flat contact-cijalu" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
+                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
                             </div>
 
                         </div>
@@ -59,7 +57,7 @@
 
                         <h2>Pandan View <span>Mandeh</span></h2>
                         <p>{{ __('messages.carousel.description') }}</p>
-                        <a href="#about" class="btn-get-started scrollto">Selengkapnya</a>
+                        <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
 
                         <div class="carousel-caption text-end">
                             <div class="s_share text-end">
@@ -79,13 +77,11 @@
                                 <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
                                     <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
                                 </a>
-                                <a href="mailto:?body=https%3A%2F%2Fcijaluresorts.com%2F&amp;subject=Home%20%7C%20Cijalu%20Resort" class="s_share_email" data-original-title="" title="" aria-describedby="tooltip910272">
-                                </a>
                             </div>
 
                             <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
                                 <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
-                                <a href="/contactus" class="btn btn-success flat flat contact-cijalu" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
+                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
                             </div>
 
                         </div>
@@ -100,7 +96,7 @@
 
                         <h2>Pandan View <span>Mandeh</span></h2>
                         <p>{{ __('messages.carousel.description') }}</p>
-                        <a href="#about" class="btn-get-started scrollto">Selengkapnya</a>
+                        <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
 
                         <div class="carousel-caption text-end">
                             <div class="s_share text-end">
@@ -120,13 +116,11 @@
                                 <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
                                     <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
                                 </a>
-                                <a href="mailto:?body=https%3A%2F%2Fcijaluresorts.com%2F&amp;subject=Home%20%7C%20Cijalu%20Resort" class="s_share_email" data-original-title="" title="" aria-describedby="tooltip910272">
-                                </a>
                             </div>
 
                             <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
                                 <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
-                                <a href="/contactus" class="btn btn-success flat flat contact-cijalu" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
+                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
                             </div>
 
                         </div>
@@ -141,7 +135,7 @@
 
                         <h2>Pandan View <span>Mandeh</span></h2>
                         <p>{{ __('messages.carousel.description') }}</p>
-                        <a href="#about" class="btn-get-started scrollto">Selengkapnya</a>
+                        <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
 
                         <div class="carousel-caption text-end">
                             <div class="s_share text-end">
@@ -161,13 +155,11 @@
                                 <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
                                     <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
                                 </a>
-                                <a href="mailto:?body=https%3A%2F%2Fcijaluresorts.com%2F&amp;subject=Home%20%7C%20Cijalu%20Resort" class="s_share_email" data-original-title="" title="" aria-describedby="tooltip910272">
-                                </a>
                             </div>
 
                             <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
                                 <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
-                                <a href="/contactus" class="btn btn-success flat flat contact-cijalu" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
+                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
                             </div>
 
                         </div>
@@ -182,7 +174,7 @@
 
                         <h2>Pandan View <span>Mandeh</span></h2>
                         <p>{{ __('messages.carousel.description') }}</p>
-                        <a href="#about" class="btn-get-started scrollto">Selengkapnya</a>
+                        <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
 
                         <div class="carousel-caption text-end">
                             <div class="s_share text-end">
@@ -202,13 +194,11 @@
                                 <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
                                     <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
                                 </a>
-                                <a href="mailto:?body=https%3A%2F%2Fcijaluresorts.com%2F&amp;subject=Home%20%7C%20Cijalu%20Resort" class="s_share_email" data-original-title="" title="" aria-describedby="tooltip910272">
-                                </a>
                             </div>
 
                             <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
                                 <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
-                                <a href="/contactus" class="btn btn-success flat flat contact-cijalu" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
+                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
                             </div>
 
                         </div>
@@ -262,42 +252,43 @@
     </section><!-- End About Section -->
 
     <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
+    {{-- <section id="clients" class="clients section-bg">
         <div class="container">
 
             <div class="row">
 
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
                     <img src="{{ asset('sailor/img/clients/client-1.png')}}" class="img-fluid" alt="">
-                </div>
+    </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('sailor/img/clients/client-2.png')}}" class="img-fluid" alt="">
-                </div>
+    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{{ asset('sailor/img/clients/client-2.png')}}" class="img-fluid" alt="">
+    </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('sailor/img/clients/client-3.png')}}" class="img-fluid" alt="">
-                </div>
+    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{{ asset('sailor/img/clients/client-3.png')}}" class="img-fluid" alt="">
+    </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('sailor/img/clients/client-4.png')}}" class="img-fluid" alt="">
-                </div>
+    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{{ asset('sailor/img/clients/client-4.png')}}" class="img-fluid" alt="">
+    </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('sailor/img/clients/client-5.png')}}" class="img-fluid" alt="">
-                </div>
+    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{{ asset('sailor/img/clients/client-5.png')}}" class="img-fluid" alt="">
+    </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <img src="{{ asset('sailor/img/clients/client-6.png')}}" class="img-fluid" alt="">
-                </div>
+    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{{ asset('sailor/img/clients/client-6.png')}}" class="img-fluid" alt="">
+    </div>
 
-            </div>
+    </div>
 
-        </div>
-    </section><!-- End Clients Section -->
+    </div>
+    </section> --}}
+    <!-- End Clients Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    {{-- <section id="services" class="services">
         <div class="container">
 
             <div class="row">
@@ -346,7 +337,8 @@
             </div>
 
         </div>
-    </section><!-- End Services Section -->
+    </section> --}}
+    <!-- End Services Section -->
 
 </main><!-- End #main -->
 @endsection

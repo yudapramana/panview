@@ -6,6 +6,7 @@ return array (
     'description' => 'Tourist Attractions, Lodging, Restaurants, and Cafes',
     'book' => 'Book Now',
     'contact' => 'Contact Us',
+    'more' => 'More',
   ),
   'title' => 'Welcome to Pandan View Mandeh.',
   'menu' => 

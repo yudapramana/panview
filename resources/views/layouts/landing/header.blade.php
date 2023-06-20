@@ -11,19 +11,10 @@
 
                 <li class="dropdown"><a href="/product"><span>{{ __('messages.menu.product') }}</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="/1">1</a></li>
+                        <li><a href="/2">2</a></li>
+                        <li><a href="/3">3</a></li>
 
-                        <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                            <ul>
-                                <li><a href="#">Deep Drop Down 1</a></li>
-                                <li><a href="#">Deep Drop Down 2</a></li>
-                                <li><a href="#">Deep Drop Down 3</a></li>
-                                <li><a href="#">Deep Drop Down 4</a></li>
-                                <li><a href="#">Deep Drop Down 5</a></li>
-                            </ul>
-                        </li>
                     </ul>
                 </li>
                 <li><a href="/gallery">{{ __('messages.menu.gallery') }}</a></li>

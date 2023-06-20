@@ -6,6 +6,7 @@ return array (
     'description' => 'Tempat Wisata, Penginapan, Restoran, dan Cafe',
     'book' => 'Booking Sekarang',
     'contact' => 'Kontak Kami',
+    'more' => 'Selengkapnya',
   ),
   'title' => 'Selamat Datang di Pandan View Mandeh.',
   'menu' => 
