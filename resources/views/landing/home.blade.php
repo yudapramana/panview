@@ -23,9 +23,6 @@
                         <div class="carousel-caption text-end animate__animated animate__fadeInRight">
                             <div class="s_share text-end">
 
-                                <a href="https://web.facebook.com/{{$accountfb}}" class="s_share_facebook" target="_blank" data-original-title="" title="" aria-describedby="tooltip278388">
-                                    <i class="coba-fb fa fa-brands fa-facebook rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip702620"></i>
-                                </a>&nbsp;
                                 <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
                                     <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
                                 </a>&nbsp;
@@ -62,9 +59,6 @@
                         <div class="carousel-caption text-end">
                             <div class="s_share text-end">
 
-                                <a href="https://web.facebook.com/{{$accountfb}}" class="s_share_facebook" target="_blank" data-original-title="" title="" aria-describedby="tooltip278388">
-                                    <i class="coba-fb fa fa-brands fa-facebook rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip702620"></i>
-                                </a>&nbsp;
                                 <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
                                     <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
                                 </a>&nbsp;
@@ -101,9 +95,6 @@
                         <div class="carousel-caption text-end">
                             <div class="s_share text-end">
 
-                                <a href="https://web.facebook.com/{{$accountfb}}" class="s_share_facebook" target="_blank" data-original-title="" title="" aria-describedby="tooltip278388">
-                                    <i class="coba-fb fa fa-brands fa-facebook rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip702620"></i>
-                                </a>&nbsp;
                                 <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
                                     <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
                                 </a>&nbsp;
@@ -140,9 +131,6 @@
                         <div class="carousel-caption text-end">
                             <div class="s_share text-end">
 
-                                <a href="https://web.facebook.com/{{$accountfb}}" class="s_share_facebook" target="_blank" data-original-title="" title="" aria-describedby="tooltip278388">
-                                    <i class="coba-fb fa fa-brands fa-facebook rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip702620"></i>
-                                </a>&nbsp;
                                 <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
                                     <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
                                 </a>&nbsp;
@@ -179,9 +167,6 @@
                         <div class="carousel-caption text-end">
                             <div class="s_share text-end">
 
-                                <a href="https://web.facebook.com/{{$accountfb}}" class="s_share_facebook" target="_blank" data-original-title="" title="" aria-describedby="tooltip278388">
-                                    <i class="coba-fb fa fa-brands fa-facebook rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip702620"></i>
-                                </a>&nbsp;
                                 <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
                                     <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
                                 </a>&nbsp;
@@ -233,15 +218,15 @@
                     <img src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
                 </div>
                 <div class="col-lg-6 pb-0 pt-0">
-                    <h4>{{$service->title}}</h4>
+                    <h4>{{$service->{$titleLocale} }}</h4>
                     <p style="font-size: small; text-align:justify;">{!! nl2br($service->description) !!}</p>
-                    <a href="/{{isset($service->next_url) ? $service->next_url : ''}}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
+                    <a style="font-size:smaller;" href="{!! '/' .isset($service->next_url) ? $service->next_url : '' !!}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
                 </div>
                 @else
                 <div class="col-lg-6 pb-0 pt-0">
-                    <h4>{{$service->title}}</h4>
+                    <h4>{{$service->{$titleLocale} }}</h4>
                     <p style="font-size: small; text-align:justify;">{!! nl2br($service->description) !!}</p>
-                    <a href="/{{isset($service->next_url) ? $service->next_url : ''}}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
+                    <a style="font-size:smaller;" href="{!! '/' .isset($service->next_url) ? $service->next_url : '' !!}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
                     <img src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">

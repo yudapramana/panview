@@ -23,12 +23,16 @@ class ServicesTableSeeder extends Seeder
             array (
                 'id_service' => 1,
                 'created_at' => '2023-06-20 10:26:54',
-                'updated_at' => '2023-06-20 14:04:18',
+                'updated_at' => '2023-06-20 16:43:32',
                 'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687262524/PandanViewMandeh/_PV1_y2h6yl.jpg',
-                'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687256783/PandanViewMandeh/woman_glmmih.jpg',
-                'title' => 'Welcome to Pandan View',
+                'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687278150/PandanViewMandeh/_LAYOUT_u0nlql.jpg',
+                'next_url' => 'aboutus',
+                'title_id' => 'Selamat Datang di Pandan View',
+                'title_en' => 'Welcome to Pandan View',
                 'name' => 'Welcome to Pandan View',
+                'slug' => NULL,
                 'featured' => 'yes',
+                'listed' => 'no',
                 'description' => 'Selamat datang di Pandan View Mandeh, destinasi yang memukau dengan pemandangan yang indah. Disini Anda akan diberikan hadiah alam yang luar biasa dengan pemandangan yang menakjubkan. Saat mata Anda memandang, Anda akan disambut oleh panorama yang memukau dengan sentuhan keindahan yang tak tergambarkan.
 
 Pandangan panorama di Pandan View Mandeh sungguh luar biasa. Terdapat perpaduan sempurna antara langit biru yang cerah dan laut biru yang memukau, yang seolah-olah bersatu tanpa batas. Airnya yang jernih dan tenang mencerminkan cahaya matahari, menciptakan panorama yang memesona dan memanjakan mata Anda.
@@ -39,12 +43,16 @@ Melihat ke arah pantai, Anda akan terpesona oleh garis pantai yang indah. Tak ha
             array (
                 'id_service' => 2,
                 'created_at' => '2023-06-20 11:50:14',
-                'updated_at' => '2023-06-20 11:50:14',
+                'updated_at' => '2023-06-21 12:35:01',
                 'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687261764/PandanViewMandeh/t4knnfc6v9rqq9nryp1f_jo7squ.jpg',
-                'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687261808/PandanViewMandeh/woman_gofk5a.jpg',
-                'title' => 'Fasilitas Kami',
+                'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687282977/PandanViewMandeh/_Pool_ftr4wi.jpg',
+                'next_url' => '/service-facilities',
+                'title_id' => 'Fasilitas Kami',
+                'title_en' => 'Our Facilities',
                 'name' => 'Fasilitas Kami',
+                'slug' => 'facilities',
                 'featured' => 'yes',
+                'listed' => 'yes',
                 'description' => 'Untuk memenuhi kebetuhan acara Anda, Cijalu Resort dilengkapi dengan fasilitas:  
 
 1. Auditorium kapasitas 200 orang (theater) 
@@ -61,12 +69,16 @@ Melihat ke arah pantai, Anda akan terpesona oleh garis pantai yang indah. Tak ha
             array (
                 'id_service' => 3,
                 'created_at' => '2023-06-20 11:53:14',
-                'updated_at' => '2023-06-20 11:53:14',
+                'updated_at' => '2023-06-21 12:35:12',
                 'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687261967/PandanViewMandeh/_ROOM_lm3lay.jpg',
-                'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687261985/PandanViewMandeh/asuuu_w77wdc.jpg',
-                'title' => 'Penginapan',
-                'name' => 'Penginapan',
+                'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687283044/PandanViewMandeh/jpg_20230528_120632_0000_u5ruus.jpg',
+                'next_url' => '/service-accommodations',
+                'title_id' => 'Akomodasi',
+                'title_en' => 'Accommodations',
+                'name' => 'Akomodasi',
+                'slug' => 'accommodations',
                 'featured' => 'yes',
+                'listed' => 'yes',
                 'description' => 'Cijalu Resort menyediakan beberapa tipe kamar diantaranya adalah tipe kamar Superior 4 Guests, Superior 3 Guests, dan superior 2 Guests.
 Sebagian besar kamar dilengkapi balkon dengan view yang sangat indah dan lepas.
 
@@ -78,6 +90,38 @@ Bungalow Rajawali memiliki 4 rooms masing-masing berisi 6 bed
 Bungalow Elang memiliki 8 rooms masing-masing berisi 6 beds
 Bungalow Kutilang memiliki 6 rooms masing-masing berisi 4 beds
 Bungalow Parkit memiliki 4 rooms masing-masing berisi 3 beds',
+            ),
+            3 => 
+            array (
+                'id_service' => 4,
+                'created_at' => '2023-06-21 00:52:56',
+                'updated_at' => '2023-06-21 12:35:21',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687283508/PandanViewMandeh/_RC4_rhddub.jpg',
+                'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687283570/PandanViewMandeh/20230517_121049_jrhxjp.jpg',
+                'next_url' => '/service-food-beverage',
+                'title_id' => 'Makanan dan Minuman',
+                'title_en' => 'Food and Beverage',
+                'name' => 'Food and Beverage',
+                'slug' => 'food-beverage',
+                'featured' => 'no',
+                'listed' => 'yes',
+            'description' => 'Di Pandan View Mandeh, makanan dan minuman (Food and Beverage) juga menjadi bagian penting dari pengalaman menginap dan menjelajahi keindahan alam pulau ini. Sumatera memiliki kekayaan budaya dan kuliner yang khas, yang tercermin dalam variasi hidangan yang ditawarkan di resort-resort di sana.',
+            ),
+            4 => 
+            array (
+                'id_service' => 5,
+                'created_at' => '2023-06-21 00:59:18',
+                'updated_at' => '2023-06-21 12:35:30',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687283943/PandanViewMandeh/2306_oncbq6.jpg',
+                'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687283955/PandanViewMandeh/2306_reyaf3.jpg',
+                'next_url' => '/service-amenities',
+                'title_id' => 'Perlengkapan',
+                'title_en' => 'Amenities',
+                'name' => 'Amenities',
+                'slug' => 'amenities',
+                'featured' => 'no',
+                'listed' => 'yes',
+                'description' => 'Apabila Anda menginap di Pandan View Mandeh Resort, Anda akan mendapatkan beberapa fasilitas dan kenyamanan ketika menginap, diantaranya handuk, peralatan mandi, hingga perlengkapan untuk mengobrol bersama keluarga tercinta yakni kopi dan teh.',
             ),
         ));
         

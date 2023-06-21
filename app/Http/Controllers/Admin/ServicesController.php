@@ -48,8 +48,8 @@ class ServicesController extends Controller
                     return $html;
                 })
                 ->addColumn('name-description', function ($service) {
-                    $text = '<span style="font-size:larger; font-weight:bolder;">' . $service->name . '</span>&nbsp;&nbsp; ' . ($service->featured == 'yes' ? '<i>featured</i>' : '') . '<br>
-                            <span class="text-muted" style="font-size:smaller">' . $service->description . ' </span>';
+                    $text = '<span style="font-size:larger; font-weight:bolder;">' . $service->name . '</span>&nbsp;&nbsp; ' . ($service->featured == 'yes' ? '<span class="badge bg-primary"><i>featured</i></span>' : '') . ' &nbsp;' . ($service->listed == 'yes' ? '<span class="badge bg-info"><i>listed</i></span>' : '') . '<br>
+                            <span class="text-muted preserveLines" style="font-size:smaller">' . $service->description . ' </span>';
                     return $text;
                 })
                 ->addColumn('content', function ($service) {
@@ -103,18 +103,26 @@ class ServicesController extends Controller
             if ($data['id_service'] == '') {
                 $service = new Services();
                 $service->name = $data['nama'];
-                $service->title = $data['nama'];
+                $service->slug = $data['slug'];
+                $service->next_url = $data['next_url'];
+                $service->title_id = $data['title_id'];
+                $service->title_en = $data['title_en'];
                 $service->description = $data['deskripsi'];
                 $service->featured = $data['featured'];
+                $service->listed = $data['listed'];
                 $service->cover_image_url = isset($data['new-cover_image_url']) ? $data['new-cover_image_url'] : '';
                 $service->content_image_url = isset($data['new-content_image_url']) ? $data['new-content_image_url'] : '';
                 $service->save();
             } else {
                 $fService = Services::find($data['id_service']);
                 $fService->name = $data['nama'];
-                $fService->title = $data['nama'];
+                $fService->slug = $data['slug'];
+                $fService->next_url = $data['next_url'];
+                $fService->title_id = $data['title_id'];
+                $fService->title_en = $data['title_en'];
                 $fService->description = $data['deskripsi'];
                 $fService->featured = $data['featured'];
+                $fService->listed = $data['listed'];
                 $fService->cover_image_url = isset($data['new-cover_image_url']) ? $data['new-cover_image_url'] : '';
                 $fService->content_image_url = isset($data['new-content_image_url']) ? $data['new-content_image_url'] : '';
                 $fService->save();

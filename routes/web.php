@@ -15,19 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['web']], function () {
     // your routes here
+
+    Route::get('/visitor', [App\Http\Controllers\Visitor\DashboardController::class, 'index'])->name('visitor.index');
+
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('landing.index');
 
-    // Route::get('/', function () {
-
-    //     return view('landing.home', [
-    //         'accountfb' => 'pandanviewmandeh',
-    //         'account' => 'pandanviewmandeh',
-    //         'channel' =>  '@pandanviewmandehofficial4919'
-    //     ]);
-    // });
-
     Route::get('/contact', function () {
-
         return view('landing.contact', [
             'accountfb' => 'pandanviewmandeh',
             'account' => 'pandanviewmandeh',
@@ -44,6 +37,40 @@ Route::group(['middleware' => ['web']], function () {
         ]);
     });
 
+    Route::get('/aboutus', function () {
+
+        return view('landing.aboutus', [
+            'accountfb' => 'pandanviewmandeh',
+            'account' => 'pandanviewmandeh',
+            'channel' =>  '@pandanviewmandehofficial4919'
+        ]);
+    });
+
+    Route::get('/service/{slug}', function ($slug) {
+
+        $service = \App\Models\Services::where('slug', $slug)->first();
+        $products = \App\Models\Products::where('id_service', $service->id_service)->get();
+
+        return view('landing.service-detail', [
+            'accountfb' => 'pandanviewmandeh',
+            'account' => 'pandanviewmandeh',
+            'channel' =>  '@pandanviewmandehofficial4919',
+            'service' =>  $service,
+            'products' =>  $products
+        ]);
+    });
+    
+    Route::get('/all-services', function () {
+        $services = \App\Models\Services::where('listed', 'yes')->get();
+
+        return view('landing.all-services', [
+            'accountfb' => 'pandanviewmandeh',
+            'account' => 'pandanviewmandeh',
+            'channel' =>  '@pandanviewmandehofficial4919',
+            'services' =>  $services
+        ]);
+    });
+
     Route::get('/lang/home', [App\Http\Controllers\LangController::class, 'index']);
     Route::get('/lang/change', [App\Http\Controllers\LangController::class, 'change'])->name('changeLang');
 });
@@ -54,4 +81,6 @@ Route::get('/home', [App\Http\Controllers\Admin\HomeController::class, 'index'])
 
 Route::get('/services', [\App\Http\Controllers\Admin\ServicesController::class, 'index'])->name('services.index');
 Route::post('/services/store', [\App\Http\Controllers\Admin\ServicesController::class, 'store']);
-Route::get('/services/fetch/{group}', [\App\Http\Controllers\Admin\ServicesController::class, 'fetch']);
+
+Route::get('/products', [\App\Http\Controllers\Admin\ProductController::class, 'index'])->name('products.index');
+Route::post('/products/store', [\App\Http\Controllers\Admin\ProductController::class, 'store']);

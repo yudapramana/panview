@@ -6,6 +6,19 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>@yield('title')</title>
+
+    {{-- Ambil Punya Orang --}}
+    <meta property="fb:app_id" content="1880640628839943">
+    <meta property="og:site_name" content="WISATA PULAU SUMATERA BARAT">
+
+    <meta property="og:title" content="WISATA PULAU SUMATERA BARAT ~ PANDAN VIEW MANDEH RESORT">
+    <meta name="twitter:title" content="WISATA PULAU SUMATERA BARAT ~ PANDAN VIEW MANDEH RESORT">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:description" content="Pandan View Mandeh Resort Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung k...">
+
+
+
+
     <meta name="description" content="Pandan View Mandeh" />
     <meta name="keywords" content="Pandan View Mandeh, Mandeh, Pesisir Selatan, Puncak Mandeh" />
     <meta name="author" content="Pramana Yuda Sayeti" />
@@ -17,13 +30,12 @@
     <meta property="og:image:width" content="180" />
     <meta property="og:image:height" content="50" />
     <meta property="og:type" content=website />
-    <meta property="og:title" content="Selamat Datang di Pandan View Mandeh" />
     <meta property="og:description" content="Pandan View Mandeh, Tempat Wisata, Penginapan, Restoran dan Cafe" />
     <meta property="og:url" content="https://pandanviewmandeh.com" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="Pandan View Mandeh" />
     <meta name="twitter:title" content="Pandan View Mandeh" />
-    <meta name="twitter:description" content="Pelayanan Publik Terpadu Satu Pintu Berbasis Web (ONLINE) Kementerian Agama Kabupaten Pesisir Selatan" />
+    <meta name="twitter:description" content="Pandan View Mandeh Resort Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung k...">
     <meta name="twitter:image" content="{{ asset('sailor/img/logo.png') }}" />
     <link rel="canonical" href="https://pandanviewmandeh.com" />
     <link rel="alternate" hreflang="en-US" href="https://panview.kemenagpessel.com" />

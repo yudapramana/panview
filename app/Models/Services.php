@@ -15,7 +15,7 @@ class Services extends Model
  
     protected $guarded = [];
 
-    protected $appends = ['square_cover_image'];
+    protected $appends = ['square_cover_image', 'rectangle_content_image'];
 
     public function products() {
         return $this->hasMany(Products::class);
@@ -27,5 +27,13 @@ class Services extends Model
 
 
         return $exp[0] . '/upload/c_fill,h_450,w_450/' . $exp[1];
+    }
+
+    public function getRectangleContentImageAttribute(){
+        $separator = '/upload/';
+        $exp = explode($separator, $this->attributes['content_image_url']);
+
+
+        return $exp[0] . '/upload/c_fill,ar_16:9,q_50/' . $exp[1];
     }
 }

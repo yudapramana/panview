@@ -47,15 +47,15 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Daftar Layanan</h5>
+                        <h5 class="card-title">Daftar Produk</h5>
 
                         <table class='table table-bordered display' id="example" style="width:100%; font-size:11pt!important;">
                             <thead>
                                 <tr>
                                     <th>No</th>
                                     <th>Nama - Deskripsi</th>
+                                    <th>Layanan</th>
                                     <th>Cover</th>
-                                    <th>Content</th>
                                     <th width="10%">Aksi</th>
                                 </tr>
                             </thead>
@@ -67,7 +67,7 @@
         </div>
     </section>
 
-    @include('admin.services._modal')
+    @include('admin.products._modal')
 
 
 </main>
@@ -155,33 +155,6 @@
         coverWidget.open();
     }, false);
 
-    // Content
-    var contentWidget = cloudinary.createUploadWidget({
-        cloudName: 'dezj1x6xp'
-        , uploadPreset: 'pandanviewmandeh'
-        , theme: 'minimal'
-        , multiple: false
-        , max_file_size: 10048576
-        , background: "white"
-        , quality: 20
-    }, (error, result) => {
-        if (!error && result && result.event === "success") {
-            console.log('Info Arsip Masuk: ', result.info);
-            var linklogo = result.info.secure_url;
-            $('#new-content_image_url').val(linklogo);
-
-            $('#content_image_url_btn').hide();
-
-            $('.show-content-box').show();
-            $('#preview-content').attr("src", linklogo);
-
-        }
-    });
-
-    document.getElementById("content_image_url_btn").addEventListener("click", function() {
-        contentWidget.open();
-    }, false);
-
     $('.select2').select2({
         theme: 'bootstrap-5'
         , dropdownParent: $("#tambahGroup")
@@ -254,12 +227,12 @@
             data: 'name-description'
             , name: 'name-description'
         , }, {
-            data: 'cover'
-            , name: 'cover'
+            data: 'service.name'
+            , name: 'service.name'
             , className: 'text-center align-middle'
         }, {
-            data: 'content'
-            , name: 'content'
+            data: 'cover'
+            , name: 'cover'
             , className: 'text-center align-middle'
         }, {
             data: 'action'
@@ -270,7 +243,7 @@
 
 
     $(document).ready(function() {
-        table.ajax.url('/services').load();
+        table.ajax.url('/products').load();
         console.log('mana neeee');
 
         table.buttons().container()
@@ -282,24 +255,10 @@
             }, 500);
         });
 
-        $(document).on('click', '#viewBtn', function(e) {
-            var data = table.row($(this).parents('tr')).data();
-            console.log(data);
-            jemaahTbl.clear().draw();
-            jemaahTbl.ajax.url('/group-contact/fetch/' + data.id_service).load();
-            $('#judul-dalem').html(data.nama);
-            $('#deksripsi-dalem').html(data.deskripsi);
-            $('#tipe-dalem').html(data.tipe);
-
-        });
-
-
-
-
         $(document).on("click", "#addBtn", function() {
             var title = $(this).data('title');
             $("#judul-modal").html(title);
-            $("#id_service").val('');
+            $("#id_product").val('');
             $('#nama').prop('disabled', false);
             $('#deskripsi').prop('disabled', false);
             $('#tipe').prop('disabled', false);
@@ -332,7 +291,7 @@
             $("#judul-modal").html('Edit Data Group');
             var data = table.row($(this).parents('tr')).data();
             console.log(data);
-            $("#id_service").val(data.id_service);
+            $("#id_product").val(data.id_product);
 
             $('#nama').val(data.name);
             $('#title_id').val(data.title_id);

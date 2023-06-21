@@ -19,9 +19,14 @@ class CreateProductsTable extends Migration
 
             $table->text('cover_image_url')->nullable();
             $table->unsignedInteger('id_service');
-            $table->string('title', 100);
+            $table->string('title_id', 100)->nullable();
+            $table->string('title_en', 100)->nullable();
             $table->string('name', 100);
             $table->text('description')->nullable();
+            $table->text('next_url')->nullable();
+            $table->string('slug', 50)->nullable();
+
+
         });
     }
 

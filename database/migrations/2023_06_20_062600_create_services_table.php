@@ -18,10 +18,14 @@ class CreateServicesTable extends Migration
             $table->timestamps();
 
             $table->text('cover_image_url')->nullable();
-            $table->text('content_image_url');
-            $table->string('title', 100);
+            $table->text('content_image_url')->nullable();
+            $table->text('next_url')->nullable();
+            $table->string('title_id', 100)->nullable();
+            $table->string('title_en', 100)->nullable();
             $table->string('name', 100);
+            $table->string('slug', 50)->nullable();
             $table->enum('featured', ['no', 'yes'])->default('no');
+            $table->enum('listed', ['no', 'yes'])->default('yes');
             $table->text('description')->nullable();
         });
     }
