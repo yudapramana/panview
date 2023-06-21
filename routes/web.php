@@ -30,10 +30,16 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('/gallery', function () {
 
+        $galleries = \App\Models\Gallery::all();
+        $galleries = $galleries->shuffle();
+
+        $filterTags = $galleries->pluck('filter_tag')->unique();
         return view('landing.gallery', [
             'accountfb' => 'pandanviewmandeh',
             'account' => 'pandanviewmandeh',
-            'channel' =>  '@pandanviewmandehofficial4919'
+            'channel' =>  '@pandanviewmandehofficial4919',
+            'galleries' =>  $galleries,
+            'filterTags' =>  $filterTags,
         ]);
     });
 
@@ -84,3 +90,6 @@ Route::post('/services/store', [\App\Http\Controllers\Admin\ServicesController::
 
 Route::get('/products', [\App\Http\Controllers\Admin\ProductController::class, 'index'])->name('products.index');
 Route::post('/products/store', [\App\Http\Controllers\Admin\ProductController::class, 'store']);
+
+Route::get('/galleries', [\App\Http\Controllers\Admin\GalleryController::class, 'index'])->name('galleries.index');
+Route::post('/galleries/store', [\App\Http\Controllers\Admin\GalleryController::class, 'store']);

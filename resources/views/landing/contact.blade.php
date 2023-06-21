@@ -10,10 +10,10 @@
         <div class="container">
 
             <div class="d-flex justify-content-between align-items-center">
-                <h2>Contact</h2>
+                <h2>{{__('messages.menu.contact')}}</h2>
                 <ol>
-                    <li><a href="index.html">Home</a></li>
-                    <li>Contact</li>
+                    <li><a href="index.html">{{__('messages.menu.home')}}</a></li>
+                    <li>{{__('messages.menu.contact')}}</li>
                 </ol>
             </div>
 

@@ -119,6 +119,44 @@ Dinner      buka dari Jam 18.30 sd 20.30',
                 'next_url' => 'dock-side',
                 'slug' => 'dock-side',
             ),
+            6 => 
+            array (
+                'id_product' => 7,
+                'created_at' => '2023-06-21 17:30:41',
+                'updated_at' => '2023-06-21 17:37:53',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687343181/PandanViewMandeh/Cottage_Lumbung_r0mc0y.png',
+                'id_service' => 3,
+                'title_id' => 'Cottage Lumbung',
+                'title_en' => 'Cottage Lumbung',
+                'name' => 'Cottage Lumbung',
+                'description' => 'Tipe kamar 2 Guest dapat menampung maksimal 5 orang tamu dengan kata lain terdapat 1 tempat tidur. 
+
+Fasilitas
+1. Maksimal Kapasitas 5 orang
+2. Free Sarapan 2 orang
+3. Tersedia AC, Kamar Mandi, dan Balkon',
+                'next_url' => NULL,
+                'slug' => 'cottage-lumbung',
+            ),
+            7 => 
+            array (
+                'id_product' => 8,
+                'created_at' => '2023-06-21 17:36:52',
+                'updated_at' => '2023-06-21 17:37:44',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687343690/PandanViewMandeh/VIlla_Family_Room_hgws1i.png',
+                'id_service' => 3,
+                'title_id' => 'Villa Family Room',
+                'title_en' => 'Villa Family Room',
+                'name' => 'Villa Family Room',
+                'description' => 'Tipe kamar 4 Guest dapat menampung maksimal 10 orang tamu dengan kata lain terdapat 2 tempat tidur dan 1 ruang keluarga
+
+Fasilitas
+1. Maksimal Kapasitas 10 orang
+2. 2 Kamar Tidur AC, 1 ruang keluarga, 2 kamar mandi
+3. Free Sarapan untuk 5 Orang',
+                'next_url' => NULL,
+                'slug' => 'villa-family-room',
+            ),
         ));
         
         

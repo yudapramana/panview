@@ -22,5 +22,6 @@ class DatabaseSeeder extends Seeder
 
         DB::statement('SET FOREIGN_KEY_CHECKS=1');
         $this->call(ProductsTableSeeder::class);
+        $this->call(GalleriesTableSeeder::class);
     }
 }

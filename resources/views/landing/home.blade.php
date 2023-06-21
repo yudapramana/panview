@@ -237,6 +237,36 @@
     </section><!-- End About Section -->
     @endforeach
 
+    <section id="about" class="about  @if($key+1 == 1) pb-4 pt-5 @else pb-4 pt-0 @endif">
+        <div class="container">
+            <div class="row content align-item-center align-middle" style="align-items: center">
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                    <iframe width="530" height="315" src="https://www.youtube.com/embed/bdv1XyiLFW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    {{-- <iframe class="img img-fluid mx-auto" style="width: 100%; height:380px;" src="//www.youtube.com/embed/gzJEYkoWHro?autoplay=0&amp;rel=0&amp;controls=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe> --}}
+                </div>
+                <div class="col-lg-6 pb-0 pt-0">
+                    <h4>
+                        <i>Quality time starts here...</i>
+                    </h4>
+
+                    <p>
+                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">Pegunungan,</span>
+                        <br>
+                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">kebuh teh, </span>
+                        <br>
+                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">sawah, </span>
+                        <br>
+                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">rumput yang menghijau, </span>
+                        <br>
+                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">gemricik aliran air yang bening,<br></span>
+                        <span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; text-align: center; font-size: 0.875rem;">sungguh bagai karya seni instalasi karya Illahi dengan keindahan yang sempurna.</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section><!-- End About Section -->
+
     {{-- <div class="row content">
                 <div class="col-lg-6">
                     <h2>Eum ipsam laborum deleniti velitena</h2>

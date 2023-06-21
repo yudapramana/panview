@@ -23,7 +23,7 @@
                     <h4>{{ __('messages.footer.navigation') }}</h4>
                     <ul>
                         <li><i class="bx bx-chevron-right"></i> <a href="/">{{ __('messages.menu.home') }}</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="/product">{{ __('messages.menu.product') }}</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="/all-services">{{ __('messages.menu.services') }}</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="/gallery">{{ __('messages.menu.gallery') }}</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="/aboutus">{{ __('messages.menu.aboutus') }}</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="/contact">{{ __('messages.menu.contact') }}</a></li>
