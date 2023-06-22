@@ -157,6 +157,25 @@ Fasilitas
                 'next_url' => NULL,
                 'slug' => 'villa-family-room',
             ),
+            8 => 
+            array (
+                'id_product' => 9,
+                'created_at' => '2023-06-22 10:08:22',
+                'updated_at' => '2023-06-22 10:08:22',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687403295/PandanViewMandeh/jpg_20230525_105857_0000_pna52r.jpg',
+                'id_service' => 3,
+                'title_id' => 'Villa Apung',
+                'title_en' => 'Villa Apung',
+                'name' => 'Villa Apung',
+                'description' => 'Tipe kamar 4 Guest dapat menampung maksimal 10 orang tamu dengan kata lain terdapat 1 kamar dan anjungan dengan villa berada / mengapung di atas / tepi pantai
+
+Fasilitas
+1. Maksimal Kapasitas 10 orang
+2. Free Sarapan 4 orang
+3. Tersedia AC, 2 Kamar Mandi, dan Anjungan,',
+                'next_url' => NULL,
+                'slug' => 'villa-apung',
+            ),
         ));
         
         

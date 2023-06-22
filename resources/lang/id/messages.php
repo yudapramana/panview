@@ -17,6 +17,7 @@ return array (
     'gallery' => 'Galeri',
     'contact' => 'Kontak',
     'services' => 'Layanan',
+    'login' => 'Masuk',
   ),
   'footer' => 
   array (
