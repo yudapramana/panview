@@ -56,9 +56,9 @@ class GalleriesTableSeeder extends Seeder
             array (
                 'id_gallery' => 4,
                 'created_at' => '2023-06-21 15:44:20',
-                'updated_at' => '2023-06-21 15:44:20',
+                'updated_at' => '2023-06-23 13:52:46',
                 'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687337035/PandanViewMandeh/_RC1_dxb79n.jpg',
-                'filter_tag' => 'Facilities',
+                'filter_tag' => 'Restaurant',
                 'alt' => 'restoran_v1',
                 'title' => 'Restoran 1',
                 'description' => 'Tampilan Restoran dari dalam dari arah Kasir',
@@ -67,9 +67,9 @@ class GalleriesTableSeeder extends Seeder
             array (
                 'id_gallery' => 5,
                 'created_at' => '2023-06-21 15:44:49',
-                'updated_at' => '2023-06-21 15:44:49',
+                'updated_at' => '2023-06-23 13:52:54',
                 'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687337078/PandanViewMandeh/_RC2_jgoxtf.jpg',
-                'filter_tag' => 'Facilities',
+                'filter_tag' => 'Restaurant',
                 'alt' => 'restoran_v2',
                 'title' => 'Restoran 2',
                 'description' => 'Tampilan Ekor Restoran dari arah dapur menuju view mandeh',
@@ -78,9 +78,9 @@ class GalleriesTableSeeder extends Seeder
             array (
                 'id_gallery' => 6,
                 'created_at' => '2023-06-21 15:45:21',
-                'updated_at' => '2023-06-21 15:45:21',
+                'updated_at' => '2023-06-23 13:53:03',
                 'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687337105/PandanViewMandeh/_RC3_k33ton.jpg',
-                'filter_tag' => 'Facilities',
+                'filter_tag' => 'Restaurant',
                 'alt' => 'restoran_v3',
                 'title' => 'Restoran 3',
                 'description' => 'Tampilan Restoran menuju view mandeh dari POV Pelanggan',
@@ -89,9 +89,9 @@ class GalleriesTableSeeder extends Seeder
             array (
                 'id_gallery' => 7,
                 'created_at' => '2023-06-21 15:45:54',
-                'updated_at' => '2023-06-21 15:45:54',
+                'updated_at' => '2023-06-23 13:53:10',
                 'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687337142/PandanViewMandeh/_RC7_qrkcwd.jpg',
-                'filter_tag' => 'Facilities',
+                'filter_tag' => 'Restaurant',
                 'alt' => 'restoran_v4',
                 'title' => 'Restoran 4',
                 'description' => 'Tampilan Kasir dan Dapur pembuatan Minum Restoran',
@@ -172,6 +172,39 @@ class GalleriesTableSeeder extends Seeder
                 'alt' => 'dermaga_v3',
                 'title' => 'Dermaga View 3',
                 'description' => 'Dermaga tampak langsung menuju view laut dan kepualauan mandeh',
+            ),
+            14 => 
+            array (
+                'id_gallery' => 15,
+                'created_at' => '2023-06-23 13:54:13',
+                'updated_at' => '2023-06-23 13:54:13',
+                'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687503231/PandanViewMandeh/_VIEW1_tuhs1t.jpg',
+                'filter_tag' => 'View',
+                'alt' => 'view-1',
+                'title' => 'View 1',
+                'description' => 'View 1',
+            ),
+            15 => 
+            array (
+                'id_gallery' => 16,
+                'created_at' => '2023-06-23 13:55:02',
+                'updated_at' => '2023-06-23 13:55:02',
+                'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687503292/PandanViewMandeh/jpg_20230526_142231_0000_wiviin.jpg',
+                'filter_tag' => 'View',
+                'alt' => 'view-2',
+                'title' => 'View 2',
+                'description' => 'View 2',
+            ),
+            16 => 
+            array (
+                'id_gallery' => 17,
+                'created_at' => '2023-06-23 14:15:57',
+                'updated_at' => '2023-06-23 14:15:57',
+                'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687504540/PandanViewMandeh/Cottage_Family_uschgb.png',
+                'filter_tag' => 'Accommodation',
+                'alt' => 'Room - Cottage Family',
+                'title' => 'Room - Cottage Family',
+                'description' => 'Room - Cottage Family',
             ),
         ));
         

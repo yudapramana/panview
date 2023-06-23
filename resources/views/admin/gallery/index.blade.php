@@ -1,5 +1,5 @@
 @extends('layouts.admin.master')
-@section('title', 'Service List')
+@section('title', 'Gallery List')
 
 
 @section('_styles')

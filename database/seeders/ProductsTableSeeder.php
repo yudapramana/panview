@@ -176,6 +176,26 @@ Fasilitas
                 'next_url' => NULL,
                 'slug' => 'villa-apung',
             ),
+            9 => 
+            array (
+                'id_product' => 10,
+                'created_at' => '2023-06-23 07:48:08',
+                'updated_at' => '2023-06-23 13:49:54',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687502927/PandanViewMandeh/hammock_gcfdqw.png',
+                'id_service' => 3,
+                'title_id' => 'Cottage Hammock',
+                'title_en' => 'Cottage Hammock',
+                'name' => 'Cottage Hammock',
+                'description' => 'Tipe kamar 2 Guest dapat menampung maksimal 5 orang tamu dengan kata lain terdapat 1 tempat tidur.
+
+Fasilitas
+1. Maksimal Kapasitas 5 orang
+2. Free Sarapan 2 orang
+3. Tersedia AC, Kamar Mandi, dan Balkon
+4. Balkon Hammock with View',
+                'next_url' => NULL,
+                'slug' => 'cottage-hammock',
+            ),
         ));
         
         
