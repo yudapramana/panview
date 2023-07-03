@@ -35,7 +35,7 @@
                     <div class="info">
                         <div class="address">
                             <i class="bi bi-geo-alt"></i>
-                            <h4>Location:</h4>
+                            <h4>Location (Where am I):</h4>
                             <p>Jln. Mandeh, Ampang Pulai, Koto XI Tarusan, Kabupaten Pesisir Selatan, Sumatera Barat 25654</p>
                         </div>
 
