@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/xdown/{view}', function ($view) {
+    Artisan::call('down', ['--secret' => 'devmode', '--render' => 'errors.'.$view]);
+
+    return 'Web Down with command view: '. $view;
+});
+
+Route::get('/xup', function () {
+    Artisan::call('up');
+    return 'Web Up';
+});
 
 Route::group(['middleware' => ['web']], function () {
     // your routes here
