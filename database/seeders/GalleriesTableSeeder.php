@@ -206,6 +206,83 @@ class GalleriesTableSeeder extends Seeder
                 'title' => 'Room - Cottage Family',
                 'description' => 'Room - Cottage Family',
             ),
+            17 => 
+            array (
+                'id_gallery' => 18,
+                'created_at' => '2023-06-26 08:07:03',
+                'updated_at' => '2023-06-26 08:07:03',
+                'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687741617/PandanViewMandeh/_ENTRANCE_xymy2b.jpg',
+                'filter_tag' => 'Facilities',
+                'alt' => 'Area Parkir 1',
+                'title' => 'Area Parkir 1',
+                'description' => 'Area Parkir 1',
+            ),
+            18 => 
+            array (
+                'id_gallery' => 19,
+                'created_at' => '2023-06-26 08:08:06',
+                'updated_at' => '2023-06-26 08:08:06',
+                'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687741679/PandanViewMandeh/20230625_112806_0000_rmv3yi.png',
+                'filter_tag' => 'Facilities',
+                'alt' => 'Area Parkir 2',
+                'title' => 'Area Parkir 2',
+                'description' => 'Area Parkir 2',
+            ),
+            19 => 
+            array (
+                'id_gallery' => 20,
+                'created_at' => '2023-06-26 08:08:56',
+                'updated_at' => '2023-06-26 08:08:56',
+                'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687741727/PandanViewMandeh/20230625_112806_0002_iv7sd6.png',
+                'filter_tag' => 'Pool',
+                'alt' => 'pool_v2',
+                'title' => 'Pool View 2',
+                'description' => 'Pool',
+            ),
+            20 => 
+            array (
+                'id_gallery' => 21,
+                'created_at' => '2023-06-26 08:09:21',
+                'updated_at' => '2023-06-26 08:09:21',
+                'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687741753/PandanViewMandeh/20230625_112806_0003_l7hhxf.png',
+                'filter_tag' => 'Pool',
+                'alt' => 'pool_v3',
+                'title' => 'Pool View 3',
+                'description' => 'Pool',
+            ),
+            21 => 
+            array (
+                'id_gallery' => 22,
+                'created_at' => '2023-06-26 08:10:06',
+                'updated_at' => '2023-06-26 08:10:06',
+                'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687741781/PandanViewMandeh/20230625_112806_0004_iyfmgp.png',
+                'filter_tag' => 'Pool',
+                'alt' => 'pool_v4',
+                'title' => 'Pool View 4',
+                'description' => 'Pool',
+            ),
+            22 => 
+            array (
+                'id_gallery' => 23,
+                'created_at' => '2023-06-26 08:20:44',
+                'updated_at' => '2023-06-26 08:20:58',
+                'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687742436/PandanViewMandeh/20230625_112806_0007_znw56g.png',
+                'filter_tag' => 'Facilities',
+                'alt' => 'resepsionis_v1',
+                'title' => 'Resepsionis View 1',
+                'description' => 'Resepsionis',
+            ),
+            23 => 
+            array (
+                'id_gallery' => 24,
+                'created_at' => '2023-06-26 08:21:49',
+                'updated_at' => '2023-06-26 08:21:49',
+                'image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687742487/PandanViewMandeh/20230625_112806_0008_ycpnjm.png',
+                'filter_tag' => 'Facilities',
+                'alt' => 'resepsionis_v2',
+                'title' => 'Resepsionis View 2',
+                'description' => 'Resepsionis View 2',
+            ),
         ));
         
         

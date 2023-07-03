@@ -95,8 +95,8 @@ Dinner      buka dari Jam 18.30 sd 20.30',
             array (
                 'id_product' => 5,
                 'created_at' => '2023-06-21 11:40:16',
-                'updated_at' => '2023-06-21 11:40:16',
-                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687322413/PandanViewMandeh/_ENTRANCE_dkdtjb.jpg',
+                'updated_at' => '2023-06-26 11:32:16',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687753927/PandanViewMandeh/20230625_112806_0000_bll6u6.png',
                 'id_service' => 2,
                 'title_id' => 'Area Parkir',
                 'title_en' => 'Parking Area',
@@ -195,6 +195,20 @@ Fasilitas
 4. Balkon Hammock with View',
                 'next_url' => NULL,
                 'slug' => 'cottage-hammock',
+            ),
+            10 => 
+            array (
+                'id_product' => 12,
+                'created_at' => '2023-06-26 11:29:21',
+                'updated_at' => '2023-06-26 11:30:30',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687753751/PandanViewMandeh/20230625_112806_0008_j7btjf.png',
+                'id_service' => 2,
+                'title_id' => 'Resepsionis',
+                'title_en' => 'Receptionist',
+                'name' => 'Resepsionis',
+                'description' => 'Resepsionis adalah \'wajah\' dari sebuah penginapan atau resort dan berkontribusi pada pengalaman menginap para tamu',
+                'next_url' => NULL,
+                'slug' => 'receptionist',
             ),
         ));
         
