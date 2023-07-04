@@ -20,9 +20,9 @@ Route::get('/migrate-fresh', function () {
 });
 
 Route::get('/xdown/{view}', function ($view) {
-    Artisan::call('down', ['--secret' => 'devmode', '--render' => 'errors.'.$view]);
+    Artisan::call('down', ['--secret' => 'devmode', '--render' => 'errors.' . $view]);
 
-    return 'Web Down with command view: '. $view;
+    return 'Web Down with command view: ' . $view;
 });
 
 Route::get('/xup', function () {
@@ -82,7 +82,7 @@ Route::group(['middleware' => ['web']], function () {
             'products' =>  $products
         ]);
     });
-    
+
     Route::get('/all-services', function () {
         $services = \App\Models\Services::where('listed', 'yes')->get();
 
@@ -96,6 +96,8 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('/lang/home', [App\Http\Controllers\LangController::class, 'index']);
     Route::get('/lang/change', [App\Http\Controllers\LangController::class, 'change'])->name('changeLang');
+
+    Route::post('/messages/store', [\App\Http\Controllers\Visitor\MessageController::class, 'store'])->name('messages.store');;
 });
 
 Auth::routes();
@@ -113,3 +115,5 @@ Route::post('/galleries/store', [\App\Http\Controllers\Admin\GalleryController::
 
 Route::get('/carousels', [\App\Http\Controllers\Admin\CarouselController::class, 'index'])->name('carousels.index');
 Route::post('/carousels/store', [\App\Http\Controllers\Admin\CarouselController::class, 'store']);
+
+Route::get('/messages', [\App\Http\Controllers\Admin\MessageController::class, 'index'])->name('messages.admin.index');
