@@ -12,7 +12,7 @@
         <div class="carousel-inner" role="listbox">
 
             <!-- Slide 1 -->
-            <div class="carousel-item active" style="background-image: url(sailor/img/slide/pv-1.jpg)">
+            <div class="carousel-item lazy active" style="background-image: url(sailor/img/slide/pv-1.jpg)">
                 <div class="carousel-container">
                     <div class="container">
 
@@ -48,7 +48,7 @@
             </div>
 
             <!-- Slide 2 -->
-            <div class="carousel-item" style="background-image: url(sailor/img/slide/pv-3.jpg)">
+            <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-3.jpg)">
                 <div class="carousel-container">
                     <div class="container">
 
@@ -84,7 +84,7 @@
             </div>
 
             <!-- Slide 3 -->
-            <div class="carousel-item" style="background-image: url(sailor/img/slide/pv-4.jpg)">
+            <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-4.jpg)">
                 <div class="carousel-container">
                     <div class="container">
 
@@ -120,7 +120,7 @@
             </div>
 
             <!-- Slide 4 -->
-            <div class="carousel-item" style="background-image: url(sailor/img/slide/pv-6.jpg)">
+            <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-6.jpg)">
                 <div class="carousel-container">
                     <div class="container">
 
@@ -156,7 +156,7 @@
             </div>
 
             <!-- Slide 5 -->
-            <div class="carousel-item" style="background-image: url(sailor/img/slide/pv-7.jpg)">
+            <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-7.jpg)">
                 <div class="carousel-container">
                     <div class="container">
 
@@ -215,7 +215,7 @@
             <div class="row content align-item-center align-middle" style="align-items: center">
                 @if( ($key+1) % 2 == 0)
                 <div class="col-lg-6 pt-4 pt-lg-0">
-                    <img src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
+                    <img class="lazy" data-src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
                 </div>
                 <div class="col-lg-6 pb-0 pt-0">
                     <h4>{{$service->{$titleLocale} }}</h4>
@@ -229,7 +229,7 @@
                     <a style="font-size:smaller;" href="{!! '/' .isset($service->next_url) ? $service->next_url : '' !!}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
-                    <img src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
+                    <img class="lazy" data-src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
                 </div>
                 @endif
             </div>
@@ -382,4 +382,92 @@
     <!-- End Services Section -->
 
 </main><!-- End #main -->
+@endsection
+
+
+@section('_scripts')
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyloadImages = document.querySelectorAll("img.lazy");
+        var lazyloadThrottleTimeout;
+
+        function lazyload() {
+            if (lazyloadThrottleTimeout) {
+                clearTimeout(lazyloadThrottleTimeout);
+            }
+
+            lazyloadThrottleTimeout = setTimeout(function() {
+                var scrollTop = window.pageYOffset;
+                lazyloadImages.forEach(function(img) {
+                    if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                    }
+                });
+                if (lazyloadImages.length == 0) {
+                    document.removeEventListener("scroll", lazyload);
+                    window.removeEventListener("resize", lazyload);
+                    window.removeEventListener("orientationChange", lazyload);
+                }
+            }, 20);
+        }
+
+        document.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyloadImages;
+
+        if ("IntersectionObserver" in window) {
+            lazyloadImages = document.querySelectorAll(".lazy");
+            var imageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        var image = entry.target;
+                        image.classList.remove("lazy");
+                        imageObserver.unobserve(image);
+                    }
+                });
+            });
+
+            lazyloadImages.forEach(function(image) {
+                imageObserver.observe(image);
+            });
+        } else {
+            var lazyloadThrottleTimeout;
+            lazyloadImages = document.querySelectorAll(".lazy");
+
+            function lazyload() {
+                if (lazyloadThrottleTimeout) {
+                    clearTimeout(lazyloadThrottleTimeout);
+                }
+
+                lazyloadThrottleTimeout = setTimeout(function() {
+                    var scrollTop = window.pageYOffset;
+                    lazyloadImages.forEach(function(img) {
+                        if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                        }
+                    });
+                    if (lazyloadImages.length == 0) {
+                        document.removeEventListener("scroll", lazyload);
+                        window.removeEventListener("resize", lazyload);
+                        window.removeEventListener("orientationChange", lazyload);
+                    }
+                }, 20);
+            }
+
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+        }
+    })
+
+</script>
+
 @endsection
