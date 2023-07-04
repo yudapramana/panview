@@ -15,12 +15,19 @@ class Carousel extends Model
  
     protected $guarded = [];
 
-    protected $appends = ['thumbnail_image'];
+    protected $appends = ['thumbnail_image', 'smaller_image'];
 
 
     public function getThumbnailImageAttribute(){
         $separator = '/upload/';
         $exp = explode($separator, $this->attributes['image_url']);
         return $exp[0] . '/upload/q_5/' . $exp[1];
+    }
+
+
+    public function getSmallerImageAttribute(){
+        $separator = '/upload/';
+        $exp = explode($separator, $this->attributes['image_url']);
+        return $exp[0] . '/upload/q_30/' . $exp[1];
     }
 }

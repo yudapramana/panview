@@ -12,7 +12,7 @@
         <div class="carousel-inner" role="listbox">
 
             @foreach($carousels as $key => $carousel)
-            <div class="carousel-item lazy @if($key == 0) active @endif" style="background-image: url({{$carousel->image_url}})">
+            <div class="carousel-item lazy @if($key == 0) active @endif" style="background-image: url({{$carousel->smaller_image}})">
                 <div class="carousel-container">
                     <div class="container">
 
