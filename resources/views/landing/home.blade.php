@@ -11,195 +11,233 @@
 
         <div class="carousel-inner" role="listbox">
 
-            <!-- Slide 1 -->
+            @foreach($carousels as $key => $carousel)
+            <div class="carousel-item lazy @if($key == 0) active @endif" style="background-image: url({{$carousel->image_url}})">
+                <div class="carousel-container">
+                    <div class="container">
+
+                        <h2 class=" @if($key == 0) animate__animated animate__fadeInDown @endif">Pandan View <span>Mandeh</span></h2>
+                        <p class=" @if($key == 0) animate__animated animate__fadeInUp @endif">{{ __('messages.carousel.description') }}</p>
+                        <a href="#about" class="btn-get-started  @if($key == 0) animate__animated animate__fadeInUp @endif scrollto">{{ __('messages.carousel.more') }}</a>
+
+                        <div class="carousel-caption text-end  @if($key == 0) animate__animated animate__fadeInRight @endif">
+                            <div class="s_share text-end">
+
+                                <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
+                                    <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
+                                </a>&nbsp;
+                                <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
+                                    <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
+                                </a>&nbsp;
+                                <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                                    <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                                </a>&nbsp;
+                                <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                                    <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                                </a>
+                            </div>
+
+                            <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
+                                <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
+                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+
+
+            {{-- <!-- Slide 1 -->
             <div class="carousel-item lazy active" style="background-image: url(sailor/img/slide/pv-1.jpg)">
                 <div class="carousel-container">
                     <div class="container">
 
                         <h2 class="animate__animated animate__fadeInDown">Pandan View <span>Mandeh</span></h2>
                         <p class="animate__animated animate__fadeInUp">{{ __('messages.carousel.description') }}</p>
-                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">{{ __('messages.carousel.more') }}</a>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">{{ __('messages.carousel.more') }}</a>
 
-                        <div class="carousel-caption text-end animate__animated animate__fadeInRight">
-                            <div class="s_share text-end">
+            <div class="carousel-caption text-end animate__animated animate__fadeInRight">
+                <div class="s_share text-end">
 
-                                <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
-                                    <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
-                                </a>&nbsp;
-                                <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
-                                    <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
-                                </a>&nbsp;
-                                <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
-                                    <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
-                                </a>&nbsp;
-                                <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
-                                    <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
-                                </a>
-                            </div>
-
-                            <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
-                                <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
-                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
-                            </div>
-
-                        </div>
-                    </div>
+                    <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
+                        <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
+                    </a>&nbsp;
+                    <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
+                        <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
+                    </a>&nbsp;
+                    <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                        <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                    </a>&nbsp;
+                    <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                        <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                    </a>
                 </div>
-            </div>
 
-            <!-- Slide 2 -->
-            <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-3.jpg)">
-                <div class="carousel-container">
-                    <div class="container">
-
-                        <h2>Pandan View <span>Mandeh</span></h2>
-                        <p>{{ __('messages.carousel.description') }}</p>
-                        <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
-
-                        <div class="carousel-caption text-end">
-                            <div class="s_share text-end">
-
-                                <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
-                                    <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
-                                </a>&nbsp;
-                                <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
-                                    <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
-                                </a>&nbsp;
-                                <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
-                                    <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
-                                </a>&nbsp;
-                                <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
-                                    <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
-                                </a>
-                            </div>
-
-                            <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
-                                <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
-                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
-                            </div>
-
-                        </div>
-                    </div>
+                <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
+                    <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
+                    <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
                 </div>
+
             </div>
-
-            <!-- Slide 3 -->
-            <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-4.jpg)">
-                <div class="carousel-container">
-                    <div class="container">
-
-                        <h2>Pandan View <span>Mandeh</span></h2>
-                        <p>{{ __('messages.carousel.description') }}</p>
-                        <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
-
-                        <div class="carousel-caption text-end">
-                            <div class="s_share text-end">
-
-                                <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
-                                    <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
-                                </a>&nbsp;
-                                <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
-                                    <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
-                                </a>&nbsp;
-                                <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
-                                    <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
-                                </a>&nbsp;
-                                <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
-                                    <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
-                                </a>
-                            </div>
-
-                            <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
-                                <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
-                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 4 -->
-            <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-6.jpg)">
-                <div class="carousel-container">
-                    <div class="container">
-
-                        <h2>Pandan View <span>Mandeh</span></h2>
-                        <p>{{ __('messages.carousel.description') }}</p>
-                        <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
-
-                        <div class="carousel-caption text-end">
-                            <div class="s_share text-end">
-
-                                <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
-                                    <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
-                                </a>&nbsp;
-                                <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
-                                    <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
-                                </a>&nbsp;
-                                <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
-                                    <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
-                                </a>&nbsp;
-                                <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
-                                    <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
-                                </a>
-                            </div>
-
-                            <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
-                                <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
-                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 5 -->
-            <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-7.jpg)">
-                <div class="carousel-container">
-                    <div class="container">
-
-                        <h2>Pandan View <span>Mandeh</span></h2>
-                        <p>{{ __('messages.carousel.description') }}</p>
-                        <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
-
-                        <div class="carousel-caption text-end">
-                            <div class="s_share text-end">
-
-                                <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
-                                    <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
-                                </a>&nbsp;
-                                <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
-                                    <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
-                                </a>&nbsp;
-                                <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
-                                    <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
-                                </a>&nbsp;
-                                <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
-                                    <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
-                                </a>
-                            </div>
-
-                            <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
-                                <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
-                                <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
+    </div>
+    </div>
 
-        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
+    <!-- Slide 2 -->
+    <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-3.jpg)">
+        <div class="carousel-container">
+            <div class="container">
 
-        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
+                <h2>Pandan View <span>Mandeh</span></h2>
+                <p>{{ __('messages.carousel.description') }}</p>
+                <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
+
+                <div class="carousel-caption text-end">
+                    <div class="s_share text-end">
+
+                        <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
+                            <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
+                        </a>&nbsp;
+                        <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
+                            <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
+                        </a>&nbsp;
+                        <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                            <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                        </a>&nbsp;
+                        <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                            <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                        </a>
+                    </div>
+
+                    <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
+                        <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
+                        <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-4.jpg)">
+        <div class="carousel-container">
+            <div class="container">
+
+                <h2>Pandan View <span>Mandeh</span></h2>
+                <p>{{ __('messages.carousel.description') }}</p>
+                <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
+
+                <div class="carousel-caption text-end">
+                    <div class="s_share text-end">
+
+                        <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
+                            <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
+                        </a>&nbsp;
+                        <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
+                            <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
+                        </a>&nbsp;
+                        <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                            <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                        </a>&nbsp;
+                        <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                            <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                        </a>
+                    </div>
+
+                    <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
+                        <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
+                        <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-6.jpg)">
+        <div class="carousel-container">
+            <div class="container">
+
+                <h2>Pandan View <span>Mandeh</span></h2>
+                <p>{{ __('messages.carousel.description') }}</p>
+                <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
+
+                <div class="carousel-caption text-end">
+                    <div class="s_share text-end">
+
+                        <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
+                            <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
+                        </a>&nbsp;
+                        <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
+                            <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
+                        </a>&nbsp;
+                        <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                            <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                        </a>&nbsp;
+                        <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                            <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                        </a>
+                    </div>
+
+                    <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
+                        <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
+                        <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-7.jpg)">
+        <div class="carousel-container">
+            <div class="container">
+
+                <h2>Pandan View <span>Mandeh</span></h2>
+                <p>{{ __('messages.carousel.description') }}</p>
+                <a href="#about" class="btn-get-started scrollto">{{ __('messages.carousel.more') }}</a>
+
+                <div class="carousel-caption text-end">
+                    <div class="s_share text-end">
+
+                        <a href="https://twitter.com/{{$account}}" class="s_share_twitter" target="_blank">
+                            <i class="fa fa-1x fa-brands fa-twitter rounded shadow-sm" data-original-title="" title="" aria-describedby="tooltip560917"></i>
+                        </a>&nbsp;
+                        <a href="https://www.instagram.com/{{$account}}" class="s_share_linkedin" target="_blank">
+                            <span class="fa fa-1x fa-brands fa-instagram rounded shadow-sm" style="color: rgb(255, 0, 0);" data-original-title="" title="" aria-describedby="tooltip780758"></span>
+                        </a>&nbsp;
+                        <a href="https://www.youtube.com/channel/{{$channel}}" class="s_share_google" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                            <span class="fa fa-1x fa-brands fa-youtube rounded shadow-sm" style="" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                        </a>&nbsp;
+                        <a href="https://www.tiktok.com/@pandan_view_mandeh" style="color:black !important;" class="s_share_tiktok" target="_blank" data-original-title="" title="" aria-describedby="tooltip37995">
+                            <span class="fa fa-1x fa-brands fa-tiktok rounded shadow-sm" style="color:black !important;" data-original-title="" title="" aria-describedby="tooltip294870"></span>
+                        </a>
+                    </div>
+
+                    <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
+                        <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
+                        <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> --}}
+
+    </div>
+
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+    </a>
 
     </div>
 </section><!-- End Hero -->

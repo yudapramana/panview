@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +12,12 @@ use Illuminate\Support\Facades\Artisan;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/migrate-fresh', function () {
+    Artisan::call('migrate:fresh', ['--seed' => true]);
+
+    return 'Migration and seeding has been succeed, click <a href="/">here</a> to return to home page';
+});
 
 Route::get('/xdown/{view}', function ($view) {
     Artisan::call('down', ['--secret' => 'devmode', '--render' => 'errors.'.$view]);
@@ -105,3 +110,6 @@ Route::post('/products/store', [\App\Http\Controllers\Admin\ProductController::c
 
 Route::get('/galleries', [\App\Http\Controllers\Admin\GalleryController::class, 'index'])->name('galleries.index');
 Route::post('/galleries/store', [\App\Http\Controllers\Admin\GalleryController::class, 'store']);
+
+Route::get('/carousels', [\App\Http\Controllers\Admin\CarouselController::class, 'index'])->name('carousels.index');
+Route::post('/carousels/store', [\App\Http\Controllers\Admin\CarouselController::class, 'store']);

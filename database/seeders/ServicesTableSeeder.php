@@ -53,7 +53,7 @@ Melihat ke arah pantai, Anda akan terpesona oleh garis pantai yang indah. Tak ha
                 'slug' => 'facilities',
                 'featured' => 'yes',
                 'listed' => 'yes',
-                'description' => 'Untuk memenuhi kebetuhan acara Anda, Cijalu Resort dilengkapi dengan fasilitas:  
+                'description' => 'Untuk memenuhi kebetuhan acara Anda, Pandan View Mandeh dilengkapi dengan fasilitas:  
 
 1. Auditorium kapasitas 200 orang (theater) 
 
@@ -63,7 +63,7 @@ Melihat ke arah pantai, Anda akan terpesona oleh garis pantai yang indah. Tak ha
 
 4. Lobby Kolam renang Play ground 
 
-5. Area parkir kapasitas 70 mobil Lokasi 1 km dari Air Terjun Curug Cijalu Dikelilingi persawahan dan kebun teh',
+5. Area parkir kapasitas 70 mobil Lokasi 1 km dari Pinggir Pantai dan Dermaga',
             ),
             2 => 
             array (
@@ -79,10 +79,10 @@ Melihat ke arah pantai, Anda akan terpesona oleh garis pantai yang indah. Tak ha
                 'slug' => 'accommodations',
                 'featured' => 'yes',
                 'listed' => 'yes',
-                'description' => 'Cijalu Resort menyediakan beberapa tipe kamar diantaranya adalah tipe kamar Superior 4 Guests, Superior 3 Guests, dan superior 2 Guests.
+                'description' => 'Pandan View Mandeh menyediakan beberapa tipe kamar diantaranya adalah tipe kamar Superior 4 Guests, Superior 3 Guests, dan superior 2 Guests.
 Sebagian besar kamar dilengkapi balkon dengan view yang sangat indah dan lepas.
 
-Tiap jenis kamar berada dalam bangunan bungalow. Cijalu Resort memiliki tujuh Bungalow ;
+Tiap jenis kamar berada dalam bangunan bungalow. Pandan View Mandeh memiliki tujuh Bungalow ;
 Bungalow Cendrawasih memiliki 20 rooms masing-masing berisi 3 beds
 Bungalow Maleo memiliki 10 rooms masing-masing berisi 3 beds
 Bungalow Kaswari memiliki 6 rooms masing-masing berisi 4 beds

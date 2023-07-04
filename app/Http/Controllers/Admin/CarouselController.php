@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 
-class GalleryController extends Controller
+class CarouselController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -36,9 +36,11 @@ class GalleryController extends Controller
                     return $btn;
                 })
                 ->addColumn('image_url_can', function ($carousel) {
-                    $img = $carousel->image_url;
+                    // $img = $carousel->image_url;
+                    $img = $carousel->thumbnail_image;
+
                     if ($img) {
-                        $html = '<div class="profile-edit">
+                        $html = '<div class="profile-edit-container">
                                     <img class="profile-edit" id="profile_photo_jst" src="' . $img . '" alt="None">
                                 </div>';
                     } else {
@@ -54,7 +56,7 @@ class GalleryController extends Controller
                     $html = '';
                     $color = $carousel->active == 'yes' ? 'success' : 'danger';
                     
-                    $text = '<span class="badge badge-sm badge-'.$color.'">New</span>';
+                    $text = '<span class="badge badge-sm badge-'.$color.' bg-'.$color.'">'.$carousel->active.'</span>';
                     return $text;
                 })
                 ->rawColumns(['action', 'image_url_can', 'name-description', 'active_can'])
