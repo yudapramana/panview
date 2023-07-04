@@ -5,7 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Gallery;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use DataTables;
+use Yajra\DataTables\DataTables;
+
 
 class GalleryController extends Controller
 {
@@ -24,7 +25,7 @@ class GalleryController extends Controller
         if ($request->ajax()) {
             $galleries = Gallery::get();
 
-            return Datatables::of($galleries)
+            return DataTables::of($galleries)
                 ->addIndexColumn()
                 ->addColumn('action', function ($gallery) {
                     $btn = '';
