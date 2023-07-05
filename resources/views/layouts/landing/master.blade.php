@@ -2,6 +2,21 @@
 <html lang="en">
 
 <head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HMVYVF6MW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-2HMVYVF6MW');
+
+    </script>
+
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -59,20 +74,6 @@
 
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=64a41dc3d2ddeb0019614a76&product=sticky-share-buttons' async='async'></script>
     <meta name="ahrefs-site-verification" content="71353c246ce479e437d4894298c3e5ad448fd758d7aabc495d9583287489f7ed">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HMVYVF6MW"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-2HMVYVF6MW');
-
-    </script>
 
 </head>
 
