@@ -1,5 +1,5 @@
 @extends('layouts.landing.master')
-@section('title', 'Pandan View Mandeh - Service')
+@section('title', 'Service - ' . $service->name)
 
 @section('_styles')
 
