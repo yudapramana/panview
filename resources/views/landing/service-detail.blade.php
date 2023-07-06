@@ -51,7 +51,7 @@
                     <h4>{{$product->{$titleLocale} }}</h4>
                     <p style="font-size: small; text-align:justify;">{!! nl2br($product->description) !!}</p>
                     @if($product->service->name == 'Akomodasi')
-                    <a target="_blank" href="https://wa.me/6281210003536" class="flat btn btn-success flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:smaller!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
+                    <a target="_blank" href="https://wa.me/6281210003536" class="flat btn btn-success flat pt-2" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:smaller!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
                     @endif
                     {{-- <a style="font-size:smaller;" href="/{{isset($product->next_url) ? $product->next_url : ''}}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a> --}}
                 </div>
