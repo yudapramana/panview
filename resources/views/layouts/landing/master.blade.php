@@ -44,10 +44,10 @@
 
     {{-- Ambil Punya Orang --}}
     <meta property="fb:app_id" content="1880640628839943">
-    <meta property="og:site_name" content="WISATA PULAU SUMATERA BARAT">
+    <meta property="og:site_name" content="PANDAN VIEW MANDEH">
 
-    <meta property="og:title" content="WISATA PULAU SUMATERA BARAT ~ PANDAN VIEW MANDEH RESORT">
-    <meta name="twitter:title" content="WISATA PULAU SUMATERA BARAT ~ PANDAN VIEW MANDEH RESORT">
+    <meta property="og:title" content="PANDAN VIEW MANDEH">
+    <meta name="twitter:title" content="PANDAN VIEW MANDEH">
     <meta property="og:locale" content="id_ID">
     <meta property="og:description" content="Pandan View Mandeh Resort Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung k...">
 
