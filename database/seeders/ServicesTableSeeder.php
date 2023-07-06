@@ -43,7 +43,7 @@ Melihat ke arah pantai, Anda akan terpesona oleh garis pantai yang indah. Tak ha
             array (
                 'id_service' => 2,
                 'created_at' => '2023-06-20 11:50:14',
-                'updated_at' => '2023-06-22 10:09:35',
+                'updated_at' => '2023-07-06 17:30:10',
                 'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687261764/PandanViewMandeh/t4knnfc6v9rqq9nryp1f_jo7squ.jpg',
                 'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687282977/PandanViewMandeh/_Pool_ftr4wi.jpg',
                 'next_url' => '/service/facilities',
@@ -55,21 +55,23 @@ Melihat ke arah pantai, Anda akan terpesona oleh garis pantai yang indah. Tak ha
                 'listed' => 'yes',
                 'description' => 'Untuk memenuhi kebetuhan acara Anda, Pandan View Mandeh dilengkapi dengan fasilitas:  
 
-1. Auditorium kapasitas 200 orang (theater) 
+1. Aula Kapasitas 100 orang (Bisa Disewa untuk event seperti Raker dan Consinyering)
 
-2. Resto kapasitas 200 orang
+2. Restoran kapasitas 200 orang
 
-3. Mushola kapasitas 80 orang (sholat)
+3. Mushola kapasitas 50 orang (sholat)
 
-4. Lobby Kolam renang Play ground 
+4. Lobby, dan Resepsionis
 
-5. Area parkir kapasitas 70 mobil Lokasi 1 km dari Pinggir Pantai dan Dermaga',
+5. Kolam Renang 2 buah, kedalaman untuk anak-anak dan orang dewasa
+
+6. Area parkir kapasitas 70 mobil Lokasi di dekat dermaga di pinggir pantai',
             ),
             2 => 
             array (
                 'id_service' => 3,
                 'created_at' => '2023-06-20 11:53:14',
-                'updated_at' => '2023-06-22 10:09:45',
+                'updated_at' => '2023-07-06 17:34:45',
                 'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687261967/PandanViewMandeh/_ROOM_lm3lay.jpg',
                 'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687283044/PandanViewMandeh/jpg_20230528_120632_0000_u5ruus.jpg',
                 'next_url' => '/service/accommodations',
@@ -79,17 +81,15 @@ Melihat ke arah pantai, Anda akan terpesona oleh garis pantai yang indah. Tak ha
                 'slug' => 'accommodations',
                 'featured' => 'yes',
                 'listed' => 'yes',
-                'description' => 'Pandan View Mandeh menyediakan beberapa tipe kamar diantaranya adalah tipe kamar Superior 4 Guests, Superior 3 Guests, dan superior 2 Guests.
-Sebagian besar kamar dilengkapi balkon dengan view yang sangat indah dan lepas.
+                'description' => 'Pandan View Mandeh menyediakan beberapa tipe kamar yang bisa dihuni untuk beberapa banyak guest, diantaranya adalah 
 
-Tiap jenis kamar berada dalam bangunan bungalow. Pandan View Mandeh memiliki tujuh Bungalow ;
-Bungalow Cendrawasih memiliki 20 rooms masing-masing berisi 3 beds
-Bungalow Maleo memiliki 10 rooms masing-masing berisi 3 beds
-Bungalow Kaswari memiliki 6 rooms masing-masing berisi 4 beds
-Bungalow Rajawali memiliki 4 rooms masing-masing berisi 6 bed
-Bungalow Elang memiliki 8 rooms masing-masing berisi 6 beds
-Bungalow Kutilang memiliki 6 rooms masing-masing berisi 4 beds
-Bungalow Parkit memiliki 4 rooms masing-masing berisi 3 beds',
+1. Cottage Family : 8 Guest Capacity
+2. Cottage Hammock : 5 Guest Capacity
+3. Cottage Lumbung : 5 Guest Capacity
+4. Villa Apung : 4 Guest Capacity
+5. Villa Family Room : 4 Guest Capacity
+
+Kamar dilengkapi dengan Kamar Mandi, Air Conditioner dan Balkon dengan View yang sangat indah dengan pemandangan laut lepas',
             ),
             3 => 
             array (
@@ -111,7 +111,7 @@ Bungalow Parkit memiliki 4 rooms masing-masing berisi 3 beds',
             array (
                 'id_service' => 5,
                 'created_at' => '2023-06-21 00:59:18',
-                'updated_at' => '2023-06-22 10:09:54',
+                'updated_at' => '2023-07-06 17:50:07',
                 'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687327051/PandanViewMandeh/amenities_wjonre.jpg',
                 'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687327058/PandanViewMandeh/ameni2_bwibzt.jpg',
                 'next_url' => '/service/amenities',
@@ -120,7 +120,7 @@ Bungalow Parkit memiliki 4 rooms masing-masing berisi 3 beds',
                 'name' => 'Amenities',
                 'slug' => 'amenities',
                 'featured' => 'no',
-                'listed' => 'yes',
+                'listed' => 'no',
                 'description' => 'Apabila Anda menginap di Pandan View Mandeh Resort, Anda akan mendapatkan beberapa fasilitas dan kenyamanan ketika menginap, diantaranya handuk, peralatan mandi, hingga perlengkapan untuk mengobrol bersama keluarga tercinta yakni kopi dan teh.',
             ),
         ));

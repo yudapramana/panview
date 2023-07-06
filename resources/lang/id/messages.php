@@ -4,7 +4,7 @@ return array (
   'carousel' => 
   array (
     'description' => 'Tempat Wisata, Penginapan, Restoran, dan Cafe',
-    'book' => 'Booking Sekarang',
+    'book' => 'Pesan Sekarang',
     'contact' => 'Kontak Kami',
     'more' => 'Selengkapnya',
   ),

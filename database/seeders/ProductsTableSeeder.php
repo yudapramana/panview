@@ -210,6 +210,54 @@ Fasilitas
                 'next_url' => NULL,
                 'slug' => 'receptionist',
             ),
+            11 => 
+            array (
+                'id_product' => 13,
+                'created_at' => '2023-07-06 17:39:19',
+                'updated_at' => '2023-07-06 17:44:43',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1688639853/PandanViewMandeh/AF1QipM_AHvCkeM-G6RrECroBLjSLycBjBxtZbvuGHXl_s0_qhrt5e.jpg',
+                'id_service' => 4,
+                'title_id' => 'Kopi',
+                'title_en' => 'Coffee',
+                'name' => 'Coffee',
+                'description' => 'Kami dengan bangga mempersembahkan kepada Anda es kopi susu kami yang sempurna. Terinspirasi oleh kelezatan tradisional kopi susu, kami telah menggabungkan keunikan dan keceriaan dalam setiap tegukan yang Anda nikmati.
+
+Di sini, kami mempersembahkan berbagai macam minuman yang segar, menggugah selera, dan menciptakan momen yang tak terlupakan. Dari kopi yang klasik hingga minuman inovatif yang unik, kami memiliki sesuatu untuk setiap selera.',
+                'next_url' => NULL,
+                'slug' => 'coffee',
+            ),
+            12 => 
+            array (
+                'id_product' => 14,
+                'created_at' => '2023-07-06 17:42:50',
+                'updated_at' => '2023-07-06 17:42:50',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1688640105/PandanViewMandeh/AF1QipM2qw75XdpJvqDiBZzjwtMcSngfMtvmk4KkCXFE_s0_m7kp5z.jpg',
+                'id_service' => 4,
+                'title_id' => 'Hidangan Utama',
+                'title_en' => 'Main Dish',
+                'name' => 'Hidangan Utama',
+                'description' => 'Kami dengan bangga menyajikan berbagai macam hidangan lezat yang akan memanjakan lidah Anda. Mulai dari makanan pembuka yang menggugah selera hingga hidangan utama yang memikat, kami menawarkan pengalaman kuliner yang tak terlupakan.
+
+Bagi Anda yang menyukai cita rasa Asia, coba hidangan khas kami yang menggabungkan rempah-rempah dan bumbu tradisional. Nikmati hidangan nasi goreng yang lezat dengan campuran sayuran yang segar, atau mi goreng dengan udang yang berlimpah. Rasakan kelezatan hidangan kari kami yang kaya rasa, lengkap dengan nasi hangat dan roti naan lembut.',
+                'next_url' => NULL,
+                'slug' => 'main-dish',
+            ),
+            13 => 
+            array (
+                'id_product' => 15,
+                'created_at' => '2023-07-06 17:49:32',
+                'updated_at' => '2023-07-06 17:49:32',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1688640441/PandanViewMandeh/snack_blvtmt.jpg',
+                'id_service' => 4,
+                'title_id' => 'Cemilan',
+                'title_en' => 'Snacks',
+                'name' => 'Cemilan',
+                'description' => 'Tempat di mana kelezatan bertemu kegembiraan. Kami dengan bangga menyajikan berbagai macam camilan yang menggugah selera dan menjadi teman setia saat Anda merayakan momen-momen kecil atau sekadar menikmati waktu santai.
+
+Apakah Anda menyukai camilan gurih yang renyah? Kami memiliki pilihan keripik kentang yang dipanggang dengan sempurna, otak-otak yang diolah dengan bumbu yang lezat. Setiap gigitan memberikan sensasi yang memikat dan kepuasan yang tiada tara.',
+                'next_url' => NULL,
+                'slug' => NULL,
+            ),
         ));
         
         
