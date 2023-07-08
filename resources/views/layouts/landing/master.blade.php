@@ -56,7 +56,7 @@
 
     <meta name="description" content="Pandan View Mandeh" />
     <meta name="keywords" content="Pandan View Mandeh, Mandeh, Pesisir Selatan, Puncak Mandeh" />
-    <meta name="author" content="Pramana Yuda Sayeti" />
+    <meta name="author" content="Pandan View Mandeh" />
     <meta name="robots" content="all" />
     <meta name="revisit-after" content="1 Days" />
     <meta property="og:locale" content="id-ID" />
