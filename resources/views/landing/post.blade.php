@@ -51,7 +51,7 @@
                             <ul>
                                 <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="/post/{{$post->slug}}">{{ $post->user->username }}</a></li>
                                 <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="/post/{{$post->slug}}"><time datetime="{{$post->created_at->format('Y-m-d')}}">{{ $post->created_at->format('d F Y') }}</time></a></li>
-                                <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="/post/{{$post->slug}}">12 Comments</a></li>
+                                <li class="d-flex align-items-center"><i class="bi bi-eye"></i> <a href="/post/{{$post->slug}}">{{$post->reads}} Reads</a></li>
                             </ul>
                         </div>
 
