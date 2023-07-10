@@ -1,7 +1,29 @@
 @extends('layouts.landing.master')
-@section('title', 'Pandan View Mandeh - About Us')
+@section('title', $post->title)
 
 @section('_styles')
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Primary Meta Tags -->
+<title>{{ $post->title }}</title>
+<meta name="title" content="{{ $post->title }}">
+<meta name="description" content="{{ $post->meta_desc }}">
+<meta name="keywords" content="{{ $post->keywords }}">
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="{{ URL::current() }}">
+<meta property="og:title" content="{{ $post->title }}">
+<meta property="og:description" content="{{ $post->meta_desc }}">
+<meta property="og:image" content="{{ $post->cover }}">
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ URL::current() }}">
+<meta property="twitter:title" content="{{ $post->title }}">
+<meta property="twitter:description" content="{{ $post->meta_desc }}">
+<meta property="twitter:image" content="{{ $post->cover }}">
+
+
 <style>
     .preserveLines {
         white-space: pre-wrap;

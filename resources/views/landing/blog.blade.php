@@ -1,5 +1,5 @@
 @extends('layouts.landing.master')
-@section('title', 'Pandan View Mandeh - About Us')
+@section('title', 'Blog - Pandan View Mandeh')
 
 @section('_styles')
 
