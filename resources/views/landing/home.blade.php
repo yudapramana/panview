@@ -38,7 +38,7 @@
                             </div>
 
                             <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
-                                <a href="https://wa.me/6281210003536" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
+                                <a href="https://api.whatsapp.com/send?phone=6281210003536&text=Halo%20saya%20mengetahui%20anda%20dari%20web%20https%3A%2F%2Fpandanviewandeh.com.%0A%0ASaya%20mau%20memesan%20Kamar.%20Mohon%20info%20kamarnya" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
                                 <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
                             </div>
 
