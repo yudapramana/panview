@@ -50,7 +50,7 @@ class Post extends Model
     public function showPost()
     {
         if (auth()->id() == null) {
-            return $this->postView()
+            return $this->view()
                 ->where('ip', '=',  request()->ip())->exists();
         }
 
