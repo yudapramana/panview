@@ -12,6 +12,10 @@ class Post extends Model
 
     protected $with = ['category', 'user', 'tags'];
 
+    protected $appends = ['view_count'];
+
+    protected $guarded = [];
+
     public function category()
     {
         return $this->belongsTo(Category::class);
@@ -26,9 +30,35 @@ class Post extends Model
     {
         return $this->belongsToMany(Tag::class);
     }
-    
-    public function incrementReadCount() {
+
+    public function incrementReadCount()
+    {
         $this->reads++;
         return $this->save();
     }
-} 
+
+    public function view()
+    {
+        return $this->hasMany(PostView::class);
+    }
+
+    public function getViewCountAttribute()
+    {
+        return $this->view()->count();
+    }
+
+    public function showPost()
+    {
+        if (auth()->id() == null) {
+            return $this->postView()
+                ->where('ip', '=',  request()->ip())->exists();
+        }
+
+        return $this->view()
+            ->where(function ($postViewsQuery) {
+                $postViewsQuery
+                    ->where('session_id', '=', request()->getSession()->getId())
+                    ->orWhere('user_id', '=', (auth()->check()));
+            })->exists();
+    }
+}

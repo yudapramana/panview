@@ -25,7 +25,7 @@ class ServicesController extends Controller
         if ($request->ajax()) {
             $services = Services::get();
 
-            return Datatables::of($services)
+            return DataTables::of($services)
                 ->addIndexColumn()
                 ->addColumn('action', function ($service) {
                     $btn = '';

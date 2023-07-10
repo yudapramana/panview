@@ -143,6 +143,12 @@ Route::group(['middleware' => ['web']], function () {
             $post->incrementReadCount();//count the view
         } 
 
+        if($post->showPost()){// this will test if the user viwed the post or not
+            // return $post;
+        } else {
+            \App\Models\PostView::createViewLog($post);
+        }
+
         $categories = \App\Models\Category::withCount('posts')->get();
         $tags = \App\Models\Tag::all();
         $recent_posts = \App\Models\Post::take(5)->get();
