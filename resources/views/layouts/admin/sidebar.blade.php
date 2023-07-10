@@ -11,5 +11,10 @@
         <li class="nav-item"><a class="nav-link @if (request()->segment(1) == 'carousels') @else collapsed @endif" href="/carousels"><i class="'bi bi-display"></i><span>Carousels</span></a>
         <li class="nav-heading">Kelola Data</li>
         <li class="nav-item"><a class="nav-link @if (request()->segment(1) == 'messages') @else collapsed @endif" href="/messages"><i class="bi bi-chat-left-text"></i><span>Message </span></a></li>
+        <li class="nav-heading">Kelola Blog</li>
+        <li class="nav-item"><a class="nav-link @if (request()->segment(1) == 'categories') @else collapsed @endif" href="/categories"><i class="bi bi-chat-left"></i><span>Categories </span></a></li>
+        <li class="nav-item"><a class="nav-link @if (request()->segment(1) == 'tags') @else collapsed @endif" href="/tags"><i class="bi bi-tag"></i><span>Tags </span></a></li>
+        <li class="nav-item"><a class="nav-link @if (request()->segment(1) == 'posts') @else collapsed @endif" href="/posts"><i class="bi bi-file-earmark-post"></i><span>Posts </span></a></li>
+
     </ul>
 </aside>

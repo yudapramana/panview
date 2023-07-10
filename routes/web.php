@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -94,6 +96,68 @@ Route::group(['middleware' => ['web']], function () {
         ]);
     });
 
+    Route::get('/blog', function (Request $request) {
+
+        if ($request->has('search')) {
+            $search = $request->input('search');
+            $posts = \App\Models\Post::where('title', 'LIKE', "%{$search}%")
+                ->orWhere('desc', 'LIKE', "%{$search}%")->orderBy('created_at', 'DESC')->paginate(2);
+        } elseif ($request->has('category')) {
+            $search = $request->input('category');
+            $posts = \App\Models\Post::whereHas('category', function($q) use($search) {
+                $q->where('slug', $search);
+            })->orderBy('created_at', 'DESC')->paginate(2);
+        } elseif ($request->has('tag')) {
+            $search = $request->input('tag');
+            $posts = \App\Models\Post::whereHas('tags', function($q) use($search) {
+                $q->where('slug', $search);
+            })->orderBy('created_at', 'DESC')->paginate(2);
+        }else {
+            $posts = \App\Models\Post::orderBy('created_at', 'DESC')->paginate(2);
+        }
+
+        $categories = \App\Models\Category::withCount('posts')->get();
+        $tags = \App\Models\Tag::all();
+
+        $recent_posts = \App\Models\Post::take(5)->get();
+
+        return view('landing.blog', [
+            'accountfb' => 'pandanviewmandeh',
+            'account' => 'pandanviewmandeh',
+            'channel' =>  '@pandanviewmandehofficial4919',
+            'categories' =>  $categories,
+            'posts' => $posts,
+            'recent_posts' => $recent_posts,
+            'tags' => $tags
+        ]);
+    });
+
+    Route::get('post/{slug}', function(Request $request, $slug) {
+        $post = \App\Models\Post::where('slug', $slug)->first();
+
+        $cookie_name = (\Str::replace('.','',($request->ip())).'-'. $post->id);
+
+        $cookie = \Cookie::get($cookie_name);
+        if($cookie == ''){//check if cookie is set
+            $cookie = cookie($cookie_name, '1', 60);//set the cookie
+            $post->incrementReadCount();//count the view
+        } 
+
+        $categories = \App\Models\Category::withCount('posts')->get();
+        $tags = \App\Models\Tag::all();
+        $recent_posts = \App\Models\Post::take(5)->get();
+        return view('landing.post', [
+            'accountfb' => 'pandanviewmandeh',
+            'account' => 'pandanviewmandeh',
+            'channel' =>  '@pandanviewmandehofficial4919',
+            'categories' =>  $categories,
+            'recent_posts' => $recent_posts,
+            'tags' => $tags,
+            'post' => $post
+        ])->withCookie($cookie);//store the cookie;
+
+    });
+
     Route::get('/lang/home', [App\Http\Controllers\LangController::class, 'index']);
     Route::get('/lang/change', [App\Http\Controllers\LangController::class, 'change'])->name('changeLang');
 
@@ -117,3 +181,12 @@ Route::get('/carousels', [\App\Http\Controllers\Admin\CarouselController::class,
 Route::post('/carousels/store', [\App\Http\Controllers\Admin\CarouselController::class, 'store']);
 
 Route::get('/messages', [\App\Http\Controllers\Admin\MessageController::class, 'index'])->name('messages.admin.index');
+
+
+Route::resource('categories', App\Http\Controllers\CategoryController::class);
+Route::resource('tags', App\Http\Controllers\TagController::class);
+// Manage Posts
+Route::get('posts/trash', [App\Http\Controllers\PostController::class, 'trash'])->name('posts.trash');
+Route::post('posts/trash/{id}/restore', [App\Http\Controllers\PostController::class, 'restore'])->name('posts.restore');
+Route::delete('posts/{id}/delete-permanent', [App\Http\Controllers\PostController::class, 'deletePermanent'])->name('posts.deletePermanent');
+Route::resource('posts', App\Http\Controllers\PostController::class);

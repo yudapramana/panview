@@ -16,4 +16,5 @@
     if (window.self == window.top) {
         window.dataLayer = window.dataLayer || [];
     }
+
 </script>

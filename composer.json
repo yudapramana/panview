@@ -38,6 +38,9 @@
         }
     },
     "scripts": {
+        "pre-update-cmd": [
+            "Statamic\\Console\\Composer\\Scripts::preUpdateCmd"
+        ],
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
@@ -60,7 +63,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
