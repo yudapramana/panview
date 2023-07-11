@@ -1,10 +1,10 @@
 @extends('layouts.landing.master')
-@section('title', 'Pandan View Mandeh - Beranda')
+@section('title', $title)
 
 @section('_styles')
 
 {{-- Primary Meta Tags --}}
-<meta name="title" content="PANDAN VIEW MANDEH">
+<meta name="title" content="{{$title}}">
 <meta name="description" content="Pandan View Mandeh" />
 <meta name="keywords" content="Pandan View Mandeh, Mandeh, Pesisir Selatan, Puncak Mandeh" />
 <meta name="author" content="Pandan View Mandeh" />
@@ -13,7 +13,7 @@
 
 <!-- Open Graph / Facebook -->
 <meta property="og:site_name" content="PANDAN VIEW MANDEH">
-<meta property="og:title" content="PANDAN VIEW MANDEH">
+<meta property="og:title" content="{{$title}}">
 <meta property="og:locale" content="id_ID">
 <meta property="og:description" content="Pandan View Mandeh Resort Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung k...">
 <meta property="og:image" content="{{ asset('sailor/img/logo.png') }}" />
@@ -23,7 +23,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="Pandan View Mandeh" />
-<meta name="twitter:title" content="Pandan View Mandeh" />
+<meta name="twitter:title" content="{{$title}}" />
 <meta name="twitter:description" content="Pandan View Mandeh Resort Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung k...">
 <meta name="twitter:image" content="{{ asset('sailor/img/logo.png') }}" />
 <meta property="twitter:url" content="{{ URL::current() }}">
