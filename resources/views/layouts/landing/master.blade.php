@@ -42,40 +42,6 @@
 
     <title>@yield('title')</title>
 
-    {{-- Ambil Punya Orang --}}
-    <meta property="fb:app_id" content="1880640628839943">
-    <meta property="og:site_name" content="PANDAN VIEW MANDEH">
-
-    <meta property="og:title" content="PANDAN VIEW MANDEH">
-    <meta name="twitter:title" content="PANDAN VIEW MANDEH">
-    <meta property="og:locale" content="id_ID">
-    <meta property="og:description" content="Pandan View Mandeh Resort Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung k...">
-
-
-
-
-    <meta name="description" content="Pandan View Mandeh" />
-    <meta name="keywords" content="Pandan View Mandeh, Mandeh, Pesisir Selatan, Puncak Mandeh" />
-    <meta name="author" content="Pandan View Mandeh" />
-    <meta name="robots" content="all" />
-    <meta name="revisit-after" content="1 Days" />
-    <meta property="og:locale" content="id-ID" />
-    <meta property="og:site_name" content="Pandan View Mandeh" />
-    <meta property="og:image" content="{{ asset('sailor/img/logo.png') }}" />
-    <meta property="og:image:width" content="180" />
-    <meta property="og:image:height" content="50" />
-    <meta property="og:type" content=website />
-    <meta property="og:description" content="Pandan View Mandeh, Tempat Wisata, Penginapan, Restoran dan Cafe" />
-    <meta property="og:url" content="https://pandanviewmandeh.com" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="Pandan View Mandeh" />
-    <meta name="twitter:title" content="Pandan View Mandeh" />
-    <meta name="twitter:description" content="Pandan View Mandeh Resort Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung k...">
-    <meta name="twitter:image" content="{{ asset('sailor/img/logo.png') }}" />
-    <link rel="canonical" href="https://pandanviewmandeh.com" />
-    <link rel="alternate" hreflang="en-US" href="https://panview.kemenagpessel.com" />
-    <link rel="shortcut icon" type="image/png" href="https://pandanviewmandeh.com" />
-
 
     <!-- Favicons -->
     <link href="{{ asset('sailor/img/favicon_io/favicon-32x32.png') }}" rel="icon">

@@ -1,7 +1,40 @@
 @extends('layouts.landing.master')
 @section('title', 'Service - ' . $service->name)
 
+
 @section('_styles')
+<!-- Primary Meta Tags -->
+<title>{{ $service->name }}</title>
+<meta name="title" content="PANDAN VIEW MANDEH - {{ $service->name }}">
+<meta name="description" content="{{ $service->desc }}">
+<meta name="keywords" content="{{ $service->name }}">
+<meta name="author" content="Pandan View Mandeh" />
+<meta name="robots" content="all" />
+<meta name="revisit-after" content="1 Days" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:site_name" content="PANDAN VIEW MANDEH">
+<meta property="og:title" content="PANDAN VIEW MANDEH - {{ $service->name }} ">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="50" />
+<meta property="og:type" content=article />
+<meta property="og:url" content="{{ URL::current() }}">
+<meta property="og:description" content="{{ $service->desc }}">
+<meta property="og:image" content="{{ $service->cover_image_url }}">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ URL::current() }}">
+<meta property="twitter:title" content="PANDAN VIEW MANDEH - {{ $service->name }}">
+<meta property="twitter:description" content="{{ $service->desc }}">
+<meta property="twitter:image" content="{{ $service->cover_image_url }}">
+<meta name="twitter:site" content="{{ URL::current() }}" />
+
+<link rel="canonical" href="https://pandanviewmandeh.com" />
+<link rel="alternate" hreflang="en-US" href="https://pandanviewmandeh.com" />
+<link rel="shortcut icon" type="image/png" href="https://pandanviewmandeh.com" />
+
 
 <style>
     .all-services::before {

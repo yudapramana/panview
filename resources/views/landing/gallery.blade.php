@@ -1,6 +1,36 @@
 @extends('layouts.landing.master')
-@section('title', 'Pandan View Mandeh - Contact')
+@section('title', 'Pandan View Mandeh - Gallery')
 
+
+
+@section('_styles'){{-- Primary Meta Tags --}}
+<meta name="title" content="{{$title}}">
+<meta name="description" content="{{$title}}" />
+<meta name="keywords" content="About Pandan View Mandeh, Mandeh, Pesisir Selatan, Puncak Mandeh" />
+<meta name="author" content="Pandan View Mandeh" />
+<meta name="robots" content="all" />
+<meta name="revisit-after" content="1 Days" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:site_name" content="{{$title}}">
+<meta property="og:title" content="{{$title}}">
+<meta property="og:locale" content="id_ID">
+<meta property="og:description" content="Pandan View Mandeh Resort Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung k...">
+<meta property="og:image" content="{{ asset('sailor/img/logo.png') }}" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="50" />
+<meta property="og:type" content=website />
+<meta property="og:url" content="https://pandanviewmandeh.com" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{$title}}" />
+<meta name="twitter:title" content="{{$title}}" />
+<meta name="twitter:description" content="Pandan View Mandeh Resort Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung k...">
+<meta name="twitter:image" content="{{ asset('sailor/img/logo.png') }}" />
+<meta property="twitter:url" content="{{ URL::current() }}">
+
+@endsection
 
 @section('content')
 <main id="main">

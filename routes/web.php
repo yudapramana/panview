@@ -41,6 +41,7 @@ Route::group(['middleware' => ['web']], function () {
 
     Route::get('/contact', function () {
         return view('landing.contact', [
+            'title' => 'Contact - Pandan View Mandeh',
             'accountfb' => 'pandanviewmandeh',
             'account' => 'pandanviewmandeh',
             'channel' =>  '@pandanviewmandehofficial4919'
@@ -54,6 +55,7 @@ Route::group(['middleware' => ['web']], function () {
 
         $filterTags = $galleries->pluck('filter_tag')->unique();
         return view('landing.gallery', [
+            'title' => 'Gallery Pandan View Mandeh',
             'accountfb' => 'pandanviewmandeh',
             'account' => 'pandanviewmandeh',
             'channel' =>  '@pandanviewmandehofficial4919',
@@ -65,6 +67,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/aboutus', function () {
 
         return view('landing.aboutus', [
+            'title' => 'Pandan View Mandeh - About Us',
             'accountfb' => 'pandanviewmandeh',
             'account' => 'pandanviewmandeh',
             'channel' =>  '@pandanviewmandehofficial4919'
@@ -89,6 +92,7 @@ Route::group(['middleware' => ['web']], function () {
         $services = \App\Models\Services::where('listed', 'yes')->get();
 
         return view('landing.all-services', [
+            'title' => 'Pandan View Mandeh - Semua Layanan',
             'accountfb' => 'pandanviewmandeh',
             'account' => 'pandanviewmandeh',
             'channel' =>  '@pandanviewmandehofficial4919',
@@ -122,6 +126,7 @@ Route::group(['middleware' => ['web']], function () {
         $recent_posts = \App\Models\Post::take(5)->get();
 
         return view('landing.blog', [
+            'title' => 'Blog Pandan View Mandeh',
             'accountfb' => 'pandanviewmandeh',
             'account' => 'pandanviewmandeh',
             'channel' =>  '@pandanviewmandehofficial4919',

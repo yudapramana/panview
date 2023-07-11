@@ -1,28 +1,42 @@
 @extends('layouts.landing.master')
-@section('title', $post->title)
+@section('title', 'Pandan View Mandeh - ' . $post->title)
 
 @section('_styles')
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <!-- Primary Meta Tags -->
 <title>{{ $post->title }}</title>
 <meta name="title" content="{{ $post->title }}">
 <meta name="description" content="{{ $post->meta_desc }}">
 <meta name="keywords" content="{{ $post->keywords }}">
+<meta name="author" content="Pandan View Mandeh" />
+<meta name="robots" content="all" />
+<meta name="revisit-after" content="1 Days" />
+
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="article">
+<meta property="og:site_name" content="PANDAN VIEW MANDEH">
+<meta property="og:title" content="PANDAN VIEW MANDEH - {{ $post->title }} ">
+<meta property="og:locale" content="id_ID">
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="50" />
+<meta property="og:type" content=article />
 <meta property="og:url" content="{{ URL::current() }}">
-<meta property="og:title" content="{{ $post->title }}">
 <meta property="og:description" content="{{ $post->meta_desc }}">
 <meta property="og:image" content="{{ $post->cover }}">
+
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="{{ URL::current() }}">
 <meta property="twitter:title" content="{{ $post->title }}">
 <meta property="twitter:description" content="{{ $post->meta_desc }}">
 <meta property="twitter:image" content="{{ $post->cover }}">
+<meta name="twitter:site" content="{{ URL::current() }}" />
 
+<link rel="canonical" href="https://pandanviewmandeh.com" />
+<link rel="alternate" hreflang="en-US" href="https://pandanviewmandeh.com" />
+<link rel="shortcut icon" type="image/png" href="https://pandanviewmandeh.com" />
 
 <style>
     .preserveLines {
