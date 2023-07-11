@@ -16,8 +16,7 @@
 <meta property="og:site_name" content="PANDAN VIEW MANDEH">
 <meta property="og:title" content="PANDAN VIEW MANDEH - {{ $service->name }} ">
 <meta property="og:locale" content="id_ID">
-<meta property="og:image:width" content="180" />
-<meta property="og:image:height" content="50" />
+
 <meta property="og:type" content=article />
 <meta property="og:url" content="{{ URL::current() }}">
 <meta property="og:description" content="{{ $service->desc }}">

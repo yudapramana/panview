@@ -17,8 +17,6 @@
 <meta property="og:locale" content="id_ID">
 <meta property="og:description" content="Pandan View Mandeh Resort Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung k...">
 <meta property="og:image" content="{{ asset('sailor/img/logo.png') }}" />
-<meta property="og:image:width" content="180" />
-<meta property="og:image:height" content="50" />
 <meta property="og:type" content=website />
 <meta property="og:url" content="https://pandanviewmandeh.com" />
 
