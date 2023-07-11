@@ -22,6 +22,7 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->truncate();
         DB::table('roles')->truncate();
 
+        
         $data = [
             ['name' => 'Admin Pandan View', 'username' => 'adminpandanview', 'email' => 'pandanviewmandeh@gmail.com', 'password' => Hash::make('superadmin'), 'current_role_id' => 1, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
             ['name' => 'Super Administrator', 'username' => 'superadmin', 'email' => 'superadmin@pandanview.com', 'password' => Hash::make('superadmin'), 'current_role_id' => 1, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
