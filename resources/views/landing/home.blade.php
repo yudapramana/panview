@@ -1,6 +1,16 @@
 @extends('layouts.landing.master')
 @section('title', 'Pandan View Mandeh')
 
+@section('_styles')
+
+<style>
+    #hero h1 {
+        color: #fff;
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+</style>
 
 @section('content')
 <!-- ======= Hero Section ======= -->
@@ -16,7 +26,7 @@
                 <div class="carousel-container">
                     <div class="container">
 
-                        <h2 class=" @if($key == 0) animate__animated animate__fadeInDown @endif">Pandan View <span>Mandeh</span></h2>
+                        <h1 class=" @if($key == 0) animate__animated animate__fadeInDown @endif">{{ __('messages.carousel.welcome') }} Pandan View <span>Mandeh</span></h1>
                         <p class=" @if($key == 0) animate__animated animate__fadeInUp @endif">{{ __('messages.carousel.description') }}</p>
                         <a href="#about" class="btn-get-started  @if($key == 0) animate__animated animate__fadeInUp @endif scrollto">{{ __('messages.carousel.more') }}</a>
 
@@ -256,13 +266,13 @@
                     <img class="lazy" data-src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
                 </div>
                 <div class="col-lg-6 pb-0 pt-0">
-                    <h4>{{$service->{$titleLocale} }}</h4>
+                    <h3>{{$service->{$titleLocale} }}</h3>
                     <p style="font-size: small; text-align:justify;">{!! nl2br($service->description) !!}</p>
                     <a style="font-size:smaller;" href="{!! '/' .isset($service->next_url) ? $service->next_url : '' !!}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
                 </div>
                 @else
                 <div class="col-lg-6 pb-0 pt-0">
-                    <h4>{{$service->{$titleLocale} }}</h4>
+                    <h3>{{$service->{$titleLocale} }}</h3>
                     <p style="font-size: small; text-align:justify;">{!! nl2br($service->description) !!}</p>
                     <a style="font-size:smaller;" href="{!! '/' .isset($service->next_url) ? $service->next_url : '' !!}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
                 </div>

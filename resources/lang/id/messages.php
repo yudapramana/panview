@@ -3,6 +3,7 @@
 return array (
   'carousel' => 
   array (
+    'welcome' => 'Selamat Datang di',
     'description' => 'Tempat Wisata, Penginapan, Restoran, dan Cafe',
     'book' => 'Pesan Sekarang',
     'contact' => 'Kontak Kami',
