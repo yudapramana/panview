@@ -41,7 +41,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h2>{{__('messages.menu.gallery')}}</h2>
                 <ol>
-                    <li><a href="index.html">{{__('messages.menu.home')}}</a></li>
+                    <li><a href="/">{{__('messages.menu.home')}}</a></li>
                     <li>{{__('messages.menu.gallery')}}</li>
                 </ol>
             </div>
@@ -81,7 +81,7 @@
                             <p>{{ $gallery->filter_tag }}</p>
                             <div class="portfolio-links">
                                 <a href="{{ $gallery->image_url }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ $gallery->title }}"><i class="bx bx-plus"></i></a>
-                                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                                <a href="#" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
                             </div>
                         </div>
                     </div>

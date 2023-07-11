@@ -1,5 +1,5 @@
 <header id="header" class="header fixed-top d-flex align-items-center">
-    {{-- <div class="d-flex align-items-center justify-content-between"> <a href="index.html" class="logo d-flex align-items-center"> <img src="{{asset('niceadmin/img/logo.png')}}" alt=""> <span class="d-none d-lg-block">Jendela Hati</span> </a> <i class="bi bi-list toggle-sidebar-btn"></i></div> --}}
+    {{-- <div class="d-flex align-items-center justify-content-between"> <a href="/" class="logo d-flex align-items-center"> <img src="{{asset('niceadmin/img/logo.png')}}" alt=""> <span class="d-none d-lg-block">Jendela Hati</span> </a> <i class="bi bi-list toggle-sidebar-btn"></i></div> --}}
     <div class="d-flex align-items-center justify-content-between">
         <a href="/" class="logo d-flex align-items-center"> <img src="{{ asset('sailor/img/logo.png') }}" alt=""> <span class="d-none d-lg-block"></span> </a>
         <i class="bi bi-list toggle-sidebar-btn"></i>

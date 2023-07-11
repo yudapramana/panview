@@ -37,7 +37,7 @@
                 </li>
 
 
-                <!-- <li><a href="index.html" class="getstarted">Get Started</a></li> -->
+                <!-- <li><a href="/" class="getstarted">Get Started</a></li> -->
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
