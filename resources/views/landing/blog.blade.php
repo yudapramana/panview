@@ -53,7 +53,7 @@
 
                         <div class="entry-content">
                             <p>
-                                {{\Illuminate\Support\Str::limit($post->desc, 200, $end='...')}}
+                                {!!\Illuminate\Support\Str::limit($post->desc, 200, $end='...')!!}
                             </p>
                             <div class="read-more">
                                 <a href="/post/{{$post->slug}}">Read More</a>

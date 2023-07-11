@@ -5,8 +5,8 @@
 @section('_styles')
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.bootstrap5.min.css">
-
-
+{{-- <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script> --}}
+<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 @endsection
 
 
@@ -85,7 +85,7 @@
                                         </div>
                                         <div class="form-group mb-3">
                                             <label for="desc">Description</label>
-                                            <textarea name="desc" id="desc" cols="30" rows="10" class="form-control @error('desc') is-invalid @enderror" required>{{old('desc') ? old('desc') : $post->desc}}</textarea>
+                                            <textarea name="desc" id="desc" cols="50" rows="30" class="ckeditor form-control @error('desc') is-invalid @enderror" required>{{old('desc') ? old('desc') : $post->desc}}</textarea>
                                             @error('desc')
                                             <div class="invalid-feedback">
                                                 {{ $message }}
@@ -200,6 +200,16 @@
 <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
 
 <script>
+    $(document).ready(function() {
+        $('.ckeditor').ckeditor();
+    });
+
+    // CKEDITOR.replace('desc', {
+    //     filebrowserUploadUrl: "{{route('ckeditor.image-upload', ['_token' => csrf_token() ])}}"
+    //     , filebrowserUploadMethod: 'form'
+    // });
+
+
     $.ajaxSetup({
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

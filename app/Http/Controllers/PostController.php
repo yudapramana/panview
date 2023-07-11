@@ -37,7 +37,7 @@ class PostController extends Controller
                 ->addColumn('desc_beautify', function ($post) {
                     return \Illuminate\Support\Str::limit($post->desc, 150, $end='...');
                 })
-                ->rawColumns(['action'])
+                ->rawColumns(['action', 'desc_beautify'])
                 ->make(true);
         }
         return view(

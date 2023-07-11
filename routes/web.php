@@ -196,3 +196,4 @@ Route::get('posts/trash', [App\Http\Controllers\PostController::class, 'trash'])
 Route::post('posts/trash/{id}/restore', [App\Http\Controllers\PostController::class, 'restore'])->name('posts.restore');
 Route::delete('posts/{id}/delete-permanent', [App\Http\Controllers\PostController::class, 'deletePermanent'])->name('posts.deletePermanent');
 Route::resource('posts', App\Http\Controllers\PostController::class);
+Route::post('ckeditor/upload', 'CKEditorController@upload')->name('ckeditor.image-upload');

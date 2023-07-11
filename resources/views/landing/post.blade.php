@@ -65,9 +65,9 @@
                             <img src="{{$post->cover}}" alt="" class="img-fluid">
                         </div>
 
-                        <h2 class="entry-title">
+                        <h1 class="entry-title">
                             <a href="/post/{{$post->slug}}">{{$post->title}}</a>
-                        </h2>
+                        </h1>
 
                         <div class="entry-meta">
                             <ul>
@@ -84,7 +84,9 @@
 
                         </script>
 
-                        <div class="entry-content preserveLines">{{$post->desc}}</div>
+                        <div class="entry-content">
+                            {!!$post->desc!!}
+                        </div>
 
                         <div class="entry-footer">
                             <i class="bi bi-folder"></i>
