@@ -23,7 +23,7 @@ class UsersTableSeeder extends Seeder
         DB::table('roles')->truncate();
 
         $data = [
-            ['name' => 'Pramana Yuda Sayeti', 'username' => 'yudapramana', 'email' => 'pramanayuda772@gmail.com', 'password' => Hash::make('superadmin'), 'current_role_id' => 1, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
+            ['name' => 'Admin Pandan View', 'username' => 'adminpandanview', 'email' => 'pandanviewmandeh@gmail.com', 'password' => Hash::make('superadmin'), 'current_role_id' => 1, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
             ['name' => 'Super Administrator', 'username' => 'superadmin', 'email' => 'superadmin@pandanview.com', 'password' => Hash::make('superadmin'), 'current_role_id' => 1, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
             ['name' => 'Administrator', 'username' => 'admin', 'email' => 'admin@pandanview.com', 'password' => Hash::make('admin@123'), 'current_role_id' => 2, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
             ['name' => 'Operator', 'username' => 'operator', 'email' => 'operator@pandanview.com', 'password' => Hash::make('operator@123'), 'current_role_id' => 3, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()]
