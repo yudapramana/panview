@@ -3,7 +3,7 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HMVYVF6MW"></script>
+    {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-2HMVYVF6MW"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -14,10 +14,10 @@
 
         gtag('config', 'G-2HMVYVF6MW');
 
-    </script>
+    </script> --}}
 
     <!-- Google Tag Manager -->
-    <script>
+    {{-- <script>
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
@@ -33,7 +33,7 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-TRCG6KP');
 
-    </script>
+    </script> --}}
     <!-- End Google Tag Manager -->
 
     <meta charset="utf-8">
@@ -44,7 +44,7 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641141866403336" crossorigin="anonymous"></script>
+    {{-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6641141866403336" crossorigin="anonymous"></script> --}}
 
     @include('layouts.admin.styles')
 
@@ -54,7 +54,7 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRCG6KP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {{-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TRCG6KP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> --}}
     <!-- End Google Tag Manager (noscript) -->
 
     @include('layouts.admin.header')
