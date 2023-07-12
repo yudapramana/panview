@@ -17,7 +17,7 @@ class HomeController extends Controller
         $services = \App\Models\Services::where('featured', 'yes')->get();
         $carousels = \App\Models\Carousel::where('active', 'yes')->get();
         return view('landing.home', [
-            'title' => 'Pandan View Mandeh - Resort, Villa and Cottage for Work and Family Vacation',
+            'title' => 'Pandan View Mandeh - Resort Kafe dan Cottage untuk Liburan Keluarga',
             'accountfb' => 'pandanviewmandeh',
             'account' => 'pandanviewmandeh',
             'channel' =>  '@pandanviewmandehofficial4919',
