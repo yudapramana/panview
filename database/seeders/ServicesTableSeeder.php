@@ -123,6 +123,22 @@ Kamar dilengkapi dengan Kamar Mandi, Air Conditioner dan Balkon dengan View yang
                 'listed' => 'no',
                 'description' => 'Apabila Anda menginap di Pandan View Mandeh Resort, Anda akan mendapatkan beberapa fasilitas dan kenyamanan ketika menginap, diantaranya handuk, peralatan mandi, hingga perlengkapan untuk mengobrol bersama keluarga tercinta yakni kopi dan teh.',
             ),
+            5 => 
+            array (
+                'id_service' => 6,
+                'created_at' => '2023-07-12 09:52:59',
+                'updated_at' => '2023-07-12 09:52:59',
+                'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1689130353/PandanViewMandeh/_AULA_qwcmmb.jpg',
+                'content_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1689130370/PandanViewMandeh/_AULA2_n9mz8k.jpg',
+                'next_url' => '/service/testimonies',
+                'title_id' => 'Testimonies',
+                'title_en' => 'Testimonies',
+                'name' => 'Testimonies',
+                'slug' => 'testimonies',
+                'featured' => 'no',
+                'listed' => 'yes',
+                'description' => 'Testimonies',
+            ),
         ));
         
         

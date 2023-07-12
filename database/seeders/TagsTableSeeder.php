@@ -49,6 +49,16 @@ class TagsTableSeeder extends Seeder
                 'created_at' => '2023-07-10 15:23:33',
                 'updated_at' => '2023-07-10 15:23:33',
             ),
+            3 => 
+            array (
+                'id' => 5,
+                'name' => 'Travel',
+                'slug' => 'travel',
+                'keywords' => 'travel',
+                'meta_desc' => 'travel',
+                'created_at' => '2023-07-11 11:34:42',
+                'updated_at' => '2023-07-11 11:34:42',
+            ),
         ));
         
         

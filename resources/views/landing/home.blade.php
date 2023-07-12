@@ -346,6 +346,9 @@
         </div>
     </section><!-- End About Section -->
 
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-e6bb8f0f-fa2d-4b77-98a1-1f5be159592e"></div>
+
     {{-- <div class="row content">
                 <div class="col-lg-6">
                     <h2>Eum ipsam laborum deleniti velitena</h2>

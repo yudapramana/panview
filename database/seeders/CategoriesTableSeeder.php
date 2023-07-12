@@ -49,6 +49,16 @@ class CategoriesTableSeeder extends Seeder
                 'created_at' => '2023-07-10 12:15:30',
                 'updated_at' => '2023-07-10 12:15:30',
             ),
+            3 => 
+            array (
+                'id' => 4,
+                'name' => 'Travel Info',
+                'slug' => 'travel-info',
+                'keywords' => 'Travel Info, Information, Pariwisata',
+                'meta_desc' => 'Travel Info, Information, Pariwisata',
+                'created_at' => '2023-07-11 11:34:28',
+                'updated_at' => '2023-07-11 11:34:28',
+            ),
         ));
         
         

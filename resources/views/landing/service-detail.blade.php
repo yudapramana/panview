@@ -91,6 +91,11 @@
         </div>
     </section><!-- End About Section -->
     @empty
+
+    @if($service->slug == 'testimonies' )
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-e6bb8f0f-fa2d-4b77-98a1-1f5be159592e"></div>
+    @else
     <section id="about" class="about pb-4 pt-5">
         <div class="container">
             <div class="row content align-item-center align-middle" style="align-items: center">
@@ -101,6 +106,7 @@
             </div>
         </div>
     </section><!-- End About Section -->
+    @endif
     @endforelse
 
 </main><!-- End #main -->

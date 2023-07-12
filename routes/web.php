@@ -191,6 +191,9 @@ Route::post('/galleries/store', [\App\Http\Controllers\Admin\GalleryController::
 Route::get('/carousels', [\App\Http\Controllers\Admin\CarouselController::class, 'index'])->name('carousels.index');
 Route::post('/carousels/store', [\App\Http\Controllers\Admin\CarouselController::class, 'store']);
 
+Route::get('/testimonies', [\App\Http\Controllers\Admin\TestimonyController::class, 'index'])->name('testimonies.index');
+Route::post('/testimonies/store', [\App\Http\Controllers\Admin\TestimonyController::class, 'store']);
+
 Route::get('/messages', [\App\Http\Controllers\Admin\MessageController::class, 'index'])->name('messages.admin.index');
 
 
