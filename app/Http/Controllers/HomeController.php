@@ -16,7 +16,7 @@ class HomeController extends Controller
     {
         $services = \App\Models\Services::where('featured', 'yes')->get();
         $carousels = \App\Models\Carousel::where('active', 'yes')->get();
-        $recent_posts = \App\Models\Post::take(5)->get();
+        $recent_posts = \App\Models\Post::orderBy('created_at', 'DESC')->take(5)->get();
         return view('landing.home', [
             'title' => 'Pandan View Mandeh - Resort Cafe dan Cottage untuk Liburan Keluarga',
             'accountfb' => 'pandanviewmandeh',

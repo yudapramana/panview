@@ -123,7 +123,7 @@ Route::group(['middleware' => ['web']], function () {
         $categories = \App\Models\Category::withCount('posts')->get();
         $tags = \App\Models\Tag::all();
 
-        $recent_posts = \App\Models\Post::take(5)->get();
+        $recent_posts = \App\Models\Post::orderBy('created_at', 'DESC')->take(5)->get();
 
         return view('landing.blog', [
             'title' => 'Blog Pandan View Mandeh',
