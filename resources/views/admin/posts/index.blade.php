@@ -234,8 +234,8 @@
             , name: 'DT_RowIndex'
             , className: 'text-center'
         }, {
-            data: 'title'
-            , name: 'title'
+            data: 'title_can'
+            , name: 'title_can'
         , }, {
             data: 'desc_beautify'
             , name: 'desc_beautify'

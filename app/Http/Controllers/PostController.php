@@ -18,7 +18,7 @@ class PostController extends Controller
      */
     public function index(Request $request)
     {
-        $posts = Post::get();
+        $posts = Post::orderBy('created_at', 'DESC')->get();
 
 
         if ($request->ajax()) {
@@ -26,6 +26,13 @@ class PostController extends Controller
 
             return DataTables::of($posts)
                 ->addIndexColumn()
+                ->addColumn('title_can', function ($post) {
+                    $text = '<span style="font-weight:bolder;">' . $post->title . ' &nbsp; <span class="text-muted" style="font-size:x-small">'.$post->created_at->format('d-m-Y').'</span><br>
+                            <span class="text-muted preserveLines" style="font-size:smaller">Slug: ' . $post->slug . ' </span><br>
+                            <span class="text-muted preserveLines" style="font-size:xx-small">Keywords: ' . $post->keywords . ' </span><br>
+                            <span class="text-muted preserveLines" style="font-size:xx-small">Meta:' . $post->meta_desc . ' </span>';
+                    return $text;
+                })
                 ->addColumn('action', function ($post) {
                     $btn = '';
 
@@ -35,9 +42,9 @@ class PostController extends Controller
                     return $btn;
                 })
                 ->addColumn('desc_beautify', function ($post) {
-                    return \Illuminate\Support\Str::limit($post->desc, 150, $end='...');
+                    return \Illuminate\Support\Str::limit($post->desc, 200, $end='...');
                 })
-                ->rawColumns(['action', 'desc_beautify'])
+                ->rawColumns(['action', 'desc_beautify', 'title_can'])
                 ->make(true);
         }
         return view(
