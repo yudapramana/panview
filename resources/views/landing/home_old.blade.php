@@ -53,7 +53,7 @@
         <div class="carousel-inner" role="listbox">
 
             @foreach($carousels as $key => $carousel)
-            <div class="carousel-item  @if($key == 0) active @endif" style="background-image: url({{$carousel->smaller_image}})">
+            <div class="carousel-item lazy @if($key == 0) active @endif" style="background-image: url({{$carousel->smaller_image}})">
                 <div class="carousel-container">
                     <div class="container">
 
@@ -91,7 +91,7 @@
 
 
             {{-- <!-- Slide 1 -->
-            <div class="carousel-item  active" style="background-image: url(sailor/img/slide/pv-1.jpg)">
+            <div class="carousel-item lazy active" style="background-image: url(sailor/img/slide/pv-1.jpg)">
                 <div class="carousel-container">
                     <div class="container">
 
@@ -127,7 +127,7 @@
     </div>
 
     <!-- Slide 2 -->
-    <div class="carousel-item " style="background-image: url(sailor/img/slide/pv-3.jpg)">
+    <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-3.jpg)">
         <div class="carousel-container">
             <div class="container">
 
@@ -163,7 +163,7 @@
     </div>
 
     <!-- Slide 3 -->
-    <div class="carousel-item " style="background-image: url(sailor/img/slide/pv-4.jpg)">
+    <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-4.jpg)">
         <div class="carousel-container">
             <div class="container">
 
@@ -199,7 +199,7 @@
     </div>
 
     <!-- Slide 4 -->
-    <div class="carousel-item " style="background-image: url(sailor/img/slide/pv-6.jpg)">
+    <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-6.jpg)">
         <div class="carousel-container">
             <div class="container">
 
@@ -235,7 +235,7 @@
     </div>
 
     <!-- Slide 5 -->
-    <div class="carousel-item " style="background-image: url(sailor/img/slide/pv-7.jpg)">
+    <div class="carousel-item lazy" style="background-image: url(sailor/img/slide/pv-7.jpg)">
         <div class="carousel-container">
             <div class="container">
 
@@ -294,7 +294,7 @@
             <div class="row content align-item-center align-middle" style="align-items: center">
                 @if( ($key+1) % 2 == 0)
                 <div class="col-lg-6 pt-4 pt-lg-0">
-                    <img class="" src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
+                    <img class="lazy" data-src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
                 </div>
                 <div class="col-lg-6 pb-0 pt-0">
                     <h3>{{$service->{$titleLocale} }}</h3>
@@ -308,7 +308,7 @@
                     <a style="font-size:smaller;" href="{!! '/' .isset($service->next_url) ? $service->next_url : '' !!}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0">
-                    <img class="" src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
+                    <img class="lazy" data-src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
                 </div>
                 @endif
             </div>
@@ -316,7 +316,7 @@
     </section><!-- End About Section -->
     @endforeach
 
-    <section id="about" class="about pb-4 pt-5">
+    <section id="about" class="about  @if($key+1 == 1) pb-4 pt-5 @else pb-4 pt-0 @endif">
         <div class="container">
             <div class="row content align-item-center align-middle" style="align-items: center">
                 <div class="col-lg-6 pt-4 pt-lg-0">
@@ -325,20 +325,20 @@
                 </div>
                 <div class="col-lg-6 pb-0 pt-0">
                     <h4>
-                        <i>Gugusan Pulau yang enak dipandang mata...</i>
+                        <i>Quality time starts here...</i>
                     </h4>
 
                     <p>
-                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">Gugusan Mandeh,</span>
+                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">Pegunungan,</span>
                         <br>
-                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">Tepian Pantai, </span>
+                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">kebuh teh, </span>
                         <br>
-                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">Jalan Mendaki, </span>
+                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">sawah, </span>
                         <br>
-                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">View yang mempesona, </span>
+                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">rumput yang menghijau, </span>
                         <br>
-                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">Bersantai dengan Keluarga dan Teman,<br></span>
-                        <span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; text-align: center; font-size: 0.875rem;">sungguh bagai karya seni instalasi karya Ilahi dengan keindahan yang sempurna.</span>
+                        <span style="background-color: rgb(255, 255, 255); font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 0.875rem; text-align: center;">gemricik aliran air yang bening,<br></span>
+                        <span style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; text-align: center; font-size: 0.875rem;">sungguh bagai karya seni instalasi karya Illahi dengan keindahan yang sempurna.</span>
                     </p>
                 </div>
 
@@ -469,5 +469,87 @@
 
 @section('_scripts')
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyloadImages = document.querySelectorAll("img.lazy");
+        var lazyloadThrottleTimeout;
+
+        function lazyload() {
+            if (lazyloadThrottleTimeout) {
+                clearTimeout(lazyloadThrottleTimeout);
+            }
+
+            lazyloadThrottleTimeout = setTimeout(function() {
+                var scrollTop = window.pageYOffset;
+                lazyloadImages.forEach(function(img) {
+                    if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                    }
+                });
+                if (lazyloadImages.length == 0) {
+                    document.removeEventListener("scroll", lazyload);
+                    window.removeEventListener("resize", lazyload);
+                    window.removeEventListener("orientationChange", lazyload);
+                }
+            }, 20);
+        }
+
+        document.addEventListener("scroll", lazyload);
+        window.addEventListener("resize", lazyload);
+        window.addEventListener("orientationChange", lazyload);
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyloadImages;
+
+        if ("IntersectionObserver" in window) {
+            lazyloadImages = document.querySelectorAll(".lazy");
+            var imageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        var image = entry.target;
+                        image.classList.remove("lazy");
+                        imageObserver.unobserve(image);
+                    }
+                });
+            });
+
+            lazyloadImages.forEach(function(image) {
+                imageObserver.observe(image);
+            });
+        } else {
+            var lazyloadThrottleTimeout;
+            lazyloadImages = document.querySelectorAll(".lazy");
+
+            function lazyload() {
+                if (lazyloadThrottleTimeout) {
+                    clearTimeout(lazyloadThrottleTimeout);
+                }
+
+                lazyloadThrottleTimeout = setTimeout(function() {
+                    var scrollTop = window.pageYOffset;
+                    lazyloadImages.forEach(function(img) {
+                        if (img.offsetTop < (window.innerHeight + scrollTop)) {
+                            img.src = img.dataset.src;
+                            img.classList.remove('lazy');
+                        }
+                    });
+                    if (lazyloadImages.length == 0) {
+                        document.removeEventListener("scroll", lazyload);
+                        window.removeEventListener("resize", lazyload);
+                        window.removeEventListener("orientationChange", lazyload);
+                    }
+                }, 20);
+            }
+
+            document.addEventListener("scroll", lazyload);
+            window.addEventListener("resize", lazyload);
+            window.addEventListener("orientationChange", lazyload);
+        }
+    })
+
+</script>
 
 @endsection
