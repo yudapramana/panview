@@ -346,8 +346,40 @@
         </div>
     </section><!-- End About Section -->
 
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <div class="elfsight-app-e6bb8f0f-fa2d-4b77-98a1-1f5be159592e"></div>
+    <section id="blog" class="blog">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+
+                <div class="col-lg-8 entries">
+                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                    <div class="elfsight-app-2596a9b0-d20d-47f8-b3cb-18372280a49a"></div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <h3 class="sidebar-title">Recent Posts</h3>
+                        <div class="sidebar-item recent-posts">
+
+                            @foreach($recent_posts as $key => $post)
+                            <div class="post-item clearfix">
+                                <img src="{{$post->cover}}" alt="">
+                                <h4><a href="/post/{{$post->slug}}">{{\Illuminate\Support\Str::limit($post->title, 20, $end='...')}}</a></h4>
+                                <time datetime="2020-01-01"> {{ $post->created_at->format('d F Y') }}</time>
+                            </div>
+                            @endforeach
+
+
+                        </div><!-- End sidebar recent posts-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
     {{-- <div class="row content">
                 <div class="col-lg-6">
