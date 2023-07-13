@@ -105,19 +105,19 @@ Route::group(['middleware' => ['web']], function () {
         if ($request->has('search')) {
             $search = $request->input('search');
             $posts = \App\Models\Post::where('title', 'LIKE', "%{$search}%")
-                ->orWhere('desc', 'LIKE', "%{$search}%")->orderBy('created_at', 'DESC')->paginate(2);
+                ->orWhere('desc', 'LIKE', "%{$search}%")->orderBy('created_at', 'DESC')->paginate(4);
         } elseif ($request->has('category')) {
             $search = $request->input('category');
             $posts = \App\Models\Post::whereHas('category', function($q) use($search) {
                 $q->where('slug', $search);
-            })->orderBy('created_at', 'DESC')->paginate(2);
+            })->orderBy('created_at', 'DESC')->paginate(4);
         } elseif ($request->has('tag')) {
             $search = $request->input('tag');
             $posts = \App\Models\Post::whereHas('tags', function($q) use($search) {
                 $q->where('slug', $search);
-            })->orderBy('created_at', 'DESC')->paginate(2);
+            })->orderBy('created_at', 'DESC')->paginate(4);
         }else {
-            $posts = \App\Models\Post::orderBy('created_at', 'DESC')->paginate(2);
+            $posts = \App\Models\Post::orderBy('created_at', 'DESC')->paginate(4);
         }
 
         $categories = \App\Models\Category::withCount('posts')->get();
