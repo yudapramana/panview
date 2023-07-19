@@ -223,7 +223,7 @@
 
 
     $(document).ready(function() {
-        table.ajax.url('/messages').load();
+        table.ajax.url('/data/messages').load();
         console.log('mana neeee');
 
         table.buttons().container()

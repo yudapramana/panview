@@ -251,7 +251,7 @@
 
 
     $(document).ready(function() {
-        table.ajax.url('/tags').load();
+        table.ajax.url('/blog/tags').load();
         console.log('mana neeee');
 
         table.buttons().container()

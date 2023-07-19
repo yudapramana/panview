@@ -27,38 +27,26 @@ class PostsTableSeeder extends Seeder
                 'cover' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1688970892/PandanViewMandeh/snack_pfcp0v.jpg',
                 'title' => 'Menikmati Lezatnya Snack di Pandan View Mandeh, Sumatera Barat',
                 'slug' => 'menikmati-lezatnya-snack-di-pandan-view-mandeh',
-                'desc' => '<p>Sumatera Barat tidak hanya terkenal dengan keindahan alamnya yang menakjubkan, tetapi juga dengan kelezatan makanan dan camilan khasnya. Salah satu tempat di Sumatera Barat yang patut dikunjungi oleh pecinta kuliner adalah Pandan View Mandeh. Berlokasi di kawasan wisata Pantai Mandeh, Pandan View Mandeh menawarkan pemandangan spektakuler dan beragam pilihan camilan lezat yang dapat memanjakan lidah Anda. Inilah artikel tentang snack di Pandan View Mandeh yang akan memanjakan selera Anda.</p>
+                'desc' => '<p>Sumatera Barat terkenal tidak hanya dengan keindahan alam yang memukau, tetapi juga dengan kelezatan makanan dan camilan khasnya. Salah satu tempat yang layak dikunjungi oleh para penggemar kuliner adalah Pandan View Mandeh di Sumatera Barat. Terletak di kawasan wisata Pantai Mandeh, Pandan View Mandeh menawarkan pemandangan luar biasa dan berbagai pilihan camilan lezat yang akan memanjakan lidah Anda. Artikel ini akan membahas camilan yang dapat Anda nikmati di Pandan View Mandeh dan memuaskan selera Anda.</p>
 
-<h3>Pisang Goreng Kipas</h3>
+<p>Salah satu camilan yang wajib dicoba ketika Anda mengunjungi Pandan View Mandeh adalah Pisang Goreng Kipas. Camilan ini terbuat dari pisang yang digoreng dengan tepung yang renyah dan lezat. Yang membuatnya istimewa adalah bentuknya yang unik, menyerupai kipas yang terbuka. Rasanya manis dan teksturnya renyah, menjadikan Pisang Goreng Kipas sebagai favorit para pengunjung.</p>
 
-<p>Pisang goreng kipas menjadi salah satu camilan yang wajib dicicipi ketika mengunjungi Pandan View Mandeh. Camilan ini terbuat dari pisang yang digoreng dengan tepung yang renyah dan lezat. Yang membuatnya istimewa adalah bentuknya yang unik, seperti kipas yang terbuka. Rasanya yang manis dan teksturnya yang renyah membuat pisang goreng kipas menjadi favorit para pengunjung.</p>
+<p>Lemang adalah makanan tradisional Sumatera Barat yang terbuat dari beras ketan yang dikukus dalam bambu. Di Pandan View Mandeh, Anda bisa menikmati Lemang dengan berbagai pilihan pelengkap seperti serundeng atau ikan asin. Lemang memiliki cita rasa gurih dan aroma khas yang kenyal. Rasanya yang lezat membuatnya menjadi camilan favorit para wisatawan.</p>
 
-<h3>Lemang</h3>
+<p>Dadiah adalah yogurt tradisional khas Sumatera Barat yang terbuat dari susu sapi segar. Di Pandan View Mandeh, Anda dapat menemukan dadiah segar yang dibuat secara tradisional. Dadiah memiliki rasa yang segar dan asam yang menyegarkan. Camilan ini juga kaya nutrisi dan baik untuk pencernaan. Dadiah disajikan dalam keadaan dingin dan merupakan pilihan camilan yang sehat di cuaca panas.</p>
 
-<p>Leman adalah makanan tradisional Sumatera Barat yang terbuat dari beras ketan yang dikukus dalam bambu. Di Pandan View Mandeh, Anda dapat menikmati lemang dengan berbagai pilihan pelengkap, seperti serundeng (kelapa parut yang digoreng) atau ikan asin. Lemang memiliki cita rasa yang gurih dan aromatik yang khas, serta tekstur yang kenyal. Rasanya yang lezat membuatnya menjadi camilan yang sangat disukai oleh wisatawan.</p>
+<p>Singkong Balado adalah camilan yang terbuat dari singkong yang digoreng dan dilumuri dengan bumbu balado pedas. Di Pandan View Mandeh, Anda dapat menemukan Singkong Balado yang gurih dan pedas dengan cita rasa autentik. Kombinasi singkong yang renyah dengan kepedasan bumbu balado menciptakan harmoni rasa yang sempurna. Singkong Balado cocok untuk pecinta makanan pedas.</p>
 
-<h3>Dadiah</h3>
+<p>Lempeng Pisang adalah camilan tradisional khas Sumatera Barat yang terbuat dari adonan tepung beras dan pisang yang digoreng hingga renyah. Di Pandan View Mandeh, Anda bisa menikmati Lempeng Pisang dengan berbagai varian rasa seperti cokelat atau keju. Camilan ini memiliki tekstur kenyal dan rasa manis yang menggoda, cocok sebagai pendamping minum teh atau kopi.</p>
 
-<p>Dadiah adalah yogurt tradisional khas Sumatera Barat yang terbuat dari susu sapi segar. Di Pandan View Mandeh, Anda dapat menemukan dadiah segar yang dibuat secara tradisional. Dadiah memiliki rasa yang segar dan asam yang menyegarkan. Camilan ini juga mengandung banyak nutrisi dan baik untuk kesehatan pencernaan. Dadiah dapat dinikmati dalam keadaan dingin dan merupakan pilihan camilan yang sehat di tengah cuaca yang panas.</p>
+<p>Keripik Sanjai adalah camilan khas Sumatera Barat yang terbuat dari daun singkong yang dipotong tipis dan digoreng hingga renyah. Keripik Sanjai memiliki cita rasa gurih dan renyah, serta aroma yang khas. Di Pandan View Mandeh, Anda dapat menemukan Keripik Sanjai segar yang dibuat dengan bahan berkualitas.</p>
 
-<h3>Singkong Balado</h3>
-
-<p>Singkong balado adalah camilan yang terbuat dari singkong yang digoreng dan dilumuri dengan bumbu balado yang pedas. Di Pandan View Mandeh, Anda dapat menemukan singkong balado yang gurih dan pedas dengan cita rasa yang autentik. Kombinasi antara kelezatan singkong yang renyah dengan kepedasan bumbu balado menciptakan harmoni rasa yang sempurna. Singkong balado adalah camilan yang cocok untuk Anda yang menyukai makanan pedas.</p>
-
-<h3>Lempeng Pisang</h3>
-
-<p>Lempeng pisang adalah camilan tradisional khas Sumatera Barat yang terbuat dari adonan tepung beras dan pisang yang digoreng hingga renyah. Di Pandan View Mandeh, Anda dapat menemukan lempeng pisang yang lezat dengan berbagai varian rasa, seperti lempeng pisang cokelat atau lempeng pisang keju. Camilan ini memiliki tekstur yang kenyal dan rasa manis yang menggoda, cocok untuk dinikmati sebagai teman minum teh atau kopi.</p>
-
-<h3>Keripik Sanjai</h3>
-
-<p>Keripik sanjai adalah camilan khas Sumatera Barat yang terbuat dari daun singkong yang dipotong tipis dan digoreng hingga renyah. Keripik sanjai memiliki cita rasa yang gurih dan renyah, serta memiliki aroma yang khas. Di Pandan View Mandeh, Anda dapat menemukan keripik sanjai yang segar dan dibuat dengan bahan-bahan berkualitas.</p>
-
-<p>Selain menikmati camilan lezat, Anda juga dapat menikmati pemandangan yang indah dari Pandan View Mandeh. Dikelilingi oleh pantai yang memukau dan pepohonan hijau, tempat ini merupakan tempat yang sempurna untuk bersantai sambil menikmati makanan lezat. Jadi, jika Anda berkunjung ke Sumatera Barat, jangan lewatkan kesempatan untuk mencicipi camilan khas di Pandan View Mandeh. Selamat menikmati perjalanan kuliner Anda di Sumatera Barat!</p>',
+<p>Selain menikmati camilan lezat, Anda juga dapat menikmati pemandangan indah di Pandan View Mandeh. Dikelilingi oleh pantai yang memukau dan pepohonan hijau, tempat ini adalah tempat yang sempurna untuk bersantai sambil menikmati makanan lezat. Jadi, jika Anda mengunjungi Sumatera Barat, jangan lewatkan kesempatan untuk mencicipi camilan khas di Pandan View Mandeh. Selamat menikmati perjalanan kuliner Anda di Sumatera Barat!</p>',
                 'keywords' => 'Snack Pandan View, Pandan View, Mandeh, Pandan view Mandeh Snack',
                 'meta_desc' => 'Menikmati Lezatnya Snack di Pandan View Mandeh, Sumatera Barat',
-                'reads' => 11,
+                'reads' => 23,
                 'created_at' => '2022-05-10 13:02:40',
-                'updated_at' => '2023-07-12 08:12:13',
+                'updated_at' => '2023-07-17 21:10:25',
                 'deleted_at' => NULL,
             ),
             1 => 
@@ -102,9 +90,9 @@ class PostsTableSeeder extends Seeder
 <p>Dengan mengikuti tips ini, Anda akan dapat menikmati perjalanan yang tak terlupakan di Sumatera Barat. Nikmati keindahan alam yang luar biasa, jelajahi kebudayaan yang kaya, dan ciptakan kenangan indah selama petualangan Anda di provinsi ini. Selamat menikmati perjalanan Anda!</p>',
                 'keywords' => 'travel, pariwisata, info-pariwisata, mandeh, pandan view mandeh',
                 'meta_desc' => 'travel, pariwisata, info-pariwisata, mandeh, pandan view mandeh',
-                'reads' => 27,
+                'reads' => 39,
                 'created_at' => '2023-04-10 13:57:14',
-                'updated_at' => '2023-07-12 08:12:37',
+                'updated_at' => '2023-07-17 21:11:15',
                 'deleted_at' => NULL,
             ),
             2 => 
@@ -114,19 +102,19 @@ class PostsTableSeeder extends Seeder
                 'user_id' => 1,
                 'cover' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1688975417/PandanViewMandeh/20230518_111000_rov6f1.jpg',
                 'title' => 'Pandan View Mandeh Resort',
-                'slug' => 'pandan-view-mandeh',
-                'desc' => '<p>Pandan View Mandeh terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah langsung kelaut dan pulau dikawasan Teluk Mandeh. Dan wisatawan juga bisa menikmati Cottage yang tersedia di Pandan View Mandeh ini dengan ada 2 type kamar , type kamar Lumbung dan Type kamar Villa dengan harga yang masih terjangkau. Selain Tersedia nya Spot Foto dan Cottage, para pengunjung juga dimanjakan dengan live musik akustik dengan pemain dan musik sesuai para tamunya .</p>
+                'slug' => 'pandan-view-mandeh-resort',
+                'desc' => '<p>Pandan View Mandeh, yang terletak di kawasan wisata Teluk Mandeh, menawarkan kafe dan cottage bagi wisatawan lokal, domestik, dan mancanegara. Tempat ini memiliki beberapa spot foto yang indah dan pemandangan langsung ke laut dan pulau-pulau di Teluk Mandeh. Wisatawan juga dapat menikmati cottage yang tersedia di Pandan View Mandeh, dengan dua jenis kamar yaitu kamar Lumbung dan kamar Villa, dengan harga terjangkau. Selain itu, para pengunjung juga dapat menikmati musik akustik langsung dengan musisi yang sesuai dengan suasana.</p>
 
-<p>Meskipun pandan view ini masih dalam penyelesaian dan dalam pengerjaan 30% lagi, pengunjung sudah bisa menikmati fasilitas yang ada di Pandan View Mandeh ini, dengan prasarana yang ada, mushalla , toilet , kafe dan spot foto lainnya Fitur Pandan View Sangat Mempesona Jika berbicara mengenai tempat wisata di sumatera barat, tentu tak bisa dilepaskan dengan kawasan wisata mandeh. Destinasi ini menyuguhkan perpaduan antara indahnya teluk dan perbukitan alami. Keindahanya disebut sebut mirip dengan Raja Ampat di papua. Kawasan wisata mandeh sendiri memiliki luas mencapai 18 ribu ha, terdiri dari tiga nagari dan tujuh desa. Topografinya meliputi pantai, gugusan pulau kecil, hingga hutan mangrove. Kini mandeh mulai berkembang dan dikenal banyak orang baik dalam skala nasional maupun international. Ada banyak destinasi yang bisa kita kunjungi di kawasan wisata mandeh.</p>
+<p>Meskipun Pandan View masih dalam tahap penyelesaian dan pengerjaan sekitar 30%, pengunjung sudah dapat menikmati fasilitas yang ada, seperti musholla, toilet, kafe, dan spot foto lainnya. Fitur Pandan View sangat mempesona. Ketika berbicara tentang tempat wisata di Sumatera Barat, tidak bisa dilewatkan kawasan wisata Mandeh. Destinasi ini menggabungkan keindahan teluk dan perbukitan alami. Keindahannya disebut-sebut mirip dengan Raja Ampat di Papua. Kawasan wisata Mandeh memiliki luas sekitar 18 ribu hektar, terdiri dari tiga nagari dan tujuh desa. Topografinya meliputi pantai, gugusan pulau kecil, dan hutan mangrove. Saat ini, Mandeh sedang berkembang dan dikenal oleh banyak orang baik di tingkat nasional maupun internasional. Ada banyak destinasi yang dapat dikunjungi di kawasan wisata Mandeh.</p>
 
-<p>Puncak Indah Mandeh tentunya menjadi tujuan utama para traveller yang berkunjung. Selain itu kini banyak cafe, resto maupun resort yang bisa kamu kunjungi. Salah satunya adalah Pandan view Mandeh yang berada di ampang pulau Kabupaten Pesisir Selatan. Daya Tarik Pandan View Mandeh Pandan view mandeh merupakan resort dan resto sekaligus tempat wisata yang bisa kamu kunjungi ketika berwisata di kawasan wisata mandeh. Para pengunjung bisa bersantai dan menikmati beragam menu makanan/ minuman. Area restonya juga berada di bibir pantai, jadi kita akan disuguhkan lautan dan gugusan pulau yang ada didepan mata.</p>
+<p>Puncak Indah Mandeh menjadi tujuan utama para pelancong yang berkunjung. Selain itu, kini terdapat banyak kafe, restoran, dan resor yang bisa dikunjungi. Salah satunya adalah Pandan View Mandeh, yang terletak di Ampang Pulau, Kabupaten Pesisir Selatan. Daya tarik Pandan View Mandeh adalah sebagai resor, restoran, dan tempat wisata yang dapat dikunjungi saat berwisata di kawasan Mandeh. Pengunjung dapat bersantai dan menikmati berbagai menu makanan dan minuman. Area restoran berada tepat di tepi pantai, sehingga pengunjung dapat menikmati pemandangan laut dan gugusan pulau di depan mata.</p>
 
-<p>Selain itu, ada banyak aktivitas seru yang bisa dilakukan di kawasan wisata mandeh. Disana kamu bisa melakukan wisata laut baik sekedar menikmati suasana pantai, berenang, bahkan snorkeling. Yups, keindahan bawah laut mandeh gak kalah dengan tempat tempat lain di Indonesia. Kamu bisa menikmati berbagaijenis terumbu karang dan biota laut. Pandan view memiliki beberapa paket wisata yang bisa kamu pesan. Daya tarik selanjutnya tentunya adalah penginapan berupa villa dan cottage. Bagi kalian yang datang dari luar kota, bisa memesan penginapan tersebut. Jenis cottage cukup menarik dengan bentuknya yang seperti lumbung dengan kapasitas sampai 4 orang.</p>',
+<p>Selain itu, terdapat banyak kegiatan seru yang dapat dilakukan di kawasan wisata Mandeh. Di sana, pengunjung dapat menikmati suasana pantai, berenang, bahkan snorkeling. Keindahan bawah laut Mandeh tidak kalah dengan tempat-tempat lain di Indonesia. Pengunjung dapat menikmati berbagai jenis terumbu karang dan biota laut. Pandan View juga menawarkan beberapa paket wisata yang dapat dipesan. Selanjutnya, daya tarik lainnya adalah penginapan berupa vila dan cottage. Bagi wisatawan yang datang dari luar kota, mereka dapat memesan penginapan tersebut. Cottage yang unik dengan bentuk seperti lumbung memiliki kapasitas hingga 4 orang.</p>',
                 'keywords' => 'travel, pariwisata, info-pariwisata, mandeh, pandan view mandeh',
                 'meta_desc' => 'travel, pariwisata, info-pariwisata, mandeh, pandan view mandeh',
-                'reads' => 10,
+                'reads' => 22,
                 'created_at' => '2022-12-10 14:50:49',
-                'updated_at' => '2023-07-12 08:13:06',
+                'updated_at' => '2023-07-17 21:11:11',
                 'deleted_at' => NULL,
             ),
             3 => 
@@ -137,20 +125,20 @@ class PostsTableSeeder extends Seeder
                 'cover' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1688977377/PandanViewMandeh/image_1920x_62880a5334c1f_hweesy.jpg',
                 'title' => 'Kemenag Pessel Gelar Raker Tahun 2022 di Pandan View Kawasan Mandeh',
                 'slug' => 'kemenag-pessel-gelar-raker-tahun-2022-di-pandan-view-kawasan-mandeh',
-            'desc' => '<p>Untuk mengevaluasi hasil kinerja tahun 2021 dan membahas program kerja tahun anggaran 2022, serta perencanaan program tahun 2023, Kementerian Agama Kabupaten Pesisir Selatan menggelar Rapat Kerja (Raker), Sabtu (21/5) di Pandan View, Kawasan Mandeh Resort Kabupaten Pesisir Selatan.</p>
+            'desc' => '<p>Untuk mengevaluasi kinerja tahun 2021, membahas program kerja tahun anggaran 2022, dan merencanakan program tahun 2023, Kementerian Agama Kabupaten Pesisir Selatan mengadakan Rapat Kerja (Raker) pada Sabtu (21/5) di Pandan View, Kawasan Mandeh Resort Kabupaten Pesisir Selatan.</p>
 
-<p>Rapat kerja dibuka Kepala Kantor Kementerian Agama Kabupaten Pesisir Selatan, Abrar Munanda dan diikuti Kasubbag Tata Usaha, Kasi, penyelenggara, ASN Kankemenag Pessel, serta perwakilan kepala KUA, Forum K2MI, K2MTs, K2MA, pengawas, serta penyuluh agama di lingkungan Kantor Kementerian Agama Kabupaten Pesisir Selatan. Selain itu raker juga dihadiri Ketua Darma Wanita Persatuan Kantor Kementerian Agama Kabupaten Pesisir Selatan, Ny. Yenny Abrar Munanda beserta perwakilan anggota.</p>
+<p>Rapat kerja tersebut dibuka oleh Kepala Kantor Kementerian Agama Kabupaten Pesisir Selatan, Abrar Munanda, dan diikuti oleh Kasubbag Tata Usaha, Kasi, penyelenggara, ASN Kankemenag Pessel, serta perwakilan kepala KUA, Forum K2MI, K2MTs, K2MA, pengawas, dan penyuluh agama di lingkungan Kantor Kementerian Agama Kabupaten Pesisir Selatan. Rapat kerja juga dihadiri oleh Ketua Darma Wanita Persatuan Kantor Kementerian Agama Kabupaten Pesisir Selatan, Ny. Yenny Abrar Munanda, beserta perwakilan anggota.</p>
 
-<p>Menurut Kepala Kantor Kementerian Agama Kabupaten Pesisir Selatan, Abrar Munanda, kegiatan raker ini diselenggarakan selama 2 hari, tanggal 21 dan 22 Mei 2022. Raker yang mengusung tema Transformasi Layanan Umat, sebagai ikhtiar untuk terus berbenah di dalam mewujudkan tatanan kualitas layanan yang prima kepada masyarakat. &quot;Disamping melakukan evaluasi tahun 2021, dan strategi akselarasi percepatan anggaran triwulan tiga, serta merancang anggaran yang akan kita laksanakan di tahun 2023,&quot; ungkap Abrar. Abrar Munanda mengatakan, kegiatan ini adalah rangkaian yang kedua, karena telah diawali dengan pra raker, dan hari ini kita tinggal memplenokan hasil yang telah dibahas oleh masing-masing komisi ketika pra raker pada tanggal 17 Mei 2022 lalu. &ldquo;Kita mengharapkan raker tahun 2022 ini dapat menghasilkan rekomendasi dan memberikan jalan dalam upaya meningkatkan pelayanan di lingkungan Kantor Kementerian Agama Kabupaten Pesisir Selatan, sesuai dengan tema yang kita usung Transformasi Layanan Umat,&rdquo; harap Abrar.</p>
+<p>Menurut Abrar Munanda, Kepala Kantor Kementerian Agama Kabupaten Pesisir Selatan, raker ini akan berlangsung selama 2 hari, yaitu tanggal 21 dan 22 Mei 2022. Tema Raker ini adalah &quot;Transformasi Layanan Umat,&quot; sebagai upaya untuk terus memperbaiki kualitas layanan kepada masyarakat. Abrar menyatakan, &quot;Selain melakukan evaluasi tahun 2021 dan strategi percepatan anggaran triwulan tiga, kita juga akan merencanakan anggaran yang akan dilaksanakan di tahun 2023.&quot; Dia menambahkan bahwa kegiatan ini merupakan kelanjutan dari pra raker yang telah dilakukan sebelumnya, dan saat ini kita akan mengisi dengan diskusi mengenai hasil yang telah dibahas oleh masing-masing komisi pada pra raker tanggal 17 Mei 2022. Abrar berharap Raker tahun 2022 ini dapat menghasilkan rekomendasi dan memberikan arahan untuk meningkatkan pelayanan di Kantor Kementerian Agama Kabupaten Pesisir Selatan sesuai dengan tema &quot;Transformasi Layanan Umat.&quot;</p>
 
-<p>Lebih lanjut dikatakan bahwa raker tahun ini sangat berbeda dengan raker pada tahun-tahun sebelumnya, pada raker tahun ini akan diisi juga dengan kegiatan outbond. Abrar Munanda mengatakan kegiatan outbond ini selain untuk mempererat tali silaturahmi, hendaknya juga bisa berfungsi sebagai penyegaran dan refreshing bagi seluruh ASN dengan berbagai rutinitas sehari-hari di kantor sebagai pelayan masyarakat. Diharapkan dengan kegiatan outbond ini nantinya akan dapat membangun tim yang solid dan persatuan yang lebih kokoh melalui berbagai game yang diikuti untuk dapat diimplementasikan dalam melaksanakan tugas pokok dan fungsi sebagai ASN di lingkungan Kantor Kementerian Agama Kabupaten Pesisir Selatan.</p>
+<p>Abrar juga menjelaskan bahwa Raker tahun ini akan berbeda dengan Raker pada tahun-tahun sebelumnya karena akan ada kegiatan outbond. Dia mengungkapkan bahwa kegiatan outbond ini tidak hanya bertujuan untuk mempererat hubungan dan silaturahmi, tetapi juga sebagai waktu penyegaran bagi seluruh ASN yang biasanya terlibat dalam rutinitas kantor sehari-hari sebagai pelayan masyarakat. Harapannya, melalui kegiatan outbond ini, tim yang solid dan persatuan yang kuat dapat terbentuk melalui berbagai permainan yang diikuti, dan hal ini akan tercermin dalam pelaksanaan tugas dan fungsi ASN di Kantor Kementerian Agama Kabupaten Pesisir Selatan.</p>
 
-<p>&quot;Kemudian untuk tempat, kenapa kita memilih pelaksanaan raker di kawasan wisata, karena kita ingin seluruh ASN Kankemenag Pessel untuk bisa mendukung serta turut berkontribusi dalam mempromosikan pariwisata di Pesisir Selatan,&quot; ujar kakan kemenag. Pada kesempatan itu kakan kemenag mengucapkan terima kasih dan mengapresiasi panitia yang telah mempersiapkan segala sesuatunya hingga acara raker tahun 2022 dapat dilaksanakan dengan lancar dan sukses. &quot;Diharapkan pelaksanaan raker ini menghasilkan perencanaan yang baik, serta memunculkan inovasi-inovasi yang akan mengantarkan Kantor Kementerian Agama Kabupaten Pesisir Selatan menjadi terdepan,&quot; harap kakan kemenag. Kemudian raker dilanjutkan dengan pelaksanaan sidang pleno yang akan memaparkan hasil yang telah dibahas pada kegiatan pra raker sebelumnya dari masing-masing komisi.</p>',
+<p>Selanjutnya, Abrar menjelaskan mengapa lokasi raker dipilih di kawasan wisata. &quot;Kita memilih kawasan wisata untuk melaksanakan raker karena kita ingin seluruh ASN Kankemenag Pessel dapat mendukung dan berkontribusi dalam mempromosikan pariwisata di Pesisir Selatan,&quot; ujarnya. Dia juga menyampaikan terima kasih dan mengapresiasi panitia yang telah mempersiapkan segala sesuatunya sehingga acara Raker tahun 2022 dapat berjalan lancar dan sukses. Abrar berharap pelaksanaan raker ini akan menghasilkan perencanaan yang baik dan menciptakan inovasi-inovasi yang akan menjadikan Kantor Kementerian Agama Kabupaten Pesisir Selatan sebagai yang terdepan. Raker kemudian dilanjutkan dengan sidang pleno yang akan memaparkan hasil yang telah dibahas pada pra raker oleh masing-masing komisi.</p>',
                 'keywords' => 'Rapat Kerja, Rapat Dinas',
                 'meta_desc' => 'Rapat Kerja, Rapat Dinas',
-                'reads' => 8,
+                'reads' => 20,
                 'created_at' => '2022-05-10 15:23:15',
-                'updated_at' => '2023-07-11 20:28:28',
+                'updated_at' => '2023-07-17 21:11:04',
                 'deleted_at' => NULL,
             ),
             4 => 
@@ -161,32 +149,24 @@ class PostsTableSeeder extends Seeder
                 'cover' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1689050239/PandanViewMandeh/resort_m5ekf8.jpg',
                 'title' => 'Perbedaan Hotel, Bungalow, Resort, Cottage, dan Villa',
                 'slug' => 'perbedaan-hotel-bungalow-resort-cottage-dan-villa',
-                'desc' => '<p>Dalam industri perhotelan dan akomodasi, terdapat berbagai jenis tempat menginap yang dapat dipilih oleh wisatawan. Beberapa di antaranya adalah hotel, bungalow, resort, cottage, dan villa. Meskipun mereka semua menyediakan tempat tinggal sementara, terdapat perbedaan signifikan dalam desain, fasilitas, dan pengalaman yang ditawarkan oleh masing-masing jenis akomodasi. Artikel ini akan menjelaskan perbedaan antara hotel, bungalow, resort, cottage, dan villa.</p>
+                'desc' => '<p>Dalam industri perhotelan dan akomodasi, terdapat berbagai jenis tempat menginap yang bisa dipilih oleh para wisatawan. Beberapa di antaranya adalah hotel, bungalow, resort, cottage, dan villa. Meskipun semua tempat ini menyediakan tempat tinggal sementara, terdapat perbedaan yang signifikan dalam desain, fasilitas, dan pengalaman yang ditawarkan oleh masing-masing jenis akomodasi. Artikel ini akan menjelaskan perbedaan antara hotel, bungalow, resort, cottage, dan villa.</p>
 
-<ol>
-<li>
-<p>Hotel: Hotel adalah akomodasi yang umumnya terdiri dari beberapa kamar atau suite yang dikelola secara profesional. Hotel biasanya memiliki berbagai tipe kamar, mulai dari standar hingga mewah, dengan fasilitas yang lengkap seperti restoran, bar, pusat kebugaran, kolam renang, dan layanan kamar. Hotel juga seringkali terletak di pusat kota atau dekat dengan atraksi wisata utama. Mereka menawarkan berbagai layanan tambahan seperti resepsionis 24 jam, concierge, dan fasilitas konferensi.</p>
-</li>
-<li>
-<p>Bungalow: Bungalow adalah akomodasi yang umumnya terdiri dari sebuah bangunan berukuran kecil atau menengah yang terdiri dari satu atau dua kamar tidur. Mereka seringkali memiliki desain yang lebih santai dan terletak di sekitar alam, seperti pantai atau pegunungan. Bungalow seringkali menawarkan privasi yang lebih tinggi daripada hotel dan biasanya dilengkapi dengan dapur atau dapur kecil, serta teras atau balkon untuk menikmati pemandangan alam sekitarnya.</p>
-</li>
-<li>
+<p>Hotel: Hotel adalah akomodasi yang biasanya memiliki beberapa kamar atau suite dan dikelola secara profesional. Biasanya terdapat berbagai tipe kamar, mulai dari standar hingga mewah, dengan fasilitas yang lengkap seperti restoran, bar, pusat kebugaran, kolam renang, dan layanan kamar. Hotel seringkali terletak di pusat kota atau dekat dengan atraksi wisata utama. Mereka menawarkan berbagai layanan tambahan seperti resepsionis 24 jam, concierge, dan fasilitas konferensi.</p>
+
+<p>Bungalow: Bungalow adalah akomodasi yang umumnya terdiri dari bangunan kecil atau menengah dengan satu atau dua kamar tidur. Mereka seringkali memiliki desain santai dan terletak di alam, seperti pantai atau pegunungan. Bungalow seringkali menawarkan privasi yang lebih tinggi daripada hotel dan biasanya dilengkapi dengan dapur atau dapur kecil, serta teras atau balkon untuk menikmati pemandangan alam sekitarnya.</p>
+
 <p>Resort: Resort adalah akomodasi yang biasanya terletak di lokasi wisata alam atau pantai. Mereka menawarkan berbagai fasilitas dan aktivitas rekreasi, seperti kolam renang, spa, klub anak-anak, pusat olahraga air, dan restoran. Resort seringkali memiliki banyak pilihan kamar, mulai dari kamar biasa hingga suite mewah atau vila pribadi. Mereka bertujuan untuk memberikan pengalaman liburan yang lengkap, dengan fokus pada relaksasi, hiburan, dan aktivitas rekreasi.</p>
-</li>
-<li>
-<p>Cottage: Cottage adalah akomodasi yang biasanya terletak di pedesaan atau lingkungan alami. Mereka cenderung memiliki desain tradisional dan memberikan suasana yang hangat dan nyaman. Cottage umumnya lebih kecil dibandingkan dengan hotel atau resort, dengan satu hingga beberapa kamar tidur, dapur, ruang tamu, dan area outdoor seperti taman atau halaman. Mereka cocok untuk wisatawan yang ingin merasakan kehidupan desa atau menghabiskan waktu dalam keheningan alam.</p>
-</li>
-<li>
-<p>Villa: Villa adalah akomodasi mewah yang biasanya berdiri sendiri dan menawarkan privasi yang tinggi. Mereka seringkali dilengkapi dengan fasilitas yang lengkap seperti kolam renang pribadi, taman tropis, dapur lengkap, ruang makan, dan ruang keluarga. Villa dapat berukuran besar dengan beberapa kamar tidur, sehingga cocok untuk keluarga atau kelompok yang ingin tinggal bersama. Mereka terletak di lokasi eksklusif, seperti pantai atau pegunungan, dan menawarkan pengalaman liburan yang mewah dan intim.</p>
-</li>
-</ol>
 
-<p>Dalam memilih jenis akomodasi, penting untuk mempertimbangkan preferensi pribadi, anggaran, lokasi, fasilitas, dan pengalaman yang diinginkan. Hotel, bungalow, resort, cottage, dan villa semuanya memiliki keunikan dan daya tariknya sendiri, dan akan memberikan pengalaman menginap yang berbeda kepada para tamu.</p>',
+<p>Cottage: Cottage adalah akomodasi yang biasanya terletak di pedesaan atau lingkungan alami. Mereka cenderung memiliki desain tradisional dan memberikan suasana yang hangat dan nyaman. Cottage umumnya lebih kecil dibandingkan dengan hotel atau resort, dengan satu hingga beberapa kamar tidur, dapur, ruang tamu, dan area outdoor seperti taman atau halaman. Mereka cocok untuk wisatawan yang ingin merasakan kehidupan desa atau menghabiskan waktu dalam ketenangan alam.</p>
+
+<p>Villa: Villa adalah akomodasi mewah yang biasanya berdiri sendiri dan menawarkan privasi yang tinggi. Mereka seringkali dilengkapi dengan fasilitas lengkap seperti kolam renang pribadi, taman tropis, dapur lengkap, ruang makan, dan ruang keluarga. Villa bisa berukuran besar dengan beberapa kamar tidur, sehingga cocok untuk keluarga atau kelompok yang ingin tinggal bersama. Mereka terletak di lokasi eksklusif, seperti pantai atau pegunungan, dan menawarkan pengalaman liburan yang mewah dan intim.</p>
+
+<p>Ketika memilih jenis akomodasi, penting untuk mempertimbangkan preferensi pribadi, anggaran, lokasi, fasilitas, dan pengalaman yang diinginkan. Hotel, bungalow, resort, cottage, dan villa semuanya memiliki keunikannya masing-masing, dan akan memberikan pengalaman menginap yang berbeda kepada para tamu.</p>',
                 'keywords' => 'perbedaan, hotel, bungalow, resort, cottage, villa, akomodasi, liburan, penginapan',
                 'meta_desc' => 'Temukan perbedaan antara hotel, bungalow, resort, cottage, dan villa dalam artikel ini. Dapatkan pemahaman yang lebih baik tentang jenis-jenis akomodasi ini dan pilihlah yang sesuai dengan preferensi liburan Anda',
-                'reads' => 13,
+                'reads' => 26,
                 'created_at' => '2023-07-11 11:36:33',
-                'updated_at' => '2023-07-12 08:21:17',
+                'updated_at' => '2023-07-17 21:10:50',
                 'deleted_at' => NULL,
             ),
             5 => 
@@ -214,9 +194,9 @@ class PostsTableSeeder extends Seeder
 <p>Pandan View Mandeh adalah tempat yang memikat di Puncak Mandeh, Sumatera Barat, yang menawarkan pemandangan spektakuler dan pengalaman liburan yang tak terlupakan. Nikmati keindahan alam yang menakjubkan di Pandan View Mandeh, sambil menjelajahi aktivitas seru di Puncak Mandeh dan menikmati pesona Mandeh yang indah di sekitarnya. Jelajahi dan rasakan pesona Puncak Mandeh yang memukau, dan buat liburan Anda menjadi pengalaman yang tak terlupakan.</p>',
                 'keywords' => 'Pandan View Mandeh, Puncak Mandeh, keindahan alam, pemandangan spektakuler, liburan, destinasi wisata, Mandeh',
                 'meta_desc' => 'Temukan keindahan alam yang menakjubkan di Pandan View Mandeh, puncak tertinggi di Mandeh yang menawarkan pemandangan spektakuler dan pengalaman liburan yang tak terlupakan. Jelajahi destinasi wisata alam yang menakjubkan ini dan rasakan pesona Puncak Mandeh.',
-                'reads' => 0,
+                'reads' => 13,
                 'created_at' => '2023-07-12 08:20:32',
-                'updated_at' => '2023-07-12 08:20:32',
+                'updated_at' => '2023-07-17 21:09:10',
                 'deleted_at' => NULL,
             ),
             6 => 
@@ -244,9 +224,83 @@ class PostsTableSeeder extends Seeder
 <p>Pariwisata adalah cara yang indah untuk menjelajahi dunia, merayakan keajaiban alam, dan memahami kekayaan budaya yang ada di berbagai tempat. Melalui perjalanan, kita dapat menemukan tempat-tempat menakjubkan, merasakan budaya yang beragam, dan menciptakan kenangan tak terlupakan. Jadi, jadilah seorang pelancong yang berani, mulailah merencanakan petualangan Anda, dan nikmati setiap momen dalam perjalanan wisata Anda.</p>',
                 'keywords' => 'pariwisata, keajaiban alam, kekayaan budaya, menjelajahi dunia, tempat-tempat menakjubkan, budaya yang beragam, kenangan tak terlupakan, perjalanan wisata.',
                 'meta_desc' => 'Temukan keindahan dan kekayaan budaya dunia melalui pariwisata. Artikel ini akan membawa Anda dalam perjalanan untuk menjelajahi tempat-tempat menakjubkan, merasakan budaya yang beragam, dan menciptakan kenangan tak terlupakan di perjalanan wisata Anda.',
-                'reads' => 0,
+                'reads' => 15,
                 'created_at' => '2023-07-12 08:24:24',
-                'updated_at' => '2023-07-12 08:24:24',
+                'updated_at' => '2023-07-17 21:09:33',
+                'deleted_at' => NULL,
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'category_id' => 2,
+                'user_id' => 1,
+                'cover' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1689211794/PandanViewMandeh/114337353_u8a1zb.jpg',
+                'title' => 'Menguasai Sales dan Marketing di Industri Pariwisata: Strategi Sukses untuk Menggaet Pengunjung dan Meningkatkan Penjualan',
+                'slug' => 'menguasai-sales-dan-marketing-di-industri-pariwisata-strategi-sukses-untuk-menggaet-pengunjung-dan-meningkatkan-penjualan',
+                'desc' => '<p>Industri pariwisata merupakan salah satu sektor yang terus berkembang dan menawarkan peluang bisnis yang menarik. Dalam menghadapi persaingan yang semakin ketat, penting bagi para pelaku usaha pariwisata untuk menguasai strategi sales dan marketing yang efektif. Dengan begitu, mereka dapat menggaet pengunjung dan meningkatkan penjualan secara signifikan.</p>
+
+<p>Pertama-tama, langkah pertama dalam membangun strategi sales dan marketing yang sukses adalah memahami target pasar Anda. Identifikasi segmen pengunjung yang paling cocok dengan destinasi pariwisata yang Anda tawarkan. Apakah Anda menargetkan wisatawan domestik atau internasional? Apakah destinasi Anda lebih cocok untuk keluarga, pasangan, atau wisatawan petualang? Dengan memahami target pasar Anda, Anda dapat menyesuaikan strategi pemasaran Anda agar lebih efektif dalam menarik perhatian mereka.</p>
+
+<p>Selanjutnya, fokuslah pada promosi yang kreatif dan terarah. Manfaatkan kekuatan media sosial dan platform online untuk memperkenalkan destinasi pariwisata Anda kepada khalayak yang lebih luas. Gunakan konten visual yang menarik, cerita inspiratif, dan testimoni pengunjung yang puas untuk membangun kepercayaan dan minat pada destinasi Anda. Jangan lupa untuk berkolaborasi dengan influencer atau pihak terkait lainnya yang dapat membantu memperluas jangkauan promosi Anda.</p>
+
+<p>Selain itu, berikan nilai tambah kepada pengunjung potensial. Tawarkan paket wisata yang menarik, diskon khusus, atau pengalaman unik yang sulit ditolak oleh calon pengunjung. Jangan ragu untuk menjalin kemitraan dengan penyedia layanan transportasi, hotel, atau restoran setempat guna menciptakan paket yang lebih komprehensif dan menarik.</p>
+
+<p>Terakhir, jangan lupakan pentingnya memonitor dan menganalisis hasil dari strategi sales dan marketing Anda. Gunakan alat analitik dan pengukuran yang tepat untuk melacak sejauh mana upaya pemasaran Anda berhasil. Identifikasi strategi yang paling efektif dan terus lakukan perbaikan serta penyesuaian sesuai dengan tren dan kebutuhan pasar yang berkembang.</p>
+
+<p>Dalam dunia yang penuh dengan pilihan destinasi pariwisata, menguasai strategi sales dan marketing yang efektif adalah kunci sukses dalam menarik pengunjung dan meningkatkan penjualan. Dengan mengidentifikasi target pasar, mempromosikan destinasi dengan kreatif, memberikan nilai tambah kepada pengunjung, dan secara terus-menerus menganalisis hasil, Anda dapat mencapai kesuksesan dalam industri pariwisata yang kompetitif ini.</p>',
+                'keywords' => 'sales marketing pariwisata, strategi pemasaran pariwisata, meningkatkan penjualan pariwisata, target pasar pariwisata, promosi pariwisata',
+                'meta_desc' => 'Pelajari strategi sukses dalam sales dan marketing di industri pariwisata. Temukan cara efektif untuk menggaet pengunjung, meningkatkan penjualan, dan mempromosikan destinasi pariwisata kepada target pasar yang tepat.',
+                'reads' => 11,
+                'created_at' => '2023-07-13 08:30:06',
+                'updated_at' => '2023-07-17 21:08:32',
+                'deleted_at' => NULL,
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'category_id' => 4,
+                'user_id' => 1,
+                'cover' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1689214097/PandanViewMandeh/Templet_Mancode__3_H1uYzkM.2e16d0ba.fill-1200x800_kqrjtt.jpg',
+                'title' => 'Keindahan Lautan yang Menakjubkan: Eksplorasi Gugusan Mandeh di Sumatera Barat',
+                'slug' => 'keindahan-lautan-yang-menakjubkan-eksplorasi-gugusan-mandeh-di-sumatera-barat',
+                'desc' => '<p>Gugusan Mandeh di Sumatera Barat adalah destinasi wisata bahari yang memikat hati dan menawarkan keindahan yang tak tergoyahkan. Terletak di pantai barat pulau Sumatera, Gugusan Mandeh menawarkan pesona laut biru yang memukau, pantai berpasir putih yang menggoda, dan kekayaan alam bawah laut yang luar biasa.</p>
+
+<p>Salah satu daya tarik utama Gugusan Mandeh adalah keindahan lautnya. Airnya yang jernih dan biru menawarkan pengalaman berenang dan snorkeling yang luar biasa. Anda dapat melihat keindahan terumbu karang yang indah dengan berbagai jenis ikan dan biota laut lainnya. Jika Anda pecinta diving, Gugusan Mandeh juga menyediakan tempat diving yang menakjubkan. Menyelam di perairan ini akan memberikan Anda pemandangan yang spektakuler, seperti terumbu karang yang berwarna-warni, kehidupan laut yang berlimpah, dan mungkin Anda beruntung bisa melihat penyu atau hiu.</p>
+
+<p>Selain aktivitas bahari, Gugusan Mandeh juga memiliki pantai-pantai yang mempesona. Pantai-pantai berpasir putih dengan air laut yang tenang dan biru menyediakan tempat yang sempurna untuk bersantai dan menikmati keindahan alam. Anda dapat berjemur di bawah sinar matahari, bermain di pasir putih, atau hanya menikmati suara ombak yang menenangkan.</p>
+
+<p>Selama kunjungan Anda ke Gugusan Mandeh, jangan lewatkan untuk menjelajahi pulau-pulau kecil yang tersebar di sekitar wilayah ini. Pulau-pulau ini menawarkan pemandangan yang menakjubkan, hutan hijau yang rimbun, dan pantai yang eksotis. Anda dapat melakukan perjalanan menggunakan perahu tradisional atau menyewa kapal wisata untuk menjelajahi keindahan pulau-pulau terpencil ini.</p>
+
+<p>Gugusan Mandeh merupakan destinasi wisata bahari yang masih tersembunyi, sehingga Anda akan menemukan ketenangan dan keindahan alam yang masih alami di sini. Jika Anda mencari liburan yang menyegarkan dan mempesona, Gugusan Mandeh adalah pilihan yang tepat. Nikmati keindahan laut yang memukau, eksplorasi diving yang menakjubkan, dan liburan yang tak terlupakan di gugusan wisata bahari yang menakjubkan ini.</p>',
+                'keywords' => 'Gugusan Mandeh, pariwisata bahari Sumatera Barat, keindahan laut Gugusan Mandeh, destinasi wisata bahari Sumatera Barat, diving di Mandeh',
+                'meta_desc' => 'Temukan keindahan tak tergoyahkan Gugusan Mandeh di Sumatera Barat. Nikmati pesona laut biru yang memukau, eksplorasi diving yang menakjubkan, dan liburan yang tak terlupakan di destinasi wisata bahari tersembunyi ini.',
+                'reads' => 8,
+                'created_at' => '2023-07-13 08:57:04',
+                'updated_at' => '2023-07-17 21:08:29',
+                'deleted_at' => NULL,
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'category_id' => 1,
+                'user_id' => 1,
+                'cover' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1689214033/PandanViewMandeh/95277_fp7zbc.jpg',
+                'title' => 'Misteri Menyelubungi Rumah Gadang Mande Rubiyah: Keajaiban Arsitektur dengan Kisah yang Tersimpan',
+                'slug' => 'misteri-menyelubungi-rumah-gadang-mande-rubiyah-keajaiban-arsitektur-dengan-kisah-yang-tersimpan',
+                'desc' => '<p>Rumah Gadang Mande Rubiyah, dengan keindahan dan keagungannya, menyimpan misteri yang menggugah imajinasi dan menantang rasa ingin tahu kita. Di balik arsitektur tradisional Minangkabau yang memikat, ada cerita-cerita misterius yang tersembunyi dan legenda yang terus hidup di kalangan masyarakat Sumatera Barat.</p>
+
+<p>Satu misteri yang mengelilingi Rumah Gadang Mande Rubiyah adalah asal-usulnya. Meskipun memiliki sejarah yang panjang dan kaya, tidak ada catatan pasti tentang kapan dan oleh siapa Rumah Gadang ini dibangun. Beberapa cerita mengatakan bahwa Rumah Gadang Mande Rubiyah telah ada sejak zaman kerajaan Minangkabau, sedangkan versi lain mengaitkannya dengan legenda dan mitos yang berhubungan dengan para leluhur Minangkabau. Keberadaan Rumah Gadang ini menjadi misteri yang menarik, meninggalkan kita dengan banyak tanya.</p>
+
+<p>Selain itu, ada juga cerita-cerita misterius yang terkait dengan setiap elemen dan detail di dalam Rumah Gadang. Ukiran-ukiran halus pada tiang dan atapnya diyakini memiliki makna simbolis yang dalam, tetapi artinya masih menjadi rahasia bagi banyak orang. Ada juga cerita tentang ruangan tersembunyi atau jalan bawah tanah yang konon digunakan oleh pendahulu sebagai tempat perlindungan atau untuk tujuan yang lebih misterius. Beberapa cerita menceritakan tentang suara-suara aneh atau penampakan gaib yang dikaitkan dengan Rumah Gadang Mande Rubiyah.</p>
+
+<p>Legenda dan cerita misterius yang mengitarinya memberikan nuansa magis dan mengundang kita untuk menjelajahi dan mengeksplorasi lebih jauh. Meskipun misteri tersebut tidak dapat dipastikan kebenarannya, kehadiran cerita-cerita ini memberikan dimensi baru pada pengalaman kita dalam mengunjungi Rumah Gadang Mande Rubiyah.</p>
+
+<p>Jika Anda pecinta misteri dan sejarah, Rumah Gadang Mande Rubiyah adalah destinasi yang menarik untuk dijelajahi. Nikmati keindahan arsitektur tradisional Minangkabau yang megah sambil membiarkan cerita-cerita misterius membawa Anda ke dalam dunia yang berbeda. Bersiaplah untuk merasakan sensasi keajaiban yang tersembunyi di balik dinding Rumah Gadang ini dan berimajinasi tentang cerita-cerita yang mengalir dalam setiap ruangnya.</p>',
+                'keywords' => 'Misteri Rumah Gadang Mande Rubiyah, cerita misteri Sumatera Barat, keajaiban arsitektur tradisional Minangkabau, destinasi wisata misterius, legenda Rumah Gadang',
+                'meta_desc' => 'Temukan misteri yang menyelubungi Rumah Gadang Mande Rubiyah, sebuah keajaiban arsitektur tradisional Minangkabau di Sumatera Barat. Jelajahi cerita misterius dan legenda yang tersembunyi di balik keindahan dan keagungan Rumah Gadang ini.',
+                'reads' => 13,
+                'created_at' => '2023-07-13 09:03:34',
+                'updated_at' => '2023-07-17 21:07:12',
                 'deleted_at' => NULL,
             ),
         ));

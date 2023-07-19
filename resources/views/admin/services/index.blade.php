@@ -270,7 +270,7 @@
 
 
     $(document).ready(function() {
-        table.ajax.url('/services').load();
+        table.ajax.url('/information/services').load();
         console.log('mana neeee');
 
         table.buttons().container()

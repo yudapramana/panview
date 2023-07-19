@@ -255,7 +255,7 @@
 
 
     $(document).ready(function() {
-        table.ajax.url('/posts').load();
+        table.ajax.url('/blog/posts').load();
         console.log('mana neeee');
 
         table.buttons().container()

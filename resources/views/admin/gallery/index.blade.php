@@ -238,7 +238,7 @@
 
 
     $(document).ready(function() {
-        table.ajax.url('/galleries').load();
+        table.ajax.url('/information/galleries').load();
         console.log('mana neeee');
 
         table.buttons().container()

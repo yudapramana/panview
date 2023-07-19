@@ -59,6 +59,16 @@ class TagsTableSeeder extends Seeder
                 'created_at' => '2023-07-11 11:34:42',
                 'updated_at' => '2023-07-11 11:34:42',
             ),
+            4 => 
+            array (
+                'id' => 6,
+                'name' => 'Sales and Marketing',
+                'slug' => 'sales-and-marketing',
+                'keywords' => 'Sales and Marketing, Sales, Marketing',
+                'meta_desc' => 'Sales and Marketing, Sales, Marketing',
+                'created_at' => '2023-07-13 08:49:30',
+                'updated_at' => '2023-07-13 08:49:30',
+            ),
         ));
         
         

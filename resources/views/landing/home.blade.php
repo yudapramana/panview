@@ -40,6 +40,14 @@
         font-weight: 700;
     }
 
+    .position-relative {
+        position: relative !important;
+    }
+
+    .bg-white {
+        background-color: #fafafa !important;
+    }
+
 </style>
 @endsection
 
@@ -79,7 +87,7 @@
                             </div>
 
                             <div class="pb16 pt16 s_btn text-right pt-2" data-name="Buttons">
-                                <a href="https://api.whatsapp.com/send?phone=6281210003536&text=Halo%20saya%20mengetahui%20anda%20dari%20web%20https%3A%2F%2Fpandanviewandeh.com.%0A%0ASaya%20mau%20memesan%20Kamar.%20Mohon%20info%20kamarnya" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
+                                <a href="https://api.whatsapp.com/send?phone=62811660358&text=Halo%20saya%20mengetahui%20anda%20dari%20web%20https%3A%2F%2Fpandanviewandeh.com.%0A%0ASaya%20mau%20memesan%20Kamar.%20Mohon%20info%20kamarnya" class="flat btn btn-secondary flat" data-original-title="" title="" aria-describedby="tooltip695437" style="font-size:small!important;">&nbsp;{{ __('messages.carousel.book') }}</a>
                                 <a href="/contact" class="btn btn-success flat flat pandanview" data-original-title="" title="" aria-describedby="tooltip296367" style="font-size:small!important;">{{ __('messages.carousel.contact') }}</a>
                             </div>
 
@@ -293,8 +301,9 @@
         <div class="container">
             <div class="row content align-item-center align-middle" style="align-items: center">
                 @if( ($key+1) % 2 == 0)
-                <div class="col-lg-6 pt-4 pt-lg-0">
-                    <img class="" src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
+                <div class="col-lg-6 pt-4 pt-lg-0 position-relative">
+                    <img width="100%" class="" src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
+                    <div class="tobe_animated bg-white position-absolute top-100 start-0 w-100 h-100" data-id="1"></div>
                 </div>
                 <div class="col-lg-6 pb-0 pt-0">
                     <h3>{{$service->{$titleLocale} }}</h3>
@@ -307,8 +316,9 @@
                     <p style="font-size: small; text-align:justify;">{!! nl2br($service->description) !!}</p>
                     <a style="font-size:smaller;" href="{!! '/' .isset($service->next_url) ? $service->next_url : '' !!}" class="btn btn-success" data-original-title="" title="" aria-describedby="tooltip362623">Selengkapnya</a>
                 </div>
-                <div class="col-lg-6 pt-4 pt-lg-0">
-                    <img class="" src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
+                <div class="col-lg-6 pt-4 pt-lg-0 position-relative">
+                    <img width="100%" class="" src="{{$service->square_cover_image}}" class="img img-fluid mx-auto" alt="Odoo • Text and Image" data-original-title="" title="" aria-describedby="tooltip617481" style="">
+                    <div class="tobe_animated bg-white position-absolute top-100 start-0 w-100 h-100" data-id="1"></div>
                 </div>
                 @endif
             </div>
@@ -320,7 +330,7 @@
         <div class="container">
             <div class="row content align-item-center align-middle" style="align-items: center">
                 <div class="col-lg-6 pt-4 pt-lg-0">
-                    <iframe width="530" height="315" src="https://www.youtube.com/embed/bdv1XyiLFW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bdv1XyiLFW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     {{-- <iframe class="img img-fluid mx-auto" style="width: 100%; height:380px;" src="//www.youtube.com/embed/gzJEYkoWHro?autoplay=0&amp;rel=0&amp;controls=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe> --}}
                 </div>
                 <div class="col-lg-6 pb-0 pt-0">
@@ -501,5 +511,26 @@
 
 @section('_scripts')
 
+<script>
+    const animateList = [].slice.call(document.querySelectorAll('.tobe_animated'))
+    animateList.map(function(animateEl) {
+        new Waypoint({
+            element: animateEl
+            , offset: '130%'
+            , handler: function(direction) {
+                //https://stackoverflow.com/a/56914528/3929620
+                animateEl.classList.add('animate__animated', 'animate__slideInDown');
+
+                animateEl.addEventListener('animationend', () => {
+                    // do something
+                    animateEl.style.opacity = 0;
+                });
+
+                // this.destroy()
+            }
+        , })
+    })
+
+</script>
 
 @endsection

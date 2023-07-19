@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'id',
 
     /*
     |--------------------------------------------------------------------------
@@ -178,6 +178,7 @@ return [
         Yajra\DataTables\DataTablesServiceProvider::class,
         Orangehill\Iseed\IseedServiceProvider::class,
         Shetabit\Visitor\Provider\VisitorServiceProvider::class,
+        OwenIt\Auditing\AuditingServiceProvider::class,
 
 
     ],

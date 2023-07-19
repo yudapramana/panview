@@ -242,7 +242,7 @@
 
 
     $(document).ready(function() {
-        table.ajax.url('/testimonies').load();
+        table.ajax.url('/information/testimonies').load();
         console.log('mana neeee');
 
         table.buttons().container()

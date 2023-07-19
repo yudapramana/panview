@@ -18,40 +18,24 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('role_user')->truncate();
-        DB::table('users')->truncate();
-        DB::table('roles')->truncate();
+        
 
         
         $data = [
-            ['name' => 'Admin Pandan View', 'username' => 'adminpandanview', 'email' => 'pandanviewmandeh@gmail.com', 'password' => Hash::make('superadmin'), 'current_role_id' => 1, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
-            ['name' => 'Super Administrator', 'username' => 'superadmin', 'email' => 'superadmin@pandanview.com', 'password' => Hash::make('superadmin'), 'current_role_id' => 1, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
-            ['name' => 'Administrator', 'username' => 'admin', 'email' => 'admin@pandanview.com', 'password' => Hash::make('admin@123'), 'current_role_id' => 2, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
-            ['name' => 'Operator', 'username' => 'operator', 'email' => 'operator@pandanview.com', 'password' => Hash::make('operator@123'), 'current_role_id' => 3, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()]
+            ['name' => 'Super Administrator', 'username' => 'superadmin', 'email' => 'pramanayuda772@gmail.com', 'password' => Hash::make('1000kali'), 'current_role_id' => 1, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
+            ['name' => 'Owner Pandan View', 'username' => 'ownerpandanview', 'email' => 'owner@pandanviewmandeh.com', 'password' => Hash::make('ownerpandan'), 'current_role_id' => 2, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
+            ['name' => 'Admin Pandan View', 'username' => 'adminpandanview', 'email' => 'admin@pandanviewmandeh.com', 'password' => Hash::make('adminpandan'), 'current_role_id' => 2, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
+            ['name' => 'Pindo Marketing', 'username' => 'pindopandanview', 'email' => 'pindo@pandanviewmandeh.com', 'password' => Hash::make('pindo@123'), 'current_role_id' => 2, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()],
+            ['name' => 'Pandu Marketing', 'username' => 'pandupandanview', 'email' => 'pandu@pandanviewmandeh.com', 'password' => Hash::make('pandu@123'), 'current_role_id' => 3, 'created_at' =>  \Carbon\Carbon::now(), 'updated_at' => \Carbon\Carbon::now()]
         ];
 
 
-        DB::table('users')->insert($data);
-
-
-        DB::table('roles')->insert([
-            ['name' => 'Super Administrator'],
-            ['name' => 'Administrator'],
-            ['name' => 'Operator'],
-        ]);
-
-        DB::table('role_user')->insert([
-            ['user_id' => '1', 'role_id' => '1'],
-            ['user_id' => '1', 'role_id' => '2'],
-            ['user_id' => '1', 'role_id' => '3'],
-            ['user_id' => '2', 'role_id' => '1'],
-            ['user_id' => '2', 'role_id' => '2'],
-            ['user_id' => '2', 'role_id' => '3'],
-            ['user_id' => '3', 'role_id' => '3']
-        ]);
-
-        Artisan::call('translations:import');
-
+        foreach ($data as $key => $item) {
+            \App\Models\User::firstOrCreate(
+                ['username' => $item['username']],
+                $item
+            );
+        }
 
         
     }

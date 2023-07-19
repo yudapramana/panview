@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
 
         $this->call(UsersTableSeeder::class);
         $this->call(ServicesTableSeeder::class);
+        $this->call(RolesTableSeeder::class);
 
         DB::statement('SET FOREIGN_KEY_CHECKS=1');
         $this->call(ProductsTableSeeder::class);
@@ -29,5 +30,10 @@ class DatabaseSeeder extends Seeder
         $this->call(CategoriesTableSeeder::class);
         $this->call(PostsTableSeeder::class);
         $this->call(TestimoniesTableSeeder::class);
+        $this->call(ItemsTableSeeder::class);
+        $this->call(ReservationsTableSeeder::class);
+        $this->call(SlotsTableSeeder::class);
+        $this->call(PostTagTableSeeder::class);
+        $this->call(PostViewsTableSeeder::class);
     }
 }

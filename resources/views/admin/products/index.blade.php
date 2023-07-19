@@ -243,7 +243,7 @@
 
 
     $(document).ready(function() {
-        table.ajax.url('/products').load();
+        table.ajax.url('/information/products').load();
         console.log('mana neeee');
 
         table.buttons().container()

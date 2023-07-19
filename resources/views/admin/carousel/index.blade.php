@@ -243,7 +243,7 @@
 
 
     $(document).ready(function() {
-        table.ajax.url('/carousels').load();
+        table.ajax.url('/information/carousels').load();
         console.log('mana neeee');
 
         table.buttons().container()

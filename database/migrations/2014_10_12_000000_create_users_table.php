@@ -19,9 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('username')->unique();
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('plain_password')->nullable();
             $table->enum('block', ['no', 'yes'])->default('no');
             $table->enum('status', ['inactive', 'active'])->default('active');
             $table->string('nip', 20)->nullable();
+            $table->string('no_hp')->nullable();
             $table->text('profile_photo')->nullable();
             $table->integer('current_role_id')->nullable();
             $table->rememberToken();
