@@ -18,7 +18,7 @@ class HomeController extends Controller
         $carousels = \App\Models\Carousel::where('active', 'yes')->get();
         $recent_posts = \App\Models\Post::orderBy('created_at', 'DESC')->take(5)->get();
         return view('landing.home', [
-            'title' => 'Pandan View Mandeh - Resort Cafe dan Cottage untuk Liburan Keluarga',
+            'title' => 'Pandan View Mandeh - Villa Cafe dan Cottage Resort untuk Liburan Keluarga',
             'accountfb' => 'pandanviewmandeh',
             'account' => 'pandanviewmandeh',
             'channel' =>  '@pandanviewmandehofficial4919',

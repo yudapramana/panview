@@ -84,6 +84,8 @@ class ReservationController extends Controller
                                 <label for="unit_pengolah" class="form-label fw-bold">Filter Bulan</label>
 
                                 <select class="form-control select2 select2-filter yearmonth_filter" id="yearmonth_filter">';
+            $html_filter .= '<option value="">-- Pilih Bulan --</option>';
+
             foreach ($dates as $key => $item) {
                 if ($item->yearmonth == $yearMonth) {
                     $html_filter .= '<option value="' . $item->yearmonth . '" selected>' . $item->month_name . ' ' . $item->year . '</option>';
@@ -188,6 +190,7 @@ class ReservationController extends Controller
                                 <label for="unit_pengolah" class="form-label fw-bold">Filter Bulan</label>
 
                                 <select class="form-control select2 select2-filter yearmonth_filter" id="yearmonth_filter">';
+            $html_filter .= '<option value="">-- Pilih Bulan --</option>';
             foreach ($dates as $key => $item) {
                 if ($item->yearmonth == $yearMonth) {
                     $html_filter .= '<option value="' . $item->yearmonth . '" selected>' . $item->month_name . ' ' . $item->year . '</option>';
@@ -311,7 +314,7 @@ class ReservationController extends Controller
                     $res->auditEvent = 'Perubahan Cottage';
                     $res->isCustomEvent = true;
                     $res->auditCustomOld = [
-                        'Room' => implode(', ', $oldValues)  
+                        'Room' => implode(', ', $oldValues)
                     ];
                     $res->auditCustomNew = [
                         'Room' => implode(', ', $newValues)
