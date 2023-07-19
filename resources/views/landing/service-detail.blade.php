@@ -6,7 +6,7 @@
 <!-- Primary Meta Tags -->
 <title>{{ $service->name }}</title>
 <meta name="title" content="PANDAN VIEW MANDEH - {{ $service->name }}">
-<meta name="description" content="{{ $service->desc }}">
+<meta name="description" content="{{ $service->description }}">
 <meta name="keywords" content="{{ $service->name }}">
 <meta name="author" content="Pandan View Mandeh" />
 <meta name="robots" content="all" />
@@ -19,14 +19,14 @@
 
 <meta property="og:type" content=article />
 <meta property="og:url" content="{{ URL::current() }}">
-<meta property="og:description" content="{{ $service->desc }}">
+<meta property="og:description" content="{{ $service->description }}">
 <meta property="og:image" content="{{ $service->cover_image_url }}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="{{ URL::current() }}">
 <meta property="twitter:title" content="PANDAN VIEW MANDEH - {{ $service->name }}">
-<meta property="twitter:description" content="{{ $service->desc }}">
+<meta property="twitter:description" content="{{ $service->description }}">
 <meta property="twitter:image" content="{{ $service->cover_image_url }}">
 <meta name="twitter:site" content="{{ URL::current() }}" />
 
