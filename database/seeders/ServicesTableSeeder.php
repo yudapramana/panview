@@ -41,7 +41,7 @@ Melihat ke arah pantai, Anda akan terpesona oleh garis pantai yang indah. Tak ha
             ),
             1 => 
             array (
-                'id_service' => 2,
+                'id_service' => 3,
                 'created_at' => '2023-06-20 11:50:14',
                 'updated_at' => '2023-07-06 17:30:10',
                 'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687261764/PandanViewMandeh/t4knnfc6v9rqq9nryp1f_jo7squ.jpg',
@@ -69,7 +69,7 @@ Melihat ke arah pantai, Anda akan terpesona oleh garis pantai yang indah. Tak ha
             ),
             2 => 
             array (
-                'id_service' => 3,
+                'id_service' => 2,
                 'created_at' => '2023-06-20 11:53:14',
                 'updated_at' => '2023-07-06 17:34:45',
                 'cover_image_url' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1687261967/PandanViewMandeh/_ROOM_lm3lay.jpg',
