@@ -16,7 +16,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/migrate-fresh', function () {
-    Artisan::call('vendor:publish');
+    // Artisan::call('vendor:publish');
     Artisan::call('optimize:clear');
     Artisan::call('config:clear');
     Artisan::call('migrate:fresh', ['--seed' => true]);
