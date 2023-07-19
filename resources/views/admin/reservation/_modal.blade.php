@@ -64,21 +64,16 @@
                     </div>
 
 
-                    {{-- @foreach($items as $key => $item) --}}
-                    {{-- <div class="col">
-                        <label for="{{ 'id_item_' . $item->id_item}}" class="form-label">{{$item->name}}</label>
-                    <input type="number" class="form-control" id="{{ 'id_item_' . $item->id_item}}" name="{{ 'id_item_' . $item->id_item}}">
-            </div> --}}
-            {{-- @endforeach --}}
-
-            <div class="col-md-6">
-                <label for="notes" class="form-label">notes</label>
-
-                <textarea class="form-control" name="notes" id="notes" cols="10" rows="7"></textarea>
-            </div>
 
 
-            {{-- <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="notes" class="form-label">notes</label>
+
+                        <textarea class="form-control" name="notes" id="notes" cols="10" rows="7"></textarea>
+                    </div>
+
+
+                    {{-- <div class="row mb-3">
                                 <label for="inputText" class="col-sm-2 col-form-label">Nama Pelanggan</label>
                                 <div class="col-sm-10">
                                     <input type="text" class="form-control" id="name" name="name">
@@ -109,14 +104,51 @@
 
 
 
-            </form>
+                </form>
 
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button id="submitGroupBtn" type="button" class="btn btn-primary">Save
-                changes</button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="submitGroupBtn" type="button" class="btn btn-primary">Save
+                    changes</button>
+            </div>
         </div>
     </div>
 </div>
+
+
+
+<div class="modal fade" id="lihatHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        {{ csrf_field() }}
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Log Perubahan Data </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modalBox">
+
+
+                <table class='table table-bordered display' id="history" style="width:100%; font-size:11pt!important;table=layout:fixed;">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            {{-- <th scope="col">Model</th> --}}
+                            <th scope="col">Time</th>
+                            <th scope="col">User</th>
+                            <th scope="col">Action</th>
+                            <th scope="col">Old Values</th>
+                            <th scope="col">New Values</th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="submitGroupBtn" type="button" class="btn btn-primary">Save
+                    changes</button>
+            </div>
+        </div>
+    </div>
 </div>

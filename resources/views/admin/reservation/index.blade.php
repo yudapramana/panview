@@ -655,6 +655,54 @@
         }
     , });
 
+    var tableLog = $('#history').DataTable({
+        processing: true
+        , orderable: false
+        , searching: false
+        , paging: false
+        , sort: false
+        , order: false
+        , lengthChange: false
+        , responsive: false
+        , autoWidth: false
+        , scrollX: true
+        , sScrollXInner: "100%"
+        , lengthMenu: [
+            [10, 25, 50, -1]
+            , ['10 rows', '25 rows', '50 rows', 'Show all']
+        ]
+        , iDisplayLength: 50
+        , columns: [{
+                data: 'DT_RowIndex'
+                , name: 'DT_RowIndex'
+                , className: 'text-center align-middle'
+            }
+            , {
+                data: 'created_at'
+                , name: 'created_at'
+                , className: 'align-middle'
+            }, {
+                data: 'user.name'
+                , name: 'user.name'
+                , className: 'align-middle'
+            }
+            , {
+                data: 'event'
+                , name: 'event'
+                , className: 'text-center align-middle bolderfont'
+            }, {
+                data: 'c_old_values'
+                , name: 'c_old_values'
+                , className: 'align-middle'
+            }
+            , {
+                data: 'c_new_values'
+                , name: 'c_new_values'
+                , className: 'align-middle'
+            }
+        ]
+    , });
+
     // Order by the grouping
     $('#example tbody').on('click', 'tr.group', function() {
         var currentOrder = table.order()[0];
@@ -714,7 +762,7 @@
         $(document).on("click", "#addBtn", function() {
             var title = $(this).data('title');
             $("#judul-modal").html(title);
-            $("#id_gallery").val('');
+            $("#id_reservation").val('');
 
             $('#customer_name').val('');
             $('#customer_phone').val('');
@@ -749,6 +797,11 @@
                 $("input[name='id_item[" + item.id_item + "]']").val(item.total_room);
             });
 
+        });
+
+        $(document).on("click", "#logBtn", function() {
+            var idRes = $(this).data('id_reservation');
+            tableLog.ajax.url('/audits/fetch/' + idRes).load();
         });
 
 

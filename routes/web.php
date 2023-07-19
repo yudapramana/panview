@@ -237,4 +237,7 @@ Route::get('/reservation/audits/{id_reservation}', function ($id_reservation) {
     return $all;
 });
 
+
+
 Route::get('/audits', [\App\Http\Controllers\Admin\AuditController::class, 'index'])->name('audits.index');
+Route::get('/audits/fetch/{id_reservation}', [\App\Http\Controllers\Admin\AuditController::class, 'fetch'])->name('audits.fetch');

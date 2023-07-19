@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
-use OwenIt\Auditing\Contracts\Auditable;
 
 
-class Slot extends Model implements Auditable
+class Slot extends Model 
 {
     use HasFactory, SoftDeletes;
-    use \OwenIt\Auditing\Auditable;
 
     protected $table = "slots";
 

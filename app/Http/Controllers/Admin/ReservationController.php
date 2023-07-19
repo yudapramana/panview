@@ -9,7 +9,9 @@ use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 use Carbon\Carbon;
 use DB;
-use Event;
+use Illuminate\Support\Facades\Event;
+use OwenIt\Auditing\Events\AuditCustom;
+
 
 class ReservationController extends Controller
 {
@@ -66,7 +68,8 @@ class ReservationController extends Controller
                     $btn .= '<button id="destroyBtn" type="button" class="btn btn-link p-0 m-0" data-bs-id_reservation="' . $res->id_reservation  . '" data-id_reservation="' .  $res->id_reservation  . '"><i class="bi bi-trash-fill" style="color:red;"></i></button>&nbsp;';
                     // }
 
-                    $btn .= '<a id="historyBtn" type="button" class="btn btn-link p-0 m-0" href="/reservation/audits/' . $res->id_reservation  . '"><i class="bi bi-exclamation-square-fill" style="color:sienna;"></i></a>';
+                    $btn .= '<a id="logBtn" type="button" class="btn btn-link p-0 m-0" data-bs-toggle="modal" data-bs-target="#lihatHistory" data-bs-title="Lihat Log" data-title="Lihat Log Perubahan" data-bs-id_reservation="' . $res->id_reservation  . '" data-id_reservation="' .  $res->id_reservation  . '"><i class="bi bi-exclamation-square-fill" style="color:sienna;"></i></a>';
+                    // $btn .= '<a id="historyBtn" type="button" class="btn btn-link p-0 m-0" href="/reservation/audits/' . $res->id_reservation  . '"><i class="bi bi-exclamation-square-fill" style="color:sienna;"></i></a>';
 
                     return $btn;
                 })
@@ -171,7 +174,6 @@ class ReservationController extends Controller
                     $btn .= '<button id="restoreBtn" type="button" class="btn btn-link p-0 m-0" data-bs-id_reservation="' . $res->id_reservation  . '" data-id_reservation="' .  $res->id_reservation  . '"><i class="bi bi-reply-all-fill" style="color:red;"></i></button>&nbsp;';
                     // }
 
-                    $btn .= '<a id="historyBtn" type="button" class="btn btn-link p-0 m-0" href="/reservation/audits/' . $res->id_reservation  . '"><i class="bi bi-exclamation-square-fill" style="color:sienna;"></i></a>';
 
                     return $btn;
                 })
@@ -310,14 +312,21 @@ class ReservationController extends Controller
 
 
                 if (!$bolReal) {
+                    $res->fresh();
 
-                    $res->auditEvent = 'Perubahan Cottage';
+                    $res->auditEvent = 'updated';
                     $res->isCustomEvent = true;
                     $res->auditCustomOld = [
-                        'Room' => implode(', ', $oldValues)
+                        'Lumbung' => $oldValues[0], 
+                        'Villa Family' => $oldValues[1],
+                        'Villa Apung' => $oldValues[2],
+                        'Hammock' => $oldValues[3],
                     ];
                     $res->auditCustomNew = [
-                        'Room' => implode(', ', $newValues)
+                        'Lumbung' => $newValues[0], 
+                        'Villa Family' => $newValues[1],
+                        'Villa Apung' => $newValues[2],
+                        'Hammock' => $newValues[3],
                     ];
 
                     Event::dispatch(AuditCustom::class, [$res]);
