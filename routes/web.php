@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/migrate-fresh', function () {
+    Artisan::call('config:clear');
     Artisan::call('migrate:fresh', ['--seed' => true]);
 
     return 'Migration and seeding has been succeed, click <a href="/">here</a> to return to home page';
