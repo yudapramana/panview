@@ -178,8 +178,8 @@ return [
         Yajra\DataTables\DataTablesServiceProvider::class,
         Orangehill\Iseed\IseedServiceProvider::class,
         Shetabit\Visitor\Provider\VisitorServiceProvider::class,
-        Spatie\Permission\PermissionServiceProvider::class,
-        OwenIt\Auditing\AuditingServiceProvider::class,
+        // Spatie\Permission\PermissionServiceProvider::class,
+        // OwenIt\Auditing\AuditingServiceProvider::class,
 
 
     ],
