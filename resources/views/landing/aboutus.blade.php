@@ -19,7 +19,7 @@
 <meta property="og:image" content="{{ asset('sailor/img/logo.png') }}" />
 
 <meta property="og:type" content=website />
-<meta property="og:url" content="https://pandanviewmandeh.com" />
+<meta property="og:url" content="{{ URL::current() }}" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
@@ -30,9 +30,9 @@
 <meta property="twitter:url" content="{{ URL::current() }}">
 
 
-<link rel="canonical" href="https://pandanviewmandeh.com" />
-<link rel="alternate" hreflang="en-US" href="https://pandanviewmandeh.com" />
-<link rel="shortcut icon" type="image/png" href="https://pandanviewmandeh.com" />
+<link rel="canonical" href="{{ URL::current() }}" />
+<link rel="alternate" hreflang="en-US" href="{{ URL::current() }}" />
+<link rel="shortcut icon" type="image/png" href="{{ URL::current() }}" />
 
 <style>
     .all-services {

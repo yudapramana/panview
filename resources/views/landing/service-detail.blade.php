@@ -30,9 +30,9 @@
 <meta property="twitter:image" content="{{ $service->cover_image_url }}">
 <meta name="twitter:site" content="{{ URL::current() }}" />
 
-<link rel="canonical" href="https://pandanviewmandeh.com" />
-<link rel="alternate" hreflang="en-US" href="https://pandanviewmandeh.com" />
-<link rel="shortcut icon" type="image/png" href="https://pandanviewmandeh.com" />
+<link rel="canonical" href="{{ URL::current() }}" />
+<link rel="alternate" hreflang="en-US" href="{{ URL::current() }}" />
+<link rel="shortcut icon" type="image/png" href="{{ URL::current() }}" />
 
 
 <style>
