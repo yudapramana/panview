@@ -26,7 +26,7 @@
                 <li><a href="/gallery" @if (request()->segment(1) == 'gallery') class="active" @endif>{{ __('messages.menu.gallery') }}</a></li>
                 <li><a href="/blog" @if (request()->segment(1) == 'blog') class="active" @endif>{{ __('messages.menu.blog') }}</a></li>
                 <li><a href="/contact" @if (request()->segment(1) == 'contact') class="active" @endif>{{ __('messages.menu.contact') }}</a></li>
-                {{-- <li><a href="/login" @if (request()->segment(1) == 'login') class="active" @endif>{{ __('messages.menu.login') }}</a></li> --}}
+                <li><a href="/login" @if (request()->segment(1) == 'login') class="active" @endif>{{ __('messages.menu.login') }}</a></li>
 
 
                 <li class="dropdown"><a href="#"><span>{{ (session()->get('locale') == 'en') ? 'English' : 'Bahasa' }}</span> <i class="bi bi-chevron-down"></i></a>

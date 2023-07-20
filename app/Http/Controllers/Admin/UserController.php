@@ -33,7 +33,7 @@ class UserController extends Controller
                 ->addColumn('action', function ($user) {
                     $user = Auth::user();
                     $btn = '';
-                    if ($user->hasRole('super_administrator')) {
+                    if ($user->hasRole('super_administrator') || $user->hasRole('administrator')) {
                         $btn .= '<button id="editBtn" type="button" class="btn btn-sm btn-warning btn-xs" data-bs-toggle="modal" data-bs-target="#fModal" data-bs-title="Edit Data Pengguna" data-title="Edit Data Pengguna"><i class="bi bi-pencil-square"></i></button>&nbsp;';
                         $btn .= '<button id="destroyBtn" type="button" class="btn btn-sm btn-danger btn-xs" data-bs-user_id="'. $user->id  .'" data-user_id="'.  $user->id  .'"><i class="bi bi-trash-fill"></i></button>';
                     } else {
