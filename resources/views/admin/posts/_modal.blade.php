@@ -43,7 +43,7 @@
                             <div class="row mb-3">
                                 <label for="inputText" class="col-sm-2 col-form-label">Meta Description</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="meta_desc" name="meta_desc">
+                                    <textarea class="form-control" name="meta_desc" id="meta_desc" cols="30" rows="10"></textarea>
                                 </div>
                             </div>
 

@@ -82,6 +82,7 @@
                                     <td>{{ $audit->user->name }}</td>
                                     <td>{{ $audit->created_at }}</td>
                                     <td>
+                                        @if($audit->old_values)
                                         <table class="table">
                                             @foreach($audit->old_values as $attribute => $value)
                                             <tr>
@@ -90,8 +91,10 @@
                                             </tr>
                                             @endforeach
                                         </table>
+                                        @endif
                                     </td>
                                     <td>
+                                        @if($audit->new_values)
                                         <table class="table">
                                             @foreach($audit->new_values as $attribute => $value)
                                             <tr>
@@ -100,6 +103,7 @@
                                             </tr>
                                             @endforeach
                                         </table>
+                                        @endif
                                     </td>
                                 </tr>
                                 @endforeach

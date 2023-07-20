@@ -51,15 +51,15 @@
     }
 
     table.dataTable th {
-        font-size: 0.8em !important;
+        font-size: 0.75em !important;
     }
 
     table.dataTable td {
-        font-size: 0.8em !important;
+        font-size: 0.75em !important;
     }
 
     table.dataTable tr.dtrg-level-0 td {
-        font-size: 0.8em !important;
+        font-size: 0.75em !important;
     }
 
     tr.group,
@@ -183,7 +183,7 @@
 
                             <tfoot>
                                 <tr class="tbl_foot">
-                                    <th colspan="4" style="background-color:gold">Total</th>
+                                    <th class="text-end" colspan="4" style="background-color:gold;align-text:right;">Total</th>
                                     <th></th>
                                     <th></th>
                                     <th></th>
@@ -490,7 +490,7 @@
                 , className: 'text-center align-middle'
                 , sDefaultContent: '0'
                 , render: function(data, type, row) {
-                    if (data == 0) {
+                    if (data == 0 || typeof data === "undefined") {
                         return '';
                     } else {
                         return `<b>${data}</b>`;
@@ -502,7 +502,7 @@
                 , className: 'text-center align-middle'
                 , sDefaultContent: '0'
                 , render: function(data, type, row) {
-                    if (data == 0) {
+                    if (data == 0 || typeof data === "undefined") {
                         return '';
                     } else {
                         return `<b>${data}</b>`;
@@ -514,7 +514,7 @@
                 , className: 'text-center align-middle'
                 , sDefaultContent: '0'
                 , render: function(data, type, row) {
-                    if (data == 0) {
+                    if (data == 0 || typeof data === "undefined") {
                         return '';
                     } else {
                         return `<b>${data}</b>`;
@@ -526,7 +526,7 @@
                 , className: 'text-center align-middle'
                 , sDefaultContent: '0'
                 , render: function(data, type, row) {
-                    if (data == 0) {
+                    if (data == 0 || typeof data === "undefined") {
                         return '';
                     } else {
                         return `<b>${data}</b>`;
@@ -793,9 +793,17 @@
             $('#down_payment').val(data.down_payment);
             $('#notes').val(data.notes);
 
-            $.each(data.slot, function(key, item) {
-                $("input[name='id_item[" + item.id_item + "]']").val(item.total_room);
-            });
+            if (data.slot.length > 0) {
+                $.each(data.slot, function(key, item) {
+                    $("input[name='id_item[" + item.id_item + "]']").val(item.total_room);
+                });
+            } else {
+                $("input[name='id_item[1]']").val('');
+                $("input[name='id_item[2]']").val('');
+                $("input[name='id_item[3]']").val('');
+                $("input[name='id_item[4]']").val('');
+            }
+
 
         });
 
@@ -839,7 +847,7 @@
                             $('#tambahGroup').modal('hide');
                             table.ajax.reload(null, false);
                             Swal.fire(
-                                'Great!', 'Data sukses di update!', 'success'
+                                'Great!', 'Data sukses di simpan!', 'success'
                             );
                         } else {
                             Swal.fire(

@@ -122,25 +122,27 @@
                                         </div>
                                         <div class="form-group mb-3">
                                             <label for="meta_desc">Meta Desc</label>
-                                            <input type="text" name="meta_desc" class="form-control @error('meta_desc') is-invalid @enderror" value="{{old('meta_desc')}}" required>
-                                            @error('meta_desc')
-                                            <div class="invalid-feedback">
-                                                {{ $message }}
-                                            </div>
-                                            @enderror
+                                            {{-- <input type="text" name="meta_desc" class="form-control @error('meta_desc') is-invalid @enderror" value="{{old('meta_desc')}}" required> --}}
+                                            <textarea class="form-control" name="meta_desc" id="meta_desc" cols="5" rows="5" @error('meta_desc') is-invalid @enderror value="{{old('meta_desc')}}" required>{{old('meta_desc')}}</textarea>
                                         </div>
-                                        <div>
-                                            <a href="{{ URL::previous() }}" type="button" class="btn btn-warning float-start">Cancel</a>
-                                            <button type="submit" class="btn btn-primary float-end">Submit</button>
+                                        @error('meta_desc')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
                                         </div>
-                                    </form>
+                                        @enderror
                                 </div>
+                                <div>
+                                    <a href="{{ URL::previous() }}" type="button" class="btn btn-warning float-start">Cancel</a>
+                                    <button type="submit" class="btn btn-primary float-end">Submit</button>
+                                </div>
+                                </form>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
+        </div>
         </div>
     </section>
 

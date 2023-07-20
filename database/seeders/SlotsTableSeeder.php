@@ -1179,6 +1179,846 @@ class SlotsTableSeeder extends Seeder
                 'id_item' => 4,
                 'total_room' => 0,
             ),
+            116 => 
+            array (
+                'id_slot' => 117,
+                'created_at' => '2023-07-20 10:37:48',
+                'updated_at' => '2023-07-20 10:37:48',
+                'deleted_at' => NULL,
+                'id_reservation' => 30,
+                'id_item' => 1,
+                'total_room' => 1,
+            ),
+            117 => 
+            array (
+                'id_slot' => 118,
+                'created_at' => '2023-07-20 10:37:48',
+                'updated_at' => '2023-07-20 10:37:48',
+                'deleted_at' => NULL,
+                'id_reservation' => 30,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            118 => 
+            array (
+                'id_slot' => 119,
+                'created_at' => '2023-07-20 10:37:48',
+                'updated_at' => '2023-07-20 10:37:48',
+                'deleted_at' => NULL,
+                'id_reservation' => 30,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            119 => 
+            array (
+                'id_slot' => 120,
+                'created_at' => '2023-07-20 10:37:48',
+                'updated_at' => '2023-07-20 10:37:48',
+                'deleted_at' => NULL,
+                'id_reservation' => 30,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            120 => 
+            array (
+                'id_slot' => 121,
+                'created_at' => '2023-07-20 10:38:57',
+                'updated_at' => '2023-07-20 10:38:57',
+                'deleted_at' => NULL,
+                'id_reservation' => 31,
+                'id_item' => 1,
+                'total_room' => 1,
+            ),
+            121 => 
+            array (
+                'id_slot' => 122,
+                'created_at' => '2023-07-20 10:38:57',
+                'updated_at' => '2023-07-20 10:38:57',
+                'deleted_at' => NULL,
+                'id_reservation' => 31,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            122 => 
+            array (
+                'id_slot' => 123,
+                'created_at' => '2023-07-20 10:38:57',
+                'updated_at' => '2023-07-20 10:38:57',
+                'deleted_at' => NULL,
+                'id_reservation' => 31,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            123 => 
+            array (
+                'id_slot' => 124,
+                'created_at' => '2023-07-20 10:38:57',
+                'updated_at' => '2023-07-20 10:38:57',
+                'deleted_at' => NULL,
+                'id_reservation' => 31,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            124 => 
+            array (
+                'id_slot' => 125,
+                'created_at' => '2023-07-20 10:39:49',
+                'updated_at' => '2023-07-20 10:39:49',
+                'deleted_at' => NULL,
+                'id_reservation' => 32,
+                'id_item' => 1,
+                'total_room' => 2,
+            ),
+            125 => 
+            array (
+                'id_slot' => 126,
+                'created_at' => '2023-07-20 10:39:49',
+                'updated_at' => '2023-07-20 10:39:49',
+                'deleted_at' => NULL,
+                'id_reservation' => 32,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            126 => 
+            array (
+                'id_slot' => 127,
+                'created_at' => '2023-07-20 10:39:49',
+                'updated_at' => '2023-07-20 10:39:49',
+                'deleted_at' => NULL,
+                'id_reservation' => 32,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            127 => 
+            array (
+                'id_slot' => 128,
+                'created_at' => '2023-07-20 10:39:49',
+                'updated_at' => '2023-07-20 10:39:49',
+                'deleted_at' => NULL,
+                'id_reservation' => 32,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            128 => 
+            array (
+                'id_slot' => 129,
+                'created_at' => '2023-07-20 10:49:59',
+                'updated_at' => '2023-07-20 10:49:59',
+                'deleted_at' => NULL,
+                'id_reservation' => 33,
+                'id_item' => 1,
+                'total_room' => 1,
+            ),
+            129 => 
+            array (
+                'id_slot' => 130,
+                'created_at' => '2023-07-20 10:49:59',
+                'updated_at' => '2023-07-20 10:49:59',
+                'deleted_at' => NULL,
+                'id_reservation' => 33,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            130 => 
+            array (
+                'id_slot' => 131,
+                'created_at' => '2023-07-20 10:49:59',
+                'updated_at' => '2023-07-20 10:49:59',
+                'deleted_at' => NULL,
+                'id_reservation' => 33,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            131 => 
+            array (
+                'id_slot' => 132,
+                'created_at' => '2023-07-20 10:49:59',
+                'updated_at' => '2023-07-20 10:49:59',
+                'deleted_at' => NULL,
+                'id_reservation' => 33,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            132 => 
+            array (
+                'id_slot' => 133,
+                'created_at' => '2023-07-20 10:51:54',
+                'updated_at' => '2023-07-20 10:51:54',
+                'deleted_at' => NULL,
+                'id_reservation' => 34,
+                'id_item' => 1,
+                'total_room' => 1,
+            ),
+            133 => 
+            array (
+                'id_slot' => 134,
+                'created_at' => '2023-07-20 10:51:54',
+                'updated_at' => '2023-07-20 10:51:54',
+                'deleted_at' => NULL,
+                'id_reservation' => 34,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            134 => 
+            array (
+                'id_slot' => 135,
+                'created_at' => '2023-07-20 10:51:54',
+                'updated_at' => '2023-07-20 10:51:54',
+                'deleted_at' => NULL,
+                'id_reservation' => 34,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            135 => 
+            array (
+                'id_slot' => 136,
+                'created_at' => '2023-07-20 10:51:54',
+                'updated_at' => '2023-07-20 10:51:54',
+                'deleted_at' => NULL,
+                'id_reservation' => 34,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            136 => 
+            array (
+                'id_slot' => 137,
+                'created_at' => '2023-07-20 10:52:09',
+                'updated_at' => '2023-07-20 10:52:09',
+                'deleted_at' => NULL,
+                'id_reservation' => 35,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            137 => 
+            array (
+                'id_slot' => 138,
+                'created_at' => '2023-07-20 10:52:09',
+                'updated_at' => '2023-07-20 10:52:09',
+                'deleted_at' => NULL,
+                'id_reservation' => 35,
+                'id_item' => 2,
+                'total_room' => 2,
+            ),
+            138 => 
+            array (
+                'id_slot' => 139,
+                'created_at' => '2023-07-20 10:52:09',
+                'updated_at' => '2023-07-20 10:52:09',
+                'deleted_at' => NULL,
+                'id_reservation' => 35,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            139 => 
+            array (
+                'id_slot' => 140,
+                'created_at' => '2023-07-20 10:52:09',
+                'updated_at' => '2023-07-20 10:52:09',
+                'deleted_at' => NULL,
+                'id_reservation' => 35,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            140 => 
+            array (
+                'id_slot' => 141,
+                'created_at' => '2023-07-20 10:52:24',
+                'updated_at' => '2023-07-20 10:52:24',
+                'deleted_at' => NULL,
+                'id_reservation' => 36,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            141 => 
+            array (
+                'id_slot' => 142,
+                'created_at' => '2023-07-20 10:52:24',
+                'updated_at' => '2023-07-20 10:52:24',
+                'deleted_at' => NULL,
+                'id_reservation' => 36,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            142 => 
+            array (
+                'id_slot' => 143,
+                'created_at' => '2023-07-20 10:52:24',
+                'updated_at' => '2023-07-20 10:52:24',
+                'deleted_at' => NULL,
+                'id_reservation' => 36,
+                'id_item' => 3,
+                'total_room' => 1,
+            ),
+            143 => 
+            array (
+                'id_slot' => 144,
+                'created_at' => '2023-07-20 10:52:24',
+                'updated_at' => '2023-07-20 10:52:24',
+                'deleted_at' => NULL,
+                'id_reservation' => 36,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            144 => 
+            array (
+                'id_slot' => 145,
+                'created_at' => '2023-07-20 10:52:35',
+                'updated_at' => '2023-07-20 10:52:35',
+                'deleted_at' => NULL,
+                'id_reservation' => 37,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            145 => 
+            array (
+                'id_slot' => 146,
+                'created_at' => '2023-07-20 10:52:35',
+                'updated_at' => '2023-07-20 10:52:35',
+                'deleted_at' => NULL,
+                'id_reservation' => 37,
+                'id_item' => 2,
+                'total_room' => 1,
+            ),
+            146 => 
+            array (
+                'id_slot' => 147,
+                'created_at' => '2023-07-20 10:52:35',
+                'updated_at' => '2023-07-20 10:52:35',
+                'deleted_at' => NULL,
+                'id_reservation' => 37,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            147 => 
+            array (
+                'id_slot' => 148,
+                'created_at' => '2023-07-20 10:52:35',
+                'updated_at' => '2023-07-20 10:52:35',
+                'deleted_at' => NULL,
+                'id_reservation' => 37,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            148 => 
+            array (
+                'id_slot' => 149,
+                'created_at' => '2023-07-20 10:52:46',
+                'updated_at' => '2023-07-20 10:52:46',
+                'deleted_at' => NULL,
+                'id_reservation' => 38,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            149 => 
+            array (
+                'id_slot' => 150,
+                'created_at' => '2023-07-20 10:52:46',
+                'updated_at' => '2023-07-20 10:52:46',
+                'deleted_at' => NULL,
+                'id_reservation' => 38,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            150 => 
+            array (
+                'id_slot' => 151,
+                'created_at' => '2023-07-20 10:52:46',
+                'updated_at' => '2023-07-20 10:52:46',
+                'deleted_at' => NULL,
+                'id_reservation' => 38,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            151 => 
+            array (
+                'id_slot' => 152,
+                'created_at' => '2023-07-20 10:52:46',
+                'updated_at' => '2023-07-20 10:52:46',
+                'deleted_at' => NULL,
+                'id_reservation' => 38,
+                'id_item' => 4,
+                'total_room' => 1,
+            ),
+            152 => 
+            array (
+                'id_slot' => 153,
+                'created_at' => '2023-07-20 10:52:55',
+                'updated_at' => '2023-07-20 10:52:55',
+                'deleted_at' => NULL,
+                'id_reservation' => 39,
+                'id_item' => 1,
+                'total_room' => 2,
+            ),
+            153 => 
+            array (
+                'id_slot' => 154,
+                'created_at' => '2023-07-20 10:52:55',
+                'updated_at' => '2023-07-20 10:52:55',
+                'deleted_at' => NULL,
+                'id_reservation' => 39,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            154 => 
+            array (
+                'id_slot' => 155,
+                'created_at' => '2023-07-20 10:52:55',
+                'updated_at' => '2023-07-20 10:52:55',
+                'deleted_at' => NULL,
+                'id_reservation' => 39,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            155 => 
+            array (
+                'id_slot' => 156,
+                'created_at' => '2023-07-20 10:52:55',
+                'updated_at' => '2023-07-20 10:52:55',
+                'deleted_at' => NULL,
+                'id_reservation' => 39,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            156 => 
+            array (
+                'id_slot' => 157,
+                'created_at' => '2023-07-20 10:53:02',
+                'updated_at' => '2023-07-20 10:53:02',
+                'deleted_at' => NULL,
+                'id_reservation' => 40,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            157 => 
+            array (
+                'id_slot' => 158,
+                'created_at' => '2023-07-20 10:53:02',
+                'updated_at' => '2023-07-20 10:53:02',
+                'deleted_at' => NULL,
+                'id_reservation' => 40,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            158 => 
+            array (
+                'id_slot' => 159,
+                'created_at' => '2023-07-20 10:53:02',
+                'updated_at' => '2023-07-20 10:53:02',
+                'deleted_at' => NULL,
+                'id_reservation' => 40,
+                'id_item' => 3,
+                'total_room' => 1,
+            ),
+            159 => 
+            array (
+                'id_slot' => 160,
+                'created_at' => '2023-07-20 10:53:02',
+                'updated_at' => '2023-07-20 10:53:02',
+                'deleted_at' => NULL,
+                'id_reservation' => 40,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            160 => 
+            array (
+                'id_slot' => 161,
+                'created_at' => '2023-07-20 10:53:22',
+                'updated_at' => '2023-07-20 10:53:22',
+                'deleted_at' => NULL,
+                'id_reservation' => 41,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            161 => 
+            array (
+                'id_slot' => 162,
+                'created_at' => '2023-07-20 10:53:22',
+                'updated_at' => '2023-07-20 10:53:22',
+                'deleted_at' => NULL,
+                'id_reservation' => 41,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            162 => 
+            array (
+                'id_slot' => 163,
+                'created_at' => '2023-07-20 10:53:22',
+                'updated_at' => '2023-07-20 10:53:22',
+                'deleted_at' => NULL,
+                'id_reservation' => 41,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            163 => 
+            array (
+                'id_slot' => 164,
+                'created_at' => '2023-07-20 10:53:22',
+                'updated_at' => '2023-07-20 10:53:22',
+                'deleted_at' => NULL,
+                'id_reservation' => 41,
+                'id_item' => 4,
+                'total_room' => 1,
+            ),
+            164 => 
+            array (
+                'id_slot' => 165,
+                'created_at' => '2023-07-20 10:53:31',
+                'updated_at' => '2023-07-20 10:53:31',
+                'deleted_at' => NULL,
+                'id_reservation' => 42,
+                'id_item' => 1,
+                'total_room' => 1,
+            ),
+            165 => 
+            array (
+                'id_slot' => 166,
+                'created_at' => '2023-07-20 10:53:31',
+                'updated_at' => '2023-07-20 10:53:31',
+                'deleted_at' => NULL,
+                'id_reservation' => 42,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            166 => 
+            array (
+                'id_slot' => 167,
+                'created_at' => '2023-07-20 10:53:31',
+                'updated_at' => '2023-07-20 10:53:31',
+                'deleted_at' => NULL,
+                'id_reservation' => 42,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            167 => 
+            array (
+                'id_slot' => 168,
+                'created_at' => '2023-07-20 10:53:31',
+                'updated_at' => '2023-07-20 10:53:31',
+                'deleted_at' => NULL,
+                'id_reservation' => 42,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            168 => 
+            array (
+                'id_slot' => 169,
+                'created_at' => '2023-07-20 10:53:37',
+                'updated_at' => '2023-07-20 10:53:37',
+                'deleted_at' => NULL,
+                'id_reservation' => 43,
+                'id_item' => 1,
+                'total_room' => 2,
+            ),
+            169 => 
+            array (
+                'id_slot' => 170,
+                'created_at' => '2023-07-20 10:53:37',
+                'updated_at' => '2023-07-20 10:53:37',
+                'deleted_at' => NULL,
+                'id_reservation' => 43,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            170 => 
+            array (
+                'id_slot' => 171,
+                'created_at' => '2023-07-20 10:53:37',
+                'updated_at' => '2023-07-20 10:53:37',
+                'deleted_at' => NULL,
+                'id_reservation' => 43,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            171 => 
+            array (
+                'id_slot' => 172,
+                'created_at' => '2023-07-20 10:53:37',
+                'updated_at' => '2023-07-20 10:53:37',
+                'deleted_at' => NULL,
+                'id_reservation' => 43,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            172 => 
+            array (
+                'id_slot' => 173,
+                'created_at' => '2023-07-20 10:53:47',
+                'updated_at' => '2023-07-20 10:53:47',
+                'deleted_at' => NULL,
+                'id_reservation' => 44,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            173 => 
+            array (
+                'id_slot' => 174,
+                'created_at' => '2023-07-20 10:53:47',
+                'updated_at' => '2023-07-20 10:53:47',
+                'deleted_at' => NULL,
+                'id_reservation' => 44,
+                'id_item' => 2,
+                'total_room' => 1,
+            ),
+            174 => 
+            array (
+                'id_slot' => 175,
+                'created_at' => '2023-07-20 10:53:47',
+                'updated_at' => '2023-07-20 10:53:47',
+                'deleted_at' => NULL,
+                'id_reservation' => 44,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            175 => 
+            array (
+                'id_slot' => 176,
+                'created_at' => '2023-07-20 10:53:47',
+                'updated_at' => '2023-07-20 10:53:47',
+                'deleted_at' => NULL,
+                'id_reservation' => 44,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            176 => 
+            array (
+                'id_slot' => 177,
+                'created_at' => '2023-07-20 10:53:58',
+                'updated_at' => '2023-07-20 10:53:58',
+                'deleted_at' => NULL,
+                'id_reservation' => 45,
+                'id_item' => 1,
+                'total_room' => 4,
+            ),
+            177 => 
+            array (
+                'id_slot' => 178,
+                'created_at' => '2023-07-20 10:53:58',
+                'updated_at' => '2023-07-20 10:53:58',
+                'deleted_at' => NULL,
+                'id_reservation' => 45,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            178 => 
+            array (
+                'id_slot' => 179,
+                'created_at' => '2023-07-20 10:53:58',
+                'updated_at' => '2023-07-20 10:53:58',
+                'deleted_at' => NULL,
+                'id_reservation' => 45,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            179 => 
+            array (
+                'id_slot' => 180,
+                'created_at' => '2023-07-20 10:53:58',
+                'updated_at' => '2023-07-20 10:53:58',
+                'deleted_at' => NULL,
+                'id_reservation' => 45,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            180 => 
+            array (
+                'id_slot' => 181,
+                'created_at' => '2023-07-20 10:54:07',
+                'updated_at' => '2023-07-20 10:54:07',
+                'deleted_at' => NULL,
+                'id_reservation' => 46,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            181 => 
+            array (
+                'id_slot' => 182,
+                'created_at' => '2023-07-20 10:54:07',
+                'updated_at' => '2023-07-20 10:54:07',
+                'deleted_at' => NULL,
+                'id_reservation' => 46,
+                'id_item' => 2,
+                'total_room' => 1,
+            ),
+            182 => 
+            array (
+                'id_slot' => 183,
+                'created_at' => '2023-07-20 10:54:07',
+                'updated_at' => '2023-07-20 10:54:07',
+                'deleted_at' => NULL,
+                'id_reservation' => 46,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            183 => 
+            array (
+                'id_slot' => 184,
+                'created_at' => '2023-07-20 10:54:07',
+                'updated_at' => '2023-07-20 10:54:07',
+                'deleted_at' => NULL,
+                'id_reservation' => 46,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            184 => 
+            array (
+                'id_slot' => 185,
+                'created_at' => '2023-07-20 10:54:14',
+                'updated_at' => '2023-07-20 10:54:14',
+                'deleted_at' => NULL,
+                'id_reservation' => 47,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            185 => 
+            array (
+                'id_slot' => 186,
+                'created_at' => '2023-07-20 10:54:14',
+                'updated_at' => '2023-07-20 10:54:14',
+                'deleted_at' => NULL,
+                'id_reservation' => 47,
+                'id_item' => 2,
+                'total_room' => 1,
+            ),
+            186 => 
+            array (
+                'id_slot' => 187,
+                'created_at' => '2023-07-20 10:54:14',
+                'updated_at' => '2023-07-20 10:54:14',
+                'deleted_at' => NULL,
+                'id_reservation' => 47,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            187 => 
+            array (
+                'id_slot' => 188,
+                'created_at' => '2023-07-20 10:54:14',
+                'updated_at' => '2023-07-20 10:54:14',
+                'deleted_at' => NULL,
+                'id_reservation' => 47,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            188 => 
+            array (
+                'id_slot' => 189,
+                'created_at' => '2023-07-20 10:54:28',
+                'updated_at' => '2023-07-20 10:54:28',
+                'deleted_at' => NULL,
+                'id_reservation' => 48,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            189 => 
+            array (
+                'id_slot' => 190,
+                'created_at' => '2023-07-20 10:54:28',
+                'updated_at' => '2023-07-20 10:54:28',
+                'deleted_at' => NULL,
+                'id_reservation' => 48,
+                'id_item' => 2,
+                'total_room' => 1,
+            ),
+            190 => 
+            array (
+                'id_slot' => 191,
+                'created_at' => '2023-07-20 10:54:28',
+                'updated_at' => '2023-07-20 10:54:28',
+                'deleted_at' => NULL,
+                'id_reservation' => 48,
+                'id_item' => 3,
+                'total_room' => 0,
+            ),
+            191 => 
+            array (
+                'id_slot' => 192,
+                'created_at' => '2023-07-20 10:54:28',
+                'updated_at' => '2023-07-20 10:54:28',
+                'deleted_at' => NULL,
+                'id_reservation' => 48,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            192 => 
+            array (
+                'id_slot' => 193,
+                'created_at' => '2023-07-20 10:54:36',
+                'updated_at' => '2023-07-20 10:54:36',
+                'deleted_at' => NULL,
+                'id_reservation' => 49,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            193 => 
+            array (
+                'id_slot' => 194,
+                'created_at' => '2023-07-20 10:54:36',
+                'updated_at' => '2023-07-20 10:54:36',
+                'deleted_at' => NULL,
+                'id_reservation' => 49,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            194 => 
+            array (
+                'id_slot' => 195,
+                'created_at' => '2023-07-20 10:54:36',
+                'updated_at' => '2023-07-20 10:54:36',
+                'deleted_at' => NULL,
+                'id_reservation' => 49,
+                'id_item' => 3,
+                'total_room' => 1,
+            ),
+            195 => 
+            array (
+                'id_slot' => 196,
+                'created_at' => '2023-07-20 10:54:36',
+                'updated_at' => '2023-07-20 10:54:36',
+                'deleted_at' => NULL,
+                'id_reservation' => 49,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
+            196 => 
+            array (
+                'id_slot' => 197,
+                'created_at' => '2023-07-20 10:54:42',
+                'updated_at' => '2023-07-20 10:54:42',
+                'deleted_at' => NULL,
+                'id_reservation' => 50,
+                'id_item' => 1,
+                'total_room' => 0,
+            ),
+            197 => 
+            array (
+                'id_slot' => 198,
+                'created_at' => '2023-07-20 10:54:42',
+                'updated_at' => '2023-07-20 10:54:42',
+                'deleted_at' => NULL,
+                'id_reservation' => 50,
+                'id_item' => 2,
+                'total_room' => 0,
+            ),
+            198 => 
+            array (
+                'id_slot' => 199,
+                'created_at' => '2023-07-20 10:54:42',
+                'updated_at' => '2023-07-20 10:54:42',
+                'deleted_at' => NULL,
+                'id_reservation' => 50,
+                'id_item' => 3,
+                'total_room' => 1,
+            ),
+            199 => 
+            array (
+                'id_slot' => 200,
+                'created_at' => '2023-07-20 10:54:42',
+                'updated_at' => '2023-07-20 10:54:42',
+                'deleted_at' => NULL,
+                'id_reservation' => 50,
+                'id_item' => 4,
+                'total_room' => 0,
+            ),
         ));
         
         

@@ -133,9 +133,11 @@
                                         </div>
                                         <div class="form-group mb-3">
                                             <label for="meta_desc">Meta Desc</label>
-                                            <input type="text" name="meta_desc" class="form-control @error('meta_desc') is-invalid @enderror" value="{{old('meta_desc') ? old('meta_desc') : $post->meta_desc}}" required>
+                                            {{-- <input type="text" name="meta_desc" class="form-control @error('meta_desc') is-invalid @enderror" value="{{old('meta_desc') ? old('meta_desc') : $post->meta_desc}}" required> --}}
+                                            <textarea class="form-control" name="meta_desc" id="meta_desc" cols="5" rows="5" @error('meta_desc') is-invalid @enderror value="{{old('meta_desc') ? old('meta_desc') : $post->meta_desc}}" required>{{old('meta_desc') ? old('meta_desc') : $post->meta_desc}}</textarea>
+
                                             @error('meta_desc')
-                                            <div class="invalid-feedback">
+                                            <div class=" invalid-feedback">
                                                 {{ $message }}
                                             </div>
                                             @enderror

@@ -44,9 +44,9 @@ class PostsTableSeeder extends Seeder
 <p>Selain menikmati camilan lezat, Anda juga dapat menikmati pemandangan indah di Pandan View Mandeh. Dikelilingi oleh pantai yang memukau dan pepohonan hijau, tempat ini adalah tempat yang sempurna untuk bersantai sambil menikmati makanan lezat. Jadi, jika Anda mengunjungi Sumatera Barat, jangan lewatkan kesempatan untuk mencicipi camilan khas di Pandan View Mandeh. Selamat menikmati perjalanan kuliner Anda di Sumatera Barat!</p>',
                 'keywords' => 'Snack Pandan View, Pandan View, Mandeh, Pandan view Mandeh Snack',
                 'meta_desc' => 'Menikmati Lezatnya Snack di Pandan View Mandeh, Sumatera Barat',
-                'reads' => 23,
+                'reads' => 24,
                 'created_at' => '2022-05-10 13:02:40',
-                'updated_at' => '2023-07-17 21:10:25',
+                'updated_at' => '2023-07-19 18:27:41',
                 'deleted_at' => NULL,
             ),
             1 => 
@@ -90,9 +90,9 @@ class PostsTableSeeder extends Seeder
 <p>Dengan mengikuti tips ini, Anda akan dapat menikmati perjalanan yang tak terlupakan di Sumatera Barat. Nikmati keindahan alam yang luar biasa, jelajahi kebudayaan yang kaya, dan ciptakan kenangan indah selama petualangan Anda di provinsi ini. Selamat menikmati perjalanan Anda!</p>',
                 'keywords' => 'travel, pariwisata, info-pariwisata, mandeh, pandan view mandeh',
                 'meta_desc' => 'travel, pariwisata, info-pariwisata, mandeh, pandan view mandeh',
-                'reads' => 39,
+                'reads' => 40,
                 'created_at' => '2023-04-10 13:57:14',
-                'updated_at' => '2023-07-17 21:11:15',
+                'updated_at' => '2023-07-19 18:27:41',
                 'deleted_at' => NULL,
             ),
             2 => 
@@ -112,9 +112,9 @@ class PostsTableSeeder extends Seeder
 <p>Selain itu, terdapat banyak kegiatan seru yang dapat dilakukan di kawasan wisata Mandeh. Di sana, pengunjung dapat menikmati suasana pantai, berenang, bahkan snorkeling. Keindahan bawah laut Mandeh tidak kalah dengan tempat-tempat lain di Indonesia. Pengunjung dapat menikmati berbagai jenis terumbu karang dan biota laut. Pandan View juga menawarkan beberapa paket wisata yang dapat dipesan. Selanjutnya, daya tarik lainnya adalah penginapan berupa vila dan cottage. Bagi wisatawan yang datang dari luar kota, mereka dapat memesan penginapan tersebut. Cottage yang unik dengan bentuk seperti lumbung memiliki kapasitas hingga 4 orang.</p>',
                 'keywords' => 'travel, pariwisata, info-pariwisata, mandeh, pandan view mandeh',
                 'meta_desc' => 'travel, pariwisata, info-pariwisata, mandeh, pandan view mandeh',
-                'reads' => 22,
+                'reads' => 23,
                 'created_at' => '2022-12-10 14:50:49',
-                'updated_at' => '2023-07-17 21:11:11',
+                'updated_at' => '2023-07-19 18:27:42',
                 'deleted_at' => NULL,
             ),
             3 => 
@@ -136,9 +136,9 @@ class PostsTableSeeder extends Seeder
 <p>Selanjutnya, Abrar menjelaskan mengapa lokasi raker dipilih di kawasan wisata. &quot;Kita memilih kawasan wisata untuk melaksanakan raker karena kita ingin seluruh ASN Kankemenag Pessel dapat mendukung dan berkontribusi dalam mempromosikan pariwisata di Pesisir Selatan,&quot; ujarnya. Dia juga menyampaikan terima kasih dan mengapresiasi panitia yang telah mempersiapkan segala sesuatunya sehingga acara Raker tahun 2022 dapat berjalan lancar dan sukses. Abrar berharap pelaksanaan raker ini akan menghasilkan perencanaan yang baik dan menciptakan inovasi-inovasi yang akan menjadikan Kantor Kementerian Agama Kabupaten Pesisir Selatan sebagai yang terdepan. Raker kemudian dilanjutkan dengan sidang pleno yang akan memaparkan hasil yang telah dibahas pada pra raker oleh masing-masing komisi.</p>',
                 'keywords' => 'Rapat Kerja, Rapat Dinas',
                 'meta_desc' => 'Rapat Kerja, Rapat Dinas',
-                'reads' => 20,
+                'reads' => 21,
                 'created_at' => '2022-05-10 15:23:15',
-                'updated_at' => '2023-07-17 21:11:04',
+                'updated_at' => '2023-07-19 18:27:42',
                 'deleted_at' => NULL,
             ),
             4 => 
@@ -164,9 +164,9 @@ class PostsTableSeeder extends Seeder
 <p>Ketika memilih jenis akomodasi, penting untuk mempertimbangkan preferensi pribadi, anggaran, lokasi, fasilitas, dan pengalaman yang diinginkan. Hotel, bungalow, resort, cottage, dan villa semuanya memiliki keunikannya masing-masing, dan akan memberikan pengalaman menginap yang berbeda kepada para tamu.</p>',
                 'keywords' => 'perbedaan, hotel, bungalow, resort, cottage, villa, akomodasi, liburan, penginapan',
                 'meta_desc' => 'Temukan perbedaan antara hotel, bungalow, resort, cottage, dan villa dalam artikel ini. Dapatkan pemahaman yang lebih baik tentang jenis-jenis akomodasi ini dan pilihlah yang sesuai dengan preferensi liburan Anda',
-                'reads' => 26,
+                'reads' => 27,
                 'created_at' => '2023-07-11 11:36:33',
-                'updated_at' => '2023-07-17 21:10:50',
+                'updated_at' => '2023-07-19 18:27:43',
                 'deleted_at' => NULL,
             ),
             5 => 
@@ -194,9 +194,9 @@ class PostsTableSeeder extends Seeder
 <p>Pandan View Mandeh adalah tempat yang memikat di Puncak Mandeh, Sumatera Barat, yang menawarkan pemandangan spektakuler dan pengalaman liburan yang tak terlupakan. Nikmati keindahan alam yang menakjubkan di Pandan View Mandeh, sambil menjelajahi aktivitas seru di Puncak Mandeh dan menikmati pesona Mandeh yang indah di sekitarnya. Jelajahi dan rasakan pesona Puncak Mandeh yang memukau, dan buat liburan Anda menjadi pengalaman yang tak terlupakan.</p>',
                 'keywords' => 'Pandan View Mandeh, Puncak Mandeh, keindahan alam, pemandangan spektakuler, liburan, destinasi wisata, Mandeh',
                 'meta_desc' => 'Temukan keindahan alam yang menakjubkan di Pandan View Mandeh, puncak tertinggi di Mandeh yang menawarkan pemandangan spektakuler dan pengalaman liburan yang tak terlupakan. Jelajahi destinasi wisata alam yang menakjubkan ini dan rasakan pesona Puncak Mandeh.',
-                'reads' => 13,
+                'reads' => 14,
                 'created_at' => '2023-07-12 08:20:32',
-                'updated_at' => '2023-07-17 21:09:10',
+                'updated_at' => '2023-07-19 18:27:35',
                 'deleted_at' => NULL,
             ),
             6 => 
@@ -224,9 +224,9 @@ class PostsTableSeeder extends Seeder
 <p>Pariwisata adalah cara yang indah untuk menjelajahi dunia, merayakan keajaiban alam, dan memahami kekayaan budaya yang ada di berbagai tempat. Melalui perjalanan, kita dapat menemukan tempat-tempat menakjubkan, merasakan budaya yang beragam, dan menciptakan kenangan tak terlupakan. Jadi, jadilah seorang pelancong yang berani, mulailah merencanakan petualangan Anda, dan nikmati setiap momen dalam perjalanan wisata Anda.</p>',
                 'keywords' => 'pariwisata, keajaiban alam, kekayaan budaya, menjelajahi dunia, tempat-tempat menakjubkan, budaya yang beragam, kenangan tak terlupakan, perjalanan wisata.',
                 'meta_desc' => 'Temukan keindahan dan kekayaan budaya dunia melalui pariwisata. Artikel ini akan membawa Anda dalam perjalanan untuk menjelajahi tempat-tempat menakjubkan, merasakan budaya yang beragam, dan menciptakan kenangan tak terlupakan di perjalanan wisata Anda.',
-                'reads' => 15,
-                'created_at' => '2023-07-12 08:24:24',
-                'updated_at' => '2023-07-17 21:09:33',
+                'reads' => 16,
+                'created_at' => '2023-07-13 08:24:24',
+                'updated_at' => '2023-07-19 18:27:34',
                 'deleted_at' => NULL,
             ),
             7 => 
@@ -250,9 +250,9 @@ class PostsTableSeeder extends Seeder
 <p>Dalam dunia yang penuh dengan pilihan destinasi pariwisata, menguasai strategi sales dan marketing yang efektif adalah kunci sukses dalam menarik pengunjung dan meningkatkan penjualan. Dengan mengidentifikasi target pasar, mempromosikan destinasi dengan kreatif, memberikan nilai tambah kepada pengunjung, dan secara terus-menerus menganalisis hasil, Anda dapat mencapai kesuksesan dalam industri pariwisata yang kompetitif ini.</p>',
                 'keywords' => 'sales marketing pariwisata, strategi pemasaran pariwisata, meningkatkan penjualan pariwisata, target pasar pariwisata, promosi pariwisata',
                 'meta_desc' => 'Pelajari strategi sukses dalam sales dan marketing di industri pariwisata. Temukan cara efektif untuk menggaet pengunjung, meningkatkan penjualan, dan mempromosikan destinasi pariwisata kepada target pasar yang tepat.',
-                'reads' => 11,
-                'created_at' => '2023-07-13 08:30:06',
-                'updated_at' => '2023-07-17 21:08:32',
+                'reads' => 12,
+                'created_at' => '2023-07-14 08:30:06',
+                'updated_at' => '2023-07-19 18:27:34',
                 'deleted_at' => NULL,
             ),
             8 => 
@@ -274,9 +274,9 @@ class PostsTableSeeder extends Seeder
 <p>Gugusan Mandeh merupakan destinasi wisata bahari yang masih tersembunyi, sehingga Anda akan menemukan ketenangan dan keindahan alam yang masih alami di sini. Jika Anda mencari liburan yang menyegarkan dan mempesona, Gugusan Mandeh adalah pilihan yang tepat. Nikmati keindahan laut yang memukau, eksplorasi diving yang menakjubkan, dan liburan yang tak terlupakan di gugusan wisata bahari yang menakjubkan ini.</p>',
                 'keywords' => 'Gugusan Mandeh, pariwisata bahari Sumatera Barat, keindahan laut Gugusan Mandeh, destinasi wisata bahari Sumatera Barat, diving di Mandeh',
                 'meta_desc' => 'Temukan keindahan tak tergoyahkan Gugusan Mandeh di Sumatera Barat. Nikmati pesona laut biru yang memukau, eksplorasi diving yang menakjubkan, dan liburan yang tak terlupakan di destinasi wisata bahari tersembunyi ini.',
-                'reads' => 8,
-                'created_at' => '2023-07-13 08:57:04',
-                'updated_at' => '2023-07-17 21:08:29',
+                'reads' => 9,
+                'created_at' => '2023-07-15 08:57:04',
+                'updated_at' => '2023-07-19 18:27:33',
                 'deleted_at' => NULL,
             ),
             9 => 
@@ -298,9 +298,65 @@ class PostsTableSeeder extends Seeder
 <p>Jika Anda pecinta misteri dan sejarah, Rumah Gadang Mande Rubiyah adalah destinasi yang menarik untuk dijelajahi. Nikmati keindahan arsitektur tradisional Minangkabau yang megah sambil membiarkan cerita-cerita misterius membawa Anda ke dalam dunia yang berbeda. Bersiaplah untuk merasakan sensasi keajaiban yang tersembunyi di balik dinding Rumah Gadang ini dan berimajinasi tentang cerita-cerita yang mengalir dalam setiap ruangnya.</p>',
                 'keywords' => 'Misteri Rumah Gadang Mande Rubiyah, cerita misteri Sumatera Barat, keajaiban arsitektur tradisional Minangkabau, destinasi wisata misterius, legenda Rumah Gadang',
                 'meta_desc' => 'Temukan misteri yang menyelubungi Rumah Gadang Mande Rubiyah, sebuah keajaiban arsitektur tradisional Minangkabau di Sumatera Barat. Jelajahi cerita misterius dan legenda yang tersembunyi di balik keindahan dan keagungan Rumah Gadang ini.',
-                'reads' => 13,
-                'created_at' => '2023-07-13 09:03:34',
-                'updated_at' => '2023-07-17 21:07:12',
+                'reads' => 14,
+                'created_at' => '2023-07-16 09:03:34',
+                'updated_at' => '2023-07-19 18:27:32',
+                'deleted_at' => NULL,
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'category_id' => 1,
+                'user_id' => 3,
+                'cover' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1689766921/PandanViewMandeh/IMG-20230712-WA0017_jhin4v.jpg',
+                'title' => 'Mandiri Sungai Nyalo Bike Camp 2023 Di Negeri Sejuta Pesona.',
+                'slug' => 'mandiri-sungai-nyalo-bike-camp-2023-di-negeri-sejuta-pesona',
+                'desc' => '<p>&quot;Mandiri Sungai Nyalo Bike Camp 2023&quot; merupakan acara yang menggabungkan wisata dan olahraga yang akan diselenggarakan di Kabupaten Pesisir Selatan. Acara ini akan berlangsung mulai dari Sabtu 29 Juli hingga Minggu 30 Juli 2023.</p>
+
+<p>Panitia pelaksana Bike Camp 2023 telah menyiapkan doorprize untuk peserta acara tersebut.</p>
+
+<p>Acara ini akan diadakan di Pantai Paku Sungai Nyalo, Kawasan Wisata Mandeh, Kecamatan Koto XI Tarusan, Kabupaten Pesisir Selatan.</p>
+
+<p>Kegiatan yang akan dilakukan dalam acara ini antara lain Art Performance, Tari Minang Modern, Musik dan Pertunjukan, serta Rabab Pasisia. Acara ini akan berlangsung pada Sabtu - Minggu, tanggal 29 - 30 Juli 2023.</p>
+
+<p>Untuk Fun Bike yang akan dilaksanakan pada Minggu 30 Juli 2023, terdapat Fun Bike (gratis), King Of Mountain (KOM) untuk peserta sepeda MTE dengan kategori usia Open A (16-29 tahun), Open A - B (30-40 tahun), dan Open C (40 tahun ke atas).</p>
+
+<p>Para pemenang akan mendapatkan hadiah berupa uang tunai dan medali. Juara 1 akan mendapatkan Rp2.500.000, Juara II mendapatkan Rp2.000.000, dan Juara III mendapatkan Rp1.000.000. Selain itu, terdapat juga hadiah menarik lainnya. Informasi ini diungkapkan pada Rabu (12/7/2023).</p>
+
+<p>Peserta kom diharapkan untuk membayar biaya pendaftaran sebesar Rp100.000 dan menyertakan asuransi. Mereka juga memiliki kesempatan untuk menginap gratis di tenda camping ground untuk 50 pendaftaran pertama. Pendaftaran terakhir adalah pada Kamis 27 Juli 2023. Doorprize utama yang akan diberikan adalah satu unit sepeda road bike.</p>',
+                'keywords' => 'Mandiri Sungai Nyalo Bike Camp 2023, berwisata, berolahraga, doorprize, Pesisir Selatan, Ressi Amra, Pantai Paku Sungai Nyalo, Kawasan Wisata Mandeh',
+                'meta_desc' => 'Nikmati berwisata dan berolahraga dalam "Mandiri Sungai Nyalo Bike Camp 2023" di Kabupaten Pesisir Selatan. Doorprize menarik untuk peserta Bike Camp 2023. Ayo daftar sekarang!',
+                'reads' => 0,
+                'created_at' => '2023-07-17 18:42:10',
+                'updated_at' => '2023-07-19 18:42:10',
+                'deleted_at' => NULL,
+            ),
+            11 => 
+            array (
+                'id' => 12,
+                'category_id' => 4,
+                'user_id' => 3,
+                'cover' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1689767731/PandanViewMandeh/wisata-pulau-mandeh.width-800.format-webp_hsyebz.webp',
+                'title' => 'Menikmati Liburan Seru di Destinasi Wisata Pulau Mandeh: Menjelajahi Keindahan Seperti Raja Ampat di Sumatera Barat!',
+                'slug' => 'menikmati-liburan-seru-di-destinasi-wisata-pulau-mandeh-menjelajahi-keindahan-seperti-raja-ampat-di-sumatera-barat',
+                'desc' => '<p>Indonesia, sebagai negara kepulauan terbesar di dunia, menyimpan sejuta pesona alam yang menakjubkan. Salah satu destinasi wisata yang patut dikunjungi adalah Pulau Mandeh di Sumatera Barat. Terletak di Kabupaten Pesisir Selatan, Pulau Mandeh dikenal sebagai &quot;Si Raja Ampat ala Sumbar&quot; karena keindahan alamnya yang memikat.</p>
+
+<p>Pulau Mandeh menawarkan liburan seru dan mempesona bagi para wisatawan yang mencari ketenangan dan keindahan alam yang memukau. Dengan pantai-pantai indahnya, air laut yang jernih, dan keanekaragaman hayati yang melimpah, Pulau Mandeh memberikan pengalaman liburan yang tak terlupakan.</p>
+
+<p>Bagi para pecinta pantai, Pulau Mandeh memiliki garis pantai yang menakjubkan dengan pasir putih lembut dan air laut yang biru kehijauan. Anda dapat berenang, snorkeling, atau sekadar bersantai di tepi pantai sambil menikmati panorama yang memesona. Terumbu karang yang indah juga menyajikan keindahan bawah laut yang luar biasa, di mana Anda dapat menjumpai berbagai spesies ikan tropis yang berwarna-warni.</p>
+
+<p>Selain keindahan pantainya, Pulau Mandeh juga menawarkan keanekaragaman hayati yang mengagumkan. Hutan bakau yang subur dan hutan tropis yang rimbun menjadi habitat bagi berbagai satwa liar, termasuk burung-burung endemik. Anda dapat menjelajahi jalur trekking dan menikmati keindahan alam yang asli.</p>
+
+<p>Untuk menjaga keasrian Pulau Mandeh, upaya pelestarian alam dan pengelolaan yang berkelanjutan telah dilakukan. Para wisatawan diharapkan untuk menjaga kebersihan dan kelestarian lingkungan saat berkunjung ke pulau ini.</p>
+
+<p>Jika Anda mencari liburan seru yang memanjakan mata dan jiwa, Pulau Mandeh adalah pilihan yang sempurna. Dengan pesona alamnya yang menakjubkan, pantai indah, dan keanekaragaman hayati yang memukau, Pulau Mandeh akan memberikan pengalaman liburan yang tak terlupakan.</p>
+
+<p>Jadi, jangan lewatkan kesempatan untuk menjelajahi keindahan Pulau Mandeh, si Raja Ampat ala Sumatera Barat, dalam liburan seru Anda berikutnya!</p>',
+                'keywords' => 'liburan seru, wisata Pulau Mandeh, Raja Ampat Sumatera Barat, pesona alam, pantai indah, keanekaragaman hayati, destinasi wisata menakjubkan.',
+                'meta_desc' => 'Nikmati liburan seru ke destinasi wisata Pulau Mandeh, yang disebut sebagai Si Raja Ampat ala Sumatera Barat! Temukan pesona alam yang memukau, pantai indah, dan keanekaragaman hayati yang memikat di destinasi wisata yang menakjubkan ini.',
+                'reads' => 0,
+                'created_at' => '2023-07-18 18:56:51',
+                'updated_at' => '2023-07-19 18:56:51',
                 'deleted_at' => NULL,
             ),
         ));

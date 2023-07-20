@@ -22,6 +22,11 @@
                     </div>
 
                     <div class="col-md-4 form-group">
+                        <label for="checkin_date" class="form-label required">checkin_date</label>
+                        <input type="date" class="form-control" id="checkin_date" name="checkin_date" required>
+                    </div>
+
+                    <div class="col-md-4 form-group">
                         <label for="customer_phone" class="form-label">customer_phone</label>
                         <input type="text" class="form-control" id="customer_phone" name="customer_phone">
                     </div>
@@ -29,11 +34,6 @@
                     <div class="col-md-4 form-group">
                         <label for="total_guest" class="form-label">total_guest</label>
                         <input type="text" class="form-control" id="total_guest" name="total_guest">
-                    </div>
-
-                    <div class="col-md-4 form-group">
-                        <label for="checkin_date" class="form-label required">checkin_date</label>
-                        <input type="date" class="form-control" id="checkin_date" name="checkin_date" required>
                     </div>
 
                     <div class="col-md-4 form-group">

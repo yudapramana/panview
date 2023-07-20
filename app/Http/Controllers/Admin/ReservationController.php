@@ -68,7 +68,7 @@ class ReservationController extends Controller
                     $btn .= '<button id="destroyBtn" type="button" class="btn btn-link p-0 m-0" data-bs-id_reservation="' . $res->id_reservation  . '" data-id_reservation="' .  $res->id_reservation  . '"><i class="bi bi-trash-fill" style="color:red;"></i></button>&nbsp;';
                     // }
 
-                    $btn .= '<a id="logBtn" type="button" class="btn btn-link p-0 m-0" data-bs-toggle="modal" data-bs-target="#lihatHistory" data-bs-title="Lihat Log" data-title="Lihat Log Perubahan" data-bs-id_reservation="' . $res->id_reservation  . '" data-id_reservation="' .  $res->id_reservation  . '"><i class="bi bi-exclamation-square-fill" style="color:sienna;"></i></a>';
+                    $btn .= '<button id="logBtn" type="button" class="btn btn-link p-0 m-0" data-bs-toggle="modal" data-bs-target="#lihatHistory" data-bs-title="Lihat Log" data-title="Lihat Log Perubahan" data-bs-id_reservation="' . $res->id_reservation  . '" data-id_reservation="' .  $res->id_reservation  . '"><i class="bi bi-stopwatch-fill" style="color:sienna;"></i></button>';
                     // $btn .= '<a id="historyBtn" type="button" class="btn btn-link p-0 m-0" href="/reservation/audits/' . $res->id_reservation  . '"><i class="bi bi-exclamation-square-fill" style="color:sienna;"></i></a>';
 
                     return $btn;
@@ -314,32 +314,45 @@ class ReservationController extends Controller
                 if (!$bolReal) {
                     $res->fresh();
 
-                    $res->auditEvent = 'updated';
-                    $res->isCustomEvent = true;
-                    $res->auditCustomOld = [
-                        'Lumbung' => $oldValues[0], 
-                        'Villa Family' => $oldValues[1],
-                        'Villa Apung' => $oldValues[2],
-                        'Hammock' => $oldValues[3],
-                    ];
-                    $res->auditCustomNew = [
-                        'Lumbung' => $newValues[0], 
-                        'Villa Family' => $newValues[1],
-                        'Villa Apung' => $newValues[2],
-                        'Hammock' => $newValues[3],
-                    ];
-
-                    Event::dispatch(AuditCustom::class, [$res]);
-
                     foreach ($data['id_item'] as $id_item => $total) {
                         $slot = Slot::where([
                             'id_reservation' => $data['id_reservation'],
                             'id_item' => $id_item
                         ])->first();
 
-                        $slot->total_room = $total ? intval($total) : 0;
-                        $slot->save();
+                        if ($slot) {
+                            $slot->total_room = $total ? intval($total) : 0;
+                            $slot->save();
+                        } else {
+                            $slot = new Slot();
+                            $slot->id_reservation = $res->id_reservation;
+                            $slot->id_item = $id_item;
+                            $slot->total_room = $total ? intval($total) : 0;
+                            $slot->save();
+                        }
                     }
+
+                    $res->auditEvent = 'updated';
+                    $res->isCustomEvent = true;
+                    if (count($oldValues) > 0) {
+                        $res->auditCustomOld = [
+                            'Lumbung' => $oldValues[0],
+                            'Villa Family' => $oldValues[1],
+                            'Villa Apung' => $oldValues[2],
+                            'Hammock' => $oldValues[3],
+                        ];
+                    } else {
+                        $res->auditCustomOld = [];
+                    }
+
+                    $res->auditCustomNew = [
+                        'Lumbung' => $newValues[0],
+                        'Villa Family' => $newValues[1],
+                        'Villa Apung' => $newValues[2],
+                        'Hammock' => $newValues[3],
+                    ];
+
+                    Event::dispatch(AuditCustom::class, [$res]);
                 }
             }
 

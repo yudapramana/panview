@@ -12,7 +12,7 @@ class AuditController extends Controller
     public function index()
     {
         $audits = \OwenIt\Auditing\Models\Audit::with('user')
-            ->orderBy('created_at', 'desc')->get();
+            ->orderBy('created_at', 'desc')->take('50')->get();
         return view('admin.audits.index', [
             'audits' => $audits,
             'title'  => 'Daftar Audit',
