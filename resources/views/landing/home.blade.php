@@ -362,8 +362,10 @@
             <div class="row">
 
                 <div class="col-lg-8 entries">
-                    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-                    <div class="elfsight-app-2596a9b0-d20d-47f8-b3cb-18372280a49a"></div>
+                    {{-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                    <div class="elfsight-app-2596a9b0-d20d-47f8-b3cb-18372280a49a"></div> --}}
+                    <div class='sk-ww-google-reviews' data-embed-id='169339'></div>
+                    <script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
                 </div>
 
                 <div class="col-lg-4">
