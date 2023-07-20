@@ -26,19 +26,19 @@ class RolesTableSeeder extends Seeder
         $user->assignRole('super_administrator');
 
         // Owner
-        $user = User::where('username', 'ownerpandanview')->first();
+        $user = User::where('username', 'owner')->first();
         $user->assignRole('owner');
 
         // Administrator
-        $user = User::where('username', 'adminpandanview')->first();
+        $user = User::where('username', 'admin')->first();
         $user->assignRole('administrator');
 
         // Staff Marketing
-        $user = User::where('username', 'pindopandanview')->first();
+        $user = User::where('username', 'pindo')->first();
         $user->assignRole('staff');
 
         // Staff Marketing
-        $user = User::where('username', 'pandupandanview')->first();
+        $user = User::where('username', 'pandu')->first();
         $user->assignRole('staff');
 
         // Permissions

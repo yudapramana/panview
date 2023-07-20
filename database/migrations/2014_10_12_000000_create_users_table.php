@@ -32,6 +32,8 @@ class CreateUsersTable extends Migration
             $table->softDeletes('deleted_at', 0);
             $table->string('created_by')->default('');
             $table->string('updated_by')->default('');
+            $table->datetime('last_login_at')->nullable();
+            $table->string('last_login_ip')->nullable();
         });
     }
 
