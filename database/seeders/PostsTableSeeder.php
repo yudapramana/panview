@@ -326,9 +326,9 @@ class PostsTableSeeder extends Seeder
 <p>Peserta kom diharapkan untuk membayar biaya pendaftaran sebesar Rp100.000 dan menyertakan asuransi. Mereka juga memiliki kesempatan untuk menginap gratis di tenda camping ground untuk 50 pendaftaran pertama. Pendaftaran terakhir adalah pada Kamis 27 Juli 2023. Doorprize utama yang akan diberikan adalah satu unit sepeda road bike.</p>',
                 'keywords' => 'Mandiri Sungai Nyalo Bike Camp 2023, berwisata, berolahraga, doorprize, Pesisir Selatan, Ressi Amra, Pantai Paku Sungai Nyalo, Kawasan Wisata Mandeh',
                 'meta_desc' => 'Nikmati berwisata dan berolahraga dalam "Mandiri Sungai Nyalo Bike Camp 2023" di Kabupaten Pesisir Selatan. Doorprize menarik untuk peserta Bike Camp 2023. Ayo daftar sekarang!',
-                'reads' => 0,
+                'reads' => 2,
                 'created_at' => '2023-07-17 18:42:10',
-                'updated_at' => '2023-07-19 18:42:10',
+                'updated_at' => '2023-07-22 05:49:28',
                 'deleted_at' => NULL,
             ),
             11 => 
@@ -357,6 +357,36 @@ class PostsTableSeeder extends Seeder
                 'reads' => 0,
                 'created_at' => '2023-07-18 18:56:51',
                 'updated_at' => '2023-07-19 18:56:51',
+                'deleted_at' => NULL,
+            ),
+            12 => 
+            array (
+                'id' => 13,
+                'category_id' => 1,
+                'user_id' => 1,
+                'cover' => 'https://res.cloudinary.com/dezj1x6xp/image/upload/v1689854212/PandanViewMandeh/pool_umum_wnep3w.png',
+                'title' => 'Kolam Renang di Pandan View Mandeh Dibuka untuk Umum: Nikmati Kesegaran dan Rekreasi di Tengah Indahnya Alam',
+                'slug' => 'kolam-renang-di-pandan-view-mandeh-dibuka-untuk-umum-nikmati-kesegaran-dan-rekreasi-di-tengah-indahnya-alam',
+                'desc' => '<p><em>Pandan View Mandeh, 20 Juli 2023</em> - Pandan View Mandeh, salah satu destinasi wisata alam yang paling populer di wilayah, telah mengumumkan kabar gembira bagi para wisatawan dan masyarakat umum. Mulai sekarang, kolam renang eksklusif di Pandan View Mandeh dibuka untuk umum, memberikan kesempatan bagi semua orang untuk menikmati momen kesegaran dan rekreasi di tengah indahnya alam.</p>
+
+<p>Terletak di tepi pantai yang memukau, Pandan View Mandeh telah lama menjadi tempat yang dicari oleh para pengunjung yang mencari keindahan alam dan ketenangan. Terletak di kabupaten Pesisir Selatan, Sumatera Barat, destinasi wisata ini menawarkan pemandangan alam yang spektakuler, dengan hamparan pantai berpasir putih yang menghadap langsung ke Samudera Hindia.</p>
+
+<p>Dengan dibukanya kolam renang untuk umum, pengelola Pandan View Mandeh berharap untuk memberikan pengalaman yang lebih lengkap bagi para pengunjung. Kolam renang tersebut didesain dengan sempurna, menggabungkan sentuhan modern dengan kesederhanaan alam yang ada di sekitarnya. Air kolam yang segar dan jernih berasal dari sumber alami, menciptakan lingkungan yang sejuk dan menenangkan bagi setiap pengunjung yang berenang.</p>
+
+<p>Pengunjung dapat menikmati berenang di kolam renang yang luas sambil menikmati pemandangan memukau dari sekitar Pantai Mandeh. Kolam renang yang bersih dan terawat dengan baik ini adalah tempat yang ideal untuk bersantai dan menikmati liburan bersama keluarga dan teman-teman.</p>
+
+<p>Pandan View Mandeh juga menawarkan berbagai fasilitas lain yang memikat para pengunjung, termasuk area piknik, tempat bermain anak-anak, dan beragam kuliner khas daerah. Dengan demikian, tempat ini menjadi destinasi yang cocok bagi keluarga, rombongan teman, atau siapa pun yang mencari pengalaman wisata yang tak terlupakan.</p>
+
+<p>Untuk para pecinta alam dan rekreasi, Pandan View Mandeh menawarkan paket lengkap yang menggabungkan keindahan alam dengan berbagai aktivitas menarik. Selain menikmati pantai dan kolam renang, para pengunjung dapat berjalan-jalan di hutan alam sekitar atau berpartisipasi dalam tur petualangan menyusuri keindahan alam sekitarnya.</p>
+
+<p>Kunjungi Pandan View Mandeh sekarang juga dan nikmati momen tak terlupakan di kolam renang yang menakjubkan ini. Datanglah bersama keluarga dan teman-teman Anda untuk merasakan keajaiban alam Pantai Mandeh yang menawan sambil menikmati kesegaran kolam renang yang menakjubkan.</p>
+
+<p><em>Informasi Tambahan: Pandan View Mandeh merupakan destinasi wisata alam yang terletak di Pesisir Selatan, Sumatera Barat. Dikenal karena keindahan alamnya yang memesona, Pandan View Mandeh menawarkan beragam atraksi alam, termasuk pantai berpasir putih dan hutan hijau yang rimbun.</em></p>',
+                'keywords' => 'Pandan View Mandeh, Kolam Renang, Dibuka untuk Umum, Wisata Alam, Rekreasi, Liburan, Kesegaran',
+                'meta_desc' => 'Pandan View Mandeh, destinasi wisata alam yang terkenal dengan keindahan alamnya, kini membuka kolam renang untuk umum. Nikmati kesegaran dan rekreasi di kolam renang yang menawarkan pemandangan alam spektakuler.',
+                'reads' => 33,
+                'created_at' => '2023-07-20 18:57:00',
+                'updated_at' => '2023-07-22 15:50:23',
                 'deleted_at' => NULL,
             ),
         ));

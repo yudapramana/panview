@@ -170,13 +170,13 @@
                                     <th rowspan="2" scope="col" class="align-middle text-center">Kontak</th>
                                     <th rowspan="2" scope="col" class="align-middle text-center">Total Bayar</th>
                                     <th rowspan="2" scope="col" class="align-middle text-center">Down Payment</th>
-                                    <th colspan="4" class="align-middle text-center">Cottage</th>
+                                    <th colspan="5" class="align-middle text-center">Cottage</th>
                                     <th rowspan="2" scope="col" class="align-middle text-center">Keterangan</th>
-                                    <th width="10%" rowspan="2" scope="col" class="align-middle text-center">Action</th>
+                                    <th width="15%" rowspan="2" scope="col" class="align-middle text-center">Action</th>
                                 </tr>
                                 <tr>
                                     @foreach($items as $key => $item)
-                                    <th scope="col">{{$item->name}}</th>
+                                    <th scope="col" style="background-color: chartreuse;">{{$item->name}}</th>
                                     @endforeach
                                 </tr>
                             </thead>
@@ -184,6 +184,7 @@
                             <tfoot>
                                 <tr class="tbl_foot">
                                     <th class="text-end" colspan="4" style="background-color:gold;align-text:right;">Total</th>
+                                    <th></th>
                                     <th></th>
                                     <th></th>
                                     <th></th>
@@ -533,6 +534,18 @@
                     }
                 }
             }, {
+                data: 'slot.4.total_room'
+                , name: 'slot.4.total_room'
+                , className: 'text-center align-middle'
+                , sDefaultContent: '0'
+                , render: function(data, type, row) {
+                    if (data == 0 || typeof data === "undefined") {
+                        return '';
+                    } else {
+                        return `<b>${data}</b>`;
+                    }
+                }
+            }, {
                 data: 'memorandum'
                 , name: 'memorandum'
             }, {
@@ -560,7 +573,7 @@
             }).data().each(function(group, i) {
                 if (last !== group) {
                     $(rows).eq(i).before(
-                        '<tr class="group"><td colspan="11">' + group + '</td></tr>'
+                        '<tr class="group"><td colspan="12">' + group + '</td></tr>'
                     );
 
                     last = group;
@@ -652,6 +665,17 @@
 
             // Update footer
             api.column(9).footer().innerHTML = pageTotalE;
+
+            // Total over this page
+            pageTotalF = api
+                .column(10, {
+                    page: 'current'
+                })
+                .data()
+                .reduce((a, b) => intVal(a) + intVal(b), 0);
+
+            // Update footer
+            api.column(10).footer().innerHTML = pageTotalE;
         }
     , });
 

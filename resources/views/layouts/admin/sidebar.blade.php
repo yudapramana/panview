@@ -5,7 +5,7 @@
                 <span>Dashboard</span> </a>
         </li>
 
-        @can('menu-reservations')
+        {{-- @can('menu-reservations') --}}
         <li class="nav-heading">Sistem Marketing</li>
         @can('page-reservation-index')
         <li class="nav-item"><a class="nav-link @if (request()->segment(1) == 'reservations') @else collapsed @endif" href="/reservations"><i class="bi bi-bookmark-check-fill"></i><span>Reservasi </span></a></li>
@@ -16,7 +16,7 @@
         @can('page-reservation-deleted')
         <li class="nav-item"><a class="nav-link @if (request()->segment(1) == 'deleted-reservations') @else collapsed @endif" href="/deleted-reservations"><i class="bi bi-trash-fill"></i><span>Data Dihapus </span></a></li>
         @endcan
-        @endcan
+        {{-- @endcan --}}
 
 
         <li class="nav-heading">Kelola Web</li>

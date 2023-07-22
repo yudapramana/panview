@@ -23,6 +23,8 @@ class ReservationController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        // $this->middleware(['permission:menu-reservations']);
+        $this->middleware(['role_or_permission:super_administrator|menu-reservations']);
     }
 
     public function index(Request $request, $yearMonth = null)
@@ -252,6 +254,7 @@ class ReservationController extends Controller
 
         try {
 
+
             // $validated = $request->validate([
             //     'checkin_date' => 'required',
             //     'customer_name' => 'required',
@@ -276,6 +279,7 @@ class ReservationController extends Controller
                 $res->month = $date->month;
                 $res->year = $date->year;
                 $res->save();
+                $res->fresh();
 
                 foreach ($data['id_item'] as $id_item => $total) {
                     $slot = new Slot();
@@ -297,6 +301,8 @@ class ReservationController extends Controller
                 $res->month = $date->month;
                 $res->year = $date->year;
                 $res->save();
+                $res->fresh();
+
 
                 $oldValues = $res->slot()->pluck('total_room')->toArray();
                 $oldValues = array_map('strval', $oldValues);
@@ -312,7 +318,6 @@ class ReservationController extends Controller
 
 
                 if (!$bolReal) {
-                    $res->fresh();
 
                     foreach ($data['id_item'] as $id_item => $total) {
                         $slot = Slot::where([
@@ -334,23 +339,37 @@ class ReservationController extends Controller
 
                     $res->auditEvent = 'updated';
                     $res->isCustomEvent = true;
+
+                    $items = \App\Models\Item::all();
+
                     if (count($oldValues) > 0) {
-                        $res->auditCustomOld = [
-                            'Lumbung' => $oldValues[0],
-                            'Villa Family' => $oldValues[1],
-                            'Villa Apung' => $oldValues[2],
-                            'Hammock' => $oldValues[3],
-                        ];
+                        $auditCustomOld = [];
+                        foreach ($items as $key => $item) {
+                            $auditCustomOld[$item->name] = $oldValues[$key];
+                        }
+                        $res->auditCustomOld = $auditCustomOld;
+                        // $res->auditCustomOld = [
+                        //     'Lumbung' => $oldValues[0],
+                        //     'Villa Family' => $oldValues[1],
+                        //     'Villa Apung' => $oldValues[2],
+                        //     'Hammock' => $oldValues[3],
+                        // ];
                     } else {
                         $res->auditCustomOld = [];
                     }
 
-                    $res->auditCustomNew = [
-                        'Lumbung' => $newValues[0],
-                        'Villa Family' => $newValues[1],
-                        'Villa Apung' => $newValues[2],
-                        'Hammock' => $newValues[3],
-                    ];
+
+                    $auditCustomNew = [];
+                    foreach ($items as $key => $item) {
+                        $auditCustomNew[$item->name] = $newValues[$key];
+                    }
+                    $res->auditCustomNew = $auditCustomNew;
+                    // $res->auditCustomNew = [
+                    //     'Lumbung' => $newValues[0],
+                    //     'Villa Family' => $newValues[1],
+                    //     'Villa Apung' => $newValues[2],
+                    //     'Hammock' => $newValues[3],
+                    // ];
 
                     Event::dispatch(AuditCustom::class, [$res]);
                 }

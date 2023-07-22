@@ -31,8 +31,8 @@ class DatabaseSeeder extends Seeder
         $this->call(PostsTableSeeder::class);
         $this->call(TestimoniesTableSeeder::class);
         $this->call(ItemsTableSeeder::class);
-        $this->call(ReservationsTableSeeder::class);
-        $this->call(SlotsTableSeeder::class);
+        // $this->call(ReservationsTableSeeder::class);
+        // $this->call(SlotsTableSeeder::class);
         $this->call(PostTagTableSeeder::class);
         $this->call(PostViewsTableSeeder::class);
     }

@@ -51,12 +51,12 @@
 
                         <table class="table table-bordered table-hover table-sm">
                             <tr>
-                                <th>Cottage</th>
+                                <th>Tipe</th>
                                 <th>Total</th>
                             </tr>
                             @foreach($items as $key => $item)
                             <tr>
-                                <td>Cottage {{$item->name}}</td>
+                                <td>{{$item->name}}</td>
                                 <td><input type="number" min="0" max="20" name="id_item[{{$item->id_item}}]" value=""></td>
                             </tr>
                             @endforeach
