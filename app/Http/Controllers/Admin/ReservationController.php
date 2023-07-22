@@ -80,6 +80,7 @@ class ReservationController extends Controller
 
             $dates = DB::table('reservations')
                 ->select(DB::raw('YEAR(checkin_date) year, MONTH(checkin_date) month, DATE_FORMAT(checkin_date,"%Y-%m") as yearmonth, MONTHNAME(checkin_date) month_name'))
+                ->whereNull('deleted_at')
                 ->distinct()
                 ->orderBy('year', 'asc')
                 ->orderBy('month', 'asc')
