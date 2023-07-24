@@ -19,7 +19,7 @@ return array (
     'contact' => 'Contact',
     'services' => 'Services',
     'login' => 'Login',
-    'blog' => 'Blog',
+    'blog' => 'News',
   ),
   'footer' => 
   array (

@@ -19,7 +19,7 @@ return array (
     'contact' => 'Kontak',
     'services' => 'Layanan',
     'login' => 'Masuk',
-    'blog' => 'Blog',
+    'blog' => 'Berita',
   ),
   'footer' => 
   array (
