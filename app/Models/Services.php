@@ -25,7 +25,7 @@ class Services extends Model
         $separator = '/upload/';
         $exp = explode($separator, $this->attributes['cover_image_url']);
 
-        return $exp[0] . '/upload/c_fill,h_450,w_450,f_avif,q_auto/' . $exp[1];
+        return $exp[0] . '/upload/c_fill,h_450,w_450,f_avif,q_30/' . $exp[1];
     }
 
     public function getRectangleContentImageAttribute(){

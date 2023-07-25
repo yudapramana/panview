@@ -12,7 +12,7 @@ class Post extends Model
 
     protected $with = ['category', 'user', 'tags'];
 
-    protected $appends = ['view_count'];
+    protected $appends = ['view_count', 'cover_small'];
 
     protected $guarded = [];
 
@@ -60,5 +60,12 @@ class Post extends Model
                     ->where('session_id', '=', request()->getSession()->getId())
                     ->orWhere('user_id', '=', (auth()->check()));
             })->exists();
+    }
+
+    public function getCoverSmallAttribute(){
+        $separator = '/upload/';
+        $exp = explode($separator, $this->attributes['cover']);
+
+        return $exp[0] . '/upload/c_fill,ar_16:9,q_5,f_avif/' . $exp[1];
     }
 }

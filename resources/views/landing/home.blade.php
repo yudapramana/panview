@@ -375,7 +375,7 @@
 
                             @foreach($recent_posts as $key => $post)
                             <div class="post-item clearfix">
-                                <img src="{{$post->cover}}" alt="">
+                                <img src="{{$post->cover_small}}" alt="">
                                 <h4><a href="/post/{{$post->slug}}">{{\Illuminate\Support\Str::limit($post->title, 20, $end='...')}}</a></h4>
                                 <time datetime="2020-01-01"> {{ $post->created_at->format('d F Y') }}</time>
                             </div>
