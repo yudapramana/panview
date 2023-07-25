@@ -8,7 +8,7 @@
 <meta name="description" content="Pandan View Mandeh - Villa Cafe dan Cottage Resort untuk Liburan Keluarga.  terletak dikawasan destinasi wisata bahari Teluk Mandeh yang menghadirkan sebuah kafe dan cottage untuk wisatawan lokal, domestik dan manca negara. Pandan View Mandeh terdapat beberapa spot spot berfoto yang indah dan pemandangan yang indah" />
 <meta name="keywords" content="Pandan View Mandeh, Mandeh, Pesisir Selatan, Puncak Mandeh" />
 <meta name="author" content="Pandan View Mandeh" />
-<meta name="robots" content="all" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="revisit-after" content="1 Days" />
 
 <!-- Open Graph / Facebook -->

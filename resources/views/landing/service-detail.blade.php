@@ -9,7 +9,7 @@
 <meta name="description" content="{{ $service->description }}">
 <meta name="keywords" content="{{ $service->name }}">
 <meta name="author" content="Pandan View Mandeh" />
-<meta name="robots" content="all" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="revisit-after" content="1 Days" />
 
 <!-- Open Graph / Facebook -->

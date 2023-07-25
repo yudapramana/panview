@@ -8,7 +8,7 @@
 <meta name="description" content="{{$title}}" />
 <meta name="keywords" content="About Pandan View Mandeh, Mandeh, Pesisir Selatan, Puncak Mandeh" />
 <meta name="author" content="Pandan View Mandeh" />
-<meta name="robots" content="all" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="revisit-after" content="1 Days" />
 
 <!-- Open Graph / Facebook -->
