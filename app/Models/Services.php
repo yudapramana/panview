@@ -25,13 +25,13 @@ class Services extends Model
         $separator = '/upload/';
         $exp = explode($separator, $this->attributes['cover_image_url']);
 
-        return $exp[0] . '/upload/c_fill,h_450,w_450,q_30/' . $exp[1];
+        return $exp[0] . '/upload/c_fill,h_450,w_450,f_avif,q_auto/' . $exp[1];
     }
 
     public function getRectangleContentImageAttribute(){
         $separator = '/upload/';
         $exp = explode($separator, $this->attributes['content_image_url']);
 
-        return $exp[0] . '/upload/c_fill,ar_16:9,q_50/' . $exp[1];
+        return $exp[0] . '/upload/c_fill,ar_16:9,q_50,f_avif/' . $exp[1];
     }
 }

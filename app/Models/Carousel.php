@@ -21,13 +21,13 @@ class Carousel extends Model
     public function getThumbnailImageAttribute(){
         $separator = '/upload/';
         $exp = explode($separator, $this->attributes['image_url']);
-        return $exp[0] . '/upload/q_5/' . $exp[1];
+        return $exp[0] . '/upload/f_avif,q_5/' . $exp[1];
     }
 
 
     public function getSmallerImageAttribute(){
         $separator = '/upload/';
         $exp = explode($separator, $this->attributes['image_url']);
-        return $exp[0] . '/upload/q_30/' . $exp[1];
+        return $exp[0] . '/upload/f_avif,q_auto/' . $exp[1];
     }
 }
