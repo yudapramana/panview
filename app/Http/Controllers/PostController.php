@@ -42,7 +42,11 @@ class PostController extends Controller
                     return $btn;
                 })
                 ->addColumn('desc_beautify', function ($post) {
-                    return \Illuminate\Support\Str::limit($post->desc, 200, $end='...');
+                    $html = '';
+                    $html .=  \Illuminate\Support\Str::limit($post->desc, 200, $end='...');
+                    $html .= '<br>';
+                    $html .= '<span class="text-muted preserveLines" style="font-size:smaller">View Count: ' . $post->view_count . ' Reads</span>';
+                    return $html;
                 })
                 ->rawColumns(['action', 'desc_beautify', 'title_can'])
                 ->make(true);
