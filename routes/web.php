@@ -54,6 +54,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/gallery', function () {
 
         $galleries = \App\Models\Gallery::all();
+
+        return $galleries;
         $galleries = $galleries->shuffle();
 
         $filterTags = $galleries->pluck('filter_tag')->unique();
