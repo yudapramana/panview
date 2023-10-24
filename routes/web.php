@@ -15,9 +15,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/ads.txt',function(){
-    return view('ads');
- });
+
 
 
 Route::get('/migrate-fresh', function () {
