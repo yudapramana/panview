@@ -15,7 +15,11 @@ use Illuminate\Http\Request;
 |
 */
 
-
+Route::get('/ads.txt', function () {
+    $content = view('ads');
+    return response($content, 200)
+        ->header('content-Type', 'text');
+});
 
 
 Route::get('/migrate-fresh', function () {
