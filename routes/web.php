@@ -21,6 +21,12 @@ Route::get('/ads.txt', function () {
         ->header('content-Type', 'text');
 });
 
+Route::get('/adsusual', function () {
+    $content = view('ads');
+    return response($content, 200)
+        ->header('content-Type', 'text');
+});
+
 
 Route::get('/migrate-fresh', function () {
     // Artisan::call('vendor:publish');
