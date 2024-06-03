@@ -58,6 +58,15 @@ Route::group(['middleware' => ['web']], function () {
         ]);
     });
 
+    Route::get('/privacy-policy', function () {
+        return view('landing.privacypolicy', [
+            'title' => 'Privacy Policy - Pandan View Mandeh',
+            'accountfb' => 'pandanviewmandeh',
+            'account' => 'pandanviewmandeh',
+            'channel' =>  '@pandanviewmandehofficial4919'
+        ]);
+    });
+
     Route::get('/gallery', function () {
 
         $galleries = \App\Models\Gallery::all();
