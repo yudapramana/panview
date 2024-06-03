@@ -37,6 +37,9 @@ Route::get('/xdown/{view}', function ($view) {
     return 'Web Down with command view: ' . $view;
 });
 
+
+
+
 Route::get('/xup', function () {
     Artisan::call('up');
     return 'Web Up';
@@ -58,7 +61,7 @@ Route::group(['middleware' => ['web']], function () {
         ]);
     });
 
-    
+
     Route::get('/privacy-policy', function () {
         return view('landing.privacypolicy', [
             'title' => 'Privacy Policy - Pandan View Mandeh',
