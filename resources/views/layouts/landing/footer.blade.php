@@ -27,6 +27,7 @@
                         <li><i class="bx bx-chevron-right"></i> <a href="/gallery">{{ __('messages.menu.gallery') }}</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="/aboutus">{{ __('messages.menu.aboutus') }}</a></li>
                         <li><i class="bx bx-chevron-right"></i> <a href="/contact">{{ __('messages.menu.contact') }}</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="/privacy-policy">Privacy Policy</a></li>
                     </ul>
                 </div>
 

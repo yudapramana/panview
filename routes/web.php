@@ -58,6 +58,7 @@ Route::group(['middleware' => ['web']], function () {
         ]);
     });
 
+    
     Route::get('/privacy-policy', function () {
         return view('landing.privacypolicy', [
             'title' => 'Privacy Policy - Pandan View Mandeh',
